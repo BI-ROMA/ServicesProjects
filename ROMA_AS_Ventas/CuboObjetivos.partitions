@@ -1,0 +1,61 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fca083f0-61d8-4680-826f-4693fa65f7ba" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CuboObjetivos</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Visi Coolers</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9ac930e6-a3d8-4e70-9109-e7aa31023917">
+          <ID>Fact Visi Coolers</ID>
+          <Name>Fact Visi Coolers</Name>
+          <CreatedTimestamp>2021-12-13T22:18:51.383333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:04:59.996667Z</LastSchemaUpdate>
+          <LastProcessed>2022-02-03T06:13:22.646667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12511346-f4d0-4d21-8c54-8d1707dff2dc">
+            <DataSourceViewID>dsObjetivos</DataSourceViewID>
+            <TableID>Ventas_Fact_VisiCoolers</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b20bcb86-8212-44c1-bf78-acba63f82b4d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5aae03d9-b4ee-47cd-a19b-17ab0a595226" />
+          </ProactiveCaching>
+          <EstimatedSize>296890</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Objetivos x Clientes</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6ea38d11-e2bf-4466-a59f-899e17ef5d86">
+          <ID>Fact Objetivos x Clientes</ID>
+          <Name>Fact Objetivos x Clientes</Name>
+          <CreatedTimestamp>2021-12-13T22:18:52.053333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:05:00.23Z</LastSchemaUpdate>
+          <LastProcessed>2022-02-03T06:13:53.006667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ef6ef601-55d4-44f9-a448-3ffc537b09d0">
+            <DataSourceViewID>dsObjetivos</DataSourceViewID>
+            <TableID>Ventas_Fact_Objetivos_xClientes</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="42426671-987b-4374-bc25-33feb97c478f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="08f3a6f2-a8ec-4df9-a18a-1351c61c4e9d" />
+          </ProactiveCaching>
+          <EstimatedSize>264077</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,1164 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Vendedores Rel</ID>
+  <Name>Vendedores Rel2</Name>
+  <CreatedTimestamp>2021-07-07T23:12:40.276667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2022-01-14T07:04:15.306667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="30" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="11" scrolltop="-91" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="83" x="10874" y="13970" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCarterasNew" left="11378" top="4720" logicalid="15" controlid="1" masterid="0" hint1="0" hint2="0" width="3254" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimCarterasNew" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAlmacenes" left="1911" top="583" logicalid="16" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimAlmacenes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimRelGeneral2" left="7906" top="9408" logicalid="17" controlid="3" masterid="0" hint1="0" hint2="0" width="3494" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a60d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimRelGeneral2" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Categorias_xProveedor" left="1008" top="7113" logicalid="18" controlid="4" masterid="0" hint1="0" hint2="0" width="5073" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d11300009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Dim_Categorias_xProveedor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimProveedores" left="1102" top="13859" logicalid="19" controlid="5" masterid="0" hint1="0" hint2="0" width="3733" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000950e0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimProveedores" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_vw_Canales" left="7722" top="15494" logicalid="20" controlid="6" masterid="0" hint1="0" hint2="0" width="3637" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000350e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Dim_vw_Canales" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimSedes" left="7478" top="161" logicalid="21" controlid="7" masterid="0" hint1="0" hint2="0" width="3223" height="5733" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000970c000065160000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimSedes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8041" top="13527" logicalid="22" controlid="8" masterid="0" hint1="0" hint2="0" width="812" height="2467" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[DimRelGeneral2-Dim_vw_Canales]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8440" y="15494" />
+              <point x="8440" y="14645" />
+              <point x="8553" y="14645" />
+              <point x="8553" y="13827" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8140" top="5395" logicalid="23" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="4313" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimRelGeneral2_DimSedes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="3" sourceattachpoint="3" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8539" y="5894" />
+              <point x="8539" y="7651" />
+              <point x="8553" y="7651" />
+              <point x="8553" y="9408" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4535" top="12967" logicalid="24" controlid="10" masterid="0" hint1="0" hint2="0" width="3671" height="1428" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimRelGeneral2_DimProveedores]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="15" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4835" y="13995" />
+              <point x="6370" y="13995" />
+              <point x="6370" y="13267" />
+              <point x="7906" y="13267" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10453" top="7370" logicalid="25" controlid="11" masterid="0" hint1="0" hint2="0" width="1852" height="2338" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimRelGeneral2_DimCarterasNew]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11905" y="7869" />
+              <point x="11905" y="8638" />
+              <point x="10753" y="8638" />
+              <point x="10753" y="9408" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5781" top="9667" logicalid="26" controlid="12" masterid="0" hint1="0" hint2="0" width="2425" height="943" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimRelGeneral2_Dim_Categorias_xProveedor]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="29" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6081" y="10210" />
+              <point x="6993" y="10210" />
+              <point x="6993" y="9967" />
+              <point x="7906" y="9967" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="919" top="10808" logicalid="27" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3551" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Dim_Categorias_xProveedor_DimProveedores]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="0" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1318" y="13859" />
+              <point x="1318" y="12484" />
+              <point x="1344" y="12484" />
+              <point x="1344" y="11108" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4611" top="785" logicalid="28" controlid="14" masterid="0" hint1="0" hint2="0" width="3167" height="892" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimSedes_DimAlmacenes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="11" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4911" y="1184" />
+              <point x="6194" y="1184" />
+              <point x="6194" y="1377" />
+              <point x="7478" y="1377" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>11</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-91</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>1008</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>161</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>83</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="135">
+            <Shape Id="Id Rel General" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Rel General" />
+                <Attribute Id="Id Rel General 1" />
+                <Attribute Id="Nom Vendedor" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Id Cartera" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Cartera" />
+                <Attribute Id="Cod Cartera" />
+              </Attributes>
+              <Position x="193" y="20" />
+            </Shape>
+            <Shape Id="Id Sede" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Sede" />
+                <Attribute Id="Cod Sede" />
+                <Attribute Id="Nom Sede" />
+                <Attribute Id="Sucursal" />
+                <Attribute Id="Zona" />
+              </Attributes>
+              <Position x="367" y="20" />
+            </Shape>
+            <Shape Id="Id Can" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Can" />
+                <Attribute Id="Nom Can" />
+                <Attribute Id="Cod Can" />
+              </Attributes>
+              <Position x="541" y="20" />
+            </Shape>
+            <Shape Id="Id Cat x Prv" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Cat x Prv" />
+                <Attribute Id="Cat Jes" />
+                <Attribute Id="Nom Cat Abrv" />
+                <Attribute Id="Cod Cat" />
+              </Attributes>
+              <Position x="715" y="20" />
+            </Shape>
+            <Shape Id="Id Prv" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Prv" />
+                <Attribute Id="Cod Prv" />
+                <Attribute Id="Nom Prv Abr" />
+              </Attributes>
+              <Position x="888" y="20" />
+            </Shape>
+            <Shape Id="Id Almacen" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Almacen" />
+                <Attribute Id="Cod Almacen" />
+              </Attributes>
+              <Position x="541" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2022-02-03T06:38:11.453333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>dsCuboPlanillasRoma</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Id Rel General</ID>
+      <Name>Id Rel General</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>7637</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdRelGeneral</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimRelGeneral2</TableID>
+          <ColumnID>NomVendedor</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Nom Vendedor</AttributeID>
+          <Name>Vendedor Ult</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Cartera</AttributeID>
+          <Name>Id Cartera</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Rel General 1</AttributeID>
+          <Name>IdX</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nom Vendedor</ID>
+      <Name>Vendedor Ult</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>NomVendedor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimRelGeneral2</TableID>
+          <ColumnID>NomVendedor</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Can</ID>
+      <Name>Id Can</Name>
+      <EstimatedCount>479</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCat_xPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCanal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_vw_Canales</TableID>
+          <ColumnID>NomCan</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Can</AttributeID>
+          <Name>Cod Can</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nom Can</AttributeID>
+          <Name>Canal</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Cat x Prv</AttributeID>
+          <Name>Id Cat x Prv</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Can</ID>
+      <Name>Cod Can</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_Dim_vw_Canales</TableID>
+            <ColumnID>CodCan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_vw_Canales</TableID>
+          <ColumnID>CodCan</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nom Can</ID>
+      <Name>Canal</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_Dim_vw_Canales</TableID>
+            <ColumnID>NomCan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_vw_Canales</TableID>
+          <ColumnID>NomCan</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Sede</ID>
+      <Name>Id Sede</Name>
+      <EstimatedCount>2353</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCat_xPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCanal</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdSede</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimSedes</TableID>
+          <ColumnID>NomSede</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Sede</AttributeID>
+          <Name>Cod Sede</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nom Sede</AttributeID>
+          <Name>Sede</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Sucursal</AttributeID>
+          <Name>Sucursal</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Zona</AttributeID>
+          <Name>Zona</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Almacen</AttributeID>
+          <Name>Id Almacen</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Can</AttributeID>
+          <Name>Id Can</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Sede</ID>
+      <Name>Cod Sede</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimSedes</TableID>
+            <ColumnID>CodSede</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimSedes</TableID>
+          <ColumnID>CodSede</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nom Sede</ID>
+      <Name>Sede</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimSedes</TableID>
+            <ColumnID>NomSede</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimSedes</TableID>
+          <ColumnID>NomSede</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Sucursal</ID>
+      <Name>Sucursal</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimSedes</TableID>
+            <ColumnID>Sucursal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimSedes</TableID>
+          <ColumnID>Sucursal</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Zona</ID>
+      <Name>Zona</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimSedes</TableID>
+            <ColumnID>Zona</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimSedes</TableID>
+          <ColumnID>Zona</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Almacen</ID>
+      <Name>Id Almacen</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimAlmacenes</TableID>
+            <ColumnID>IdAlmacen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimAlmacenes</TableID>
+          <ColumnID>IdAlmacen</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Almacen</AttributeID>
+          <Name>Cod Almacen</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Almacen</ID>
+      <Name>Cod Almacen</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimAlmacenes</TableID>
+            <ColumnID>CodAlmacen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimAlmacenes</TableID>
+          <ColumnID>CodAlmacen</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Prv</ID>
+      <Name>Id Prv</Name>
+      <EstimatedCount>54</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimProveedores</TableID>
+            <ColumnID>IdPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimProveedores</TableID>
+          <ColumnID>NomPrvAbr</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Prv</AttributeID>
+          <Name>Cod Prv</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nom Prv Abr</AttributeID>
+          <Name>Proveedor Abrv</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Prv</ID>
+      <Name>Cod Prv</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimProveedores</TableID>
+            <ColumnID>CodPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimProveedores</TableID>
+          <ColumnID>CodPrv</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nom Prv Abr</ID>
+      <Name>Proveedor Abrv</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimProveedores</TableID>
+            <ColumnID>NomPrvAbr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimProveedores</TableID>
+          <ColumnID>NomPrvAbr</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Cartera</ID>
+      <Name>Id Cartera</Name>
+      <EstimatedCount>7637</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCat_xPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCanal</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdSede</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCar</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimCarterasNew</TableID>
+          <ColumnID>CodCartera</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Cartera</AttributeID>
+          <Name>Cod Cartera</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Sede</AttributeID>
+          <Name>Id Sede</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Cartera</ID>
+      <Name>Cod Cartera</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimCarterasNew</TableID>
+            <ColumnID>CodCartera</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimCarterasNew</TableID>
+          <ColumnID>CodCartera</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Cat x Prv</ID>
+      <Name>Id Cat x Prv</Name>
+      <EstimatedCount>170</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdCat_xPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+          <ColumnID>NomCat_Abrv</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Cod Cat</AttributeID>
+          <Name>Cod Cat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nom Cat Abrv</AttributeID>
+          <Name>Categoria Abrv</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Cat Jes</AttributeID>
+          <Name>Cat Jes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Id Prv</AttributeID>
+          <Name>Id Prv</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cod Cat</ID>
+      <Name>Cod Cat</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+            <ColumnID>CodCat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+          <ColumnID>CodCat</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nom Cat Abrv</ID>
+      <Name>Categoria Abrv</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+            <ColumnID>NomCat_Abrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+          <ColumnID>NomCat_Abrv</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Cat Jes</ID>
+      <Name>Cat Jes</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+            <ColumnID>CatJes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+          <ColumnID>CatJes</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Rel General 1</ID>
+      <Name>IdX</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimRelGeneral2</TableID>
+            <ColumnID>IdRelGeneral</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>14</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimRelGeneral2</TableID>
+          <ColumnID>IdRelGeneral</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Jerarquía</ID>
+      <Name>Prv-Cat-Can-Sed-Ven</Name>
+      <Levels>
+        <Level>
+          <ID>Id Prv</ID>
+          <Name>Proveedor</Name>
+          <SourceAttributeID>Id Prv</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Cat x Prv</ID>
+          <Name>Categoria</Name>
+          <SourceAttributeID>Id Cat x Prv</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Can</ID>
+          <Name>Canal</Name>
+          <SourceAttributeID>Id Can</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Sede</ID>
+          <Name>Sede</Name>
+          <SourceAttributeID>Id Sede</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Rel General</ID>
+          <Name>Vendedor</Name>
+          <SourceAttributeID>Id Rel General</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Jerarquía 1</ID>
+      <Name>Prv-Cat-Can-Sed-Car-Ven</Name>
+      <Levels>
+        <Level>
+          <ID>Id Prv</ID>
+          <Name>Proveedor</Name>
+          <SourceAttributeID>Id Prv</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Cat x Prv</ID>
+          <Name>Categoria</Name>
+          <SourceAttributeID>Id Cat x Prv</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Can</ID>
+          <Name>Canal</Name>
+          <SourceAttributeID>Id Can</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Sede</ID>
+          <Name>Sede</Name>
+          <SourceAttributeID>Id Sede</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Cartera</ID>
+          <Name>Cartera</Name>
+          <SourceAttributeID>Id Cartera</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Rel General</ID>
+          <Name>Vendedor</Name>
+          <SourceAttributeID>Id Rel General</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

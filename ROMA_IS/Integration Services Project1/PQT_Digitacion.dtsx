@@ -1,0 +1,1858 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/25/2021 10:11:40 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CI59-054"
+  DTS:CreatorName="DSROMASAC\g_lopez"
+  DTS:DTSID="{A23517E5-69D6-4FAC-879E-94A8E523AC13}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="91"
+  DTS:VersionGUID="{C17CA520-091B-4DF9-9C6F-BC084C758A39}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RBI\OLAP.Cubo_ROMA]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{B8D77F2B-0498-4FAD-B465-D2588ABA154D}"
+      DTS:ObjectName="RBI\OLAP.Cubo_ROMA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=RBI\OLAP;Initial Catalog=Cubo_ROMA;Provider=MSOLAP.8;Integrated Security=SSPI;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9260A8FC-0F5A-427E-85BD-45960537414B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaActual">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2090FDEB-5C82-43B0-9892-5204FA5AB128}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaAnterior">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2A5CBD67-9827-443B-92A4-7B5129C0F2CE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::Hora] == @[User::HoraHistoria] ? @[User::FechaAnterior] :  @[User::FechaActual]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaProceso">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7AAD4E4D-6F03-4F56-956F-6012BD9E35C7}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="DatePart(&quot;HH&quot;, Getdate())"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Hora">
+      <DTS:VariableValue
+        DTS:DataType="3">10</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{208AA878-C056-406F-A488-FB0451420CC7}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="HoraHistoria">
+      <DTS:VariableValue
+        DTS:DataType="3">10</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
+      DTS:DTSID="{8219f691-a13b-43c6-bde2-3c57329b4194}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}"
+          SQLTask:SqlStatementSource="--Drop Table #itemsBase&#xA;;With &#xA;dtBase As (Select Distinct CodPrv, CodFam, CodCat&#xA;   From dw.Reportes.item_unidadvolumenpeso&#xA;   Where IsNull(CodCat, '000')&lt;&gt; '000' And IsNull(CodFam, '000') &lt;&gt; '000'),&#xA;dt As (Select CodPrv, CodFam, Count(Distinct CodCat) QCats&#xA;   From dtBase x&#xA;   Group By CodPrv, CodFam&#xA;   Having Count(Distinct CodCat)=1&#xA;   )&#xA;Select a.*, c.nomcat, nomcat_corto2, QCats&#xA;Into #itemsBase&#xA;From dtBase a&#xA;Inner Join dt b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Inner Join reportes.grupocategoria c On c.codprv = a.CodPrv And c.codcat = a.codcat&#xA;&#xA;Update a Set CodCat = b.Codcat&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join #itemsBase b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Where a.CodCat Is Null And b.QCats = 1&#xA;&#xA;;With &#xA;dtOITM As (Select Distinct IsNull(codprv_homo, a.CardCode) CardCode, U_BKS_FAMILIA, ItemCode, ItemName &#xA;   From OITM a&#xA;   Left Join reportes.rel_prv_homologos b On a.CardCode = b.codprv&#xA;   Where frozenFor = 'N' And a.ItmsGrpCod Not In (181,208) &#xA;   And CardCode Is Not Null And U_BKS_FAMILIA Is Not Null Or itemcode In ('UNI235841')),&#xA;dtprdfamcat As (Select CardCode, U_BKS_FAMILIA, ItemCode, ItemName, b.* &#xA;   From dtOITM a&#xA;   Left Join #itemsBase b On a.CardCode = b.codprv And a.U_BKS_FAMILIA = b.codfam&#xA;   Where QCats = 1)&#xA;Insert Into dw.reportes.item_unidadvolumenpeso (itemcode, CodPrv, CodFam, CodCat, ContenidoOriginal)&#xA;Select itemcode, CodPrv, U_BKS_FAMILIA CodFam, CodCat, ItemName ContenidoOriginal &#xA;From dtprdfamcat a&#xA;Where Not Exists (Select * From dw.Reportes.item_unidadvolumenpeso b Where a.ItemCode = b.itemcode)&#xA;&#xA;Update a Set CodFam = b.U_BKS_FAMILIA, FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join (Select Distinct ItemCode, U_BKS_FAMILIA, U_bks_categoria &#xA;   From OITM Where frozenFor = 'N') b On a.itemcode = b.ItemCode&#xA;Where a.CodPrv Not Like '%000027' And IsNull(a.CodFam, '*') &lt;&gt; b.U_BKS_FAMILIA&#xA;&#xA;&#xA;Update a Set CodFam = Left(c.U_indice, 3)+'000', FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join OITM b On a.itemcode = b.ItemCode And a.CodPrv = b.CardCode And Left(SWW, 1) = 'H'&#xA;Inner Join [@BKS_CATEGORIA] c On b.U_bks_categoria = c.Code&#xA;Where CodPrv Like '%00027' And CodFam != Left(c.U_indice, 3)+'000'&#xA;&#xA;;With dt As (Select Distinct CodPrv, codfam, codcat From reportes.relfamcatgrupo Where codprv Like '%00027' And numano+nummes = 202108)&#xA;Update a Set CodCat = b.CodCat&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join dt b On a.CodPrv = b.codprv And a.CodFam = b.codfam&#xA;Inner Join OITM c On a.itemcode = c.ItemCode And a.CodPrv = c.CardCode And Left(SWW, 1) = 'H'&#xA;Where a.CodPrv Like '%00027'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
+      DTS:DTSID="{e0f13444-8ae9-43f1-83b1-8ad72f954c2f}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6603F4A0-7C8D-41DE-A9FC-9048126A5E5A}"
+          SQLTask:SqlStatementSource="/*&#xA;Select Distinct U_BKS_GRUPO, itemcode &#xA;Into #ItemCodeVta&#xA;From SrvSAP.Roma_Productiva.dbo.OINV a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.INV1 b On a.DocEntry = b.DocEntry &#xA;Where Convert(Varchar(6), Taxdate, 112) &gt;= Convert(Varchar(6), DateAdd(Month, -1, Getdate()), 112) And ItemCode Is Not Null&#xA;*/&#xA;&#xA;Select Distinct SWW U_BKS_GRUPO, a.itemcode &#xA;Into #ItemCodeVta&#xA;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM aa On a.ItemCode = aa.ItemCode And a.CodPrv = aa.CardCode&#xA;Where Convert(char(6), feregistro, 112) &gt;= Convert(char(6), getdate()-60, 112) &#xA;And Not Exists(Select * From Ventas.DimProductosFull b Where a.codprv = b.CodPrv  Collate SQL_Latin1_General_CP850_CI_AS And a.itemcode = b.codpro  Collate SQL_Latin1_General_CP850_CI_AS)&#xA;&#xA;&#xA;Insert Into ventas.DimProductosFull(IdPrv, CodPro, NomPro, CodPrv, CodFam, NomFam, U_BKS_CATEGORIA, U_BKS_CATEGORIA_Nom, CodCat, NomCat, &#xA;CodFamNestle, NomFamNestle, catJes, U_BKS_GRUPO)&#xA;Select IdPrv, a.ItemCode CodPro, ItemName NomPro, a.CodPrv, CodFam, z.Name NomFam, U_BKS_CATEGORIA, y.name U_BKS_CATEGORIA_Nom, &#xA;CodCat, Null NomCat, CodCat CodFamNestle, '*' NomFamNestle, catJes, SWW U_BKS_GRUPO&#xA;From SrvSAP.dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM x On a.ItemCode = x.ItemCode&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_CATEGORIA] y On x.U_BKS_CATEGORIA = y.Code&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] z On x.U_BKS_FAMILIA = z.Code&#xA;Inner Join Ventas.DimProveedores prv On prv.CodPrv = a.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where Not Exists (Select * From ventas.DimProductosFull b &#xA;  Where a.codprv Collate SQL_Latin1_General_CP1_CI_AS = b.codprv &#xA;  and a.itemcode Collate SQL_Latin1_General_CP1_CI_AS = b.codpro)&#xA;And a.codcat Is Not Null And a.itemcode In (Select itemcode From #ItemCodeVta)&#xA;&#xA;&#xA;Update a Set CodCat = IsNull(b.CodCat, '000'), CodFam = IsNull(b.Codfam, 'FAM000'), CatJes=IsNull(b.catjes, 'NO DEFINIDO') &#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.dw.Reportes.item_unidadvolumenpeso b &#xA;On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(b.CodCat, '000') &lt;&gt; '000'&#xA;And (&#xA; IsNull(b.CodCat, '000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodCat, '000')&#xA; Or &#xA; IsNull(b.CodFam, 'FAM000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodFam, 'FAM000')&#xA; Or &#xA; IsNull(b.catjes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.catjes, 'NO DEFINIDO')&#xA; )&#xA;&#xA;&#xA;;With dt As (Select Distinct a.CodPrv, a.ItemCode, CodFam, a.CodCat, b.NomCat, b.NomCat_Corto2, CatJes&#xA;   From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;   Left Join (Select Distinct codcat, nomcat, nomcat_corto, nomcat_corto2&#xA;      From SrvSAP.Roma_Productiva.reportes.grupocategoria) b On a.codcat=b.codcat)&#xA;Update a Set NomCat = Isnull(b.Nomcat, 'NO DEFINIDO'), NomCat_Abr = IsNull(b.nomcat_corto2, 'NO DEFINIDO'), CatJes = IsNull(b.CatJes, 'NO DEFINIDO') &#xA;From ventas.DimProductosFull a&#xA;Inner Join dt b On a.CodPrv = b.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.itemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where (IsNull(a.NomCat, '*') &lt;&gt; IsNull(b.Nomcat, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.NomCat_Abr, '*') &lt;&gt; IsNull(b.nomcat_corto2, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.CatJes, '*') &lt;&gt; IsNull(b.CatJes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;)&#xA;&#xA;Update a Set NomFam = b.Name &#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] b On a.CodFam = b.code Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(a.NomFam, '*') &lt;&gt; b.Name Collate SQL_Latin1_General_CP1_CI_AS&#xA;   &#xA;Update Ventas.DimProductosFull Set CodCat = '000' Where CodCat Is Null&#xA;Update a Set NomCat = 'NO DEFINIDO', NomCat_Abr = 'NO DEFINIDO' From Ventas.DimProductosFull a Where CodCat = '000'&#xA;   &#xA;;With dt As (Select Distinct a.IdPrv, a.CodCat, c.NomCat, c.nomcat_corto2 NomCat_Abr &#xA;   From Ventas.DimProductosFull a&#xA;   Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv&#xA;   Inner Join srvSAP.roma_productiva.reportes.grupocategoria c &#xA;   On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS And a.CodCat = c.codcat Collate SQL_Latin1_General_CP1_CI_AS)&#xA;Insert Into Ventas.Dim_Categorias_xProveedor (IdPrv, CodCat, NomCat, NomCat_Abrv)&#xA;Select IdPrv, CodCat, NomCat, NomCat_Abr From dt a&#xA;Where Not Exists (Select * From Ventas.Dim_Categorias_xProveedor b Where a.IdPrv = b.IdPrv And a.CodCat = IsNull(b.CodCat, '000'))&#xA;&#xA;;With dt As (Select Distinct a.IdPrv, CodCat, NomCat, NomCat_Abr, CatJes&#xA;   From Ventas.DimProductosFull a&#xA;   Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv)&#xA;Update x Set NomCat = y.NomCat, NomCat_Abrv = y.NomCat_Abr, CatJes = y.CatJes&#xA;From ventas.Dim_Categorias_xProveedor x&#xA;Inner Join dt y On x.IdPrv = y.IdPrv And x.CodCat = y.CodCat&#xA; &#xA;Update a Set IdCat_xPrv = b.IdCat_xPrv &#xA;From ventas.DimProductosFull a&#xA;Inner Join Ventas.Dim_Categorias_xProveedor b On a.IdPrv = b.IdPrv And a.CodCat = b.CodCat&#xA;Where IsNull(a.IdCat_xPrv, 0) != b.IdCat_xPrv" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza Item_UnidadVolumenPeso en la Nube FeFactura y FeEntrada"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{EA912418-0F4D-43BE-955C-41F07D9FCE8F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza Item_UnidadVolumenPeso en la Nube FeFactura y FeEntrada"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D7F8252E-4B15-4E64-9890-03F0EC381A92}"
+          SQLTask:SqlStatementSource="Update a Set fefactura=b.fefactura, feentrada=b.feentrada&#xA;-- Select *&#xA;From ROMA_REPOSITORIO.Nube.Item_UnidadVolumenPeso a&#xA;Inner Join SrvSAP.dw.Reportes.Item_UnidadVolumenPeso b On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.ItemCode = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DimProductosFull Dim_Categorias_xProveedor"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{3F766EA1-A927-450B-9335-6CB4B3A94F95}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DimProductosFull Dim_Categorias_xProveedor"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6603F4A0-7C8D-41DE-A9FC-9048126A5E5A}"
+          SQLTask:SqlStatementSource="--Drop Table If Exists #ProdsInv&#xA;--Drop Table If Exists #ItemCodeVta&#xA;&#xA;Select Distinct SWW U_BKS_GRUPO, a.CodPro&#xA;Into #ProdsInv&#xA;From ROMA_REPOSITORIO.temp.Inventarios a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM aa On a.CodPro Collate SQL_Latin1_General_CP1_CI_AS = aa.ItemCode&#xA;Where Not Exists (Select * From ventas.DimProductosFull b Where a.CodPro = b.CodPro)&#xA;And a.Stock &gt; 0&#xA;&#xA;Select Distinct SWW U_BKS_GRUPO, a.itemcode &#xA;Into #ItemCodeVta&#xA;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM aa On a.ItemCode = aa.ItemCode And a.CodPrv = aa.CardCode&#xA;Where Convert(char(6), feregistro, 112) &gt;= Convert(char(6), getdate()-60, 112) &#xA;And Not Exists(Select * From Ventas.DimProductosFull b Where a.codprv = b.CodPrv  Collate SQL_Latin1_General_CP850_CI_AS And a.itemcode = b.codpro  Collate SQL_Latin1_General_CP850_CI_AS)&#xA;&#xA;Insert Into #ProdsInv&#xA;Select * From #ItemCodeVta a&#xA;Where Not Exists (Select * From #ProdsInv b Where a.ItemCode Collate SQL_Latin1_General_CP1_CI_AS = b.CodPro)&#xA;&#xA;Insert Into Ventas.DimProveedores (CodPrv, NomPrv, NomPrvAbr, Origen)&#xA;Select Distinct c.CardCode, CardName, CardFName, 'SSIS' From #ProdsInv a&#xA;Inner Join SrvSAP.roma_productiva.dbo.OITM b On a.CodPro = b.itemcode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Inner Join SrvSAP.roma_productiva.dbo.OCRD c On b.cardcode = c.cardcode&#xA;Where Not Exists (Select * From Ventas.DimProveedores x Where x.CodPrv = c.CardCode Collate SQL_Latin1_General_CP1_CI_AS)&#xA;&#xA;Insert Into ventas.Dim_Categorias_xProveedor(CodCat, NomCat, NomCat_Abrv, IdPrv)&#xA;Select '000' CodCat, 'NO DEFINIDO' NomCat, 'NO DEFINIDO' NomCat_Abrv, IdPrv&#xA;From Ventas.DimProveedores a&#xA;Where DateAdd(MONTH, -2, Getdate()) &lt; FeRegistro &#xA;And Not Exists (Select * From Ventas.Dim_Categorias_xProveedor b Where a.IdPrv = b.IdPrv)&#xA;&#xA;-- Select * From Ventas.Dim_Categorias_xProveedor Where CodCat = '000'&#xA;&#xA;--Select CardCode, CardFName, CardName From OCRD Where CardCode = 'PM00000099'&#xA;----Select * From #ProdsInv&#xA;--Select * From SrvSAP.dw.Reportes.item_unidadvolumenpeso Where itemcode='BLE030133'&#xA;--Select * From ventas.DimProductosFull Where CodPro = 'BLE030133'&#xA;---- &#x9;   &#xA;--Select * From Ventas.DimProveedores Where codprv= 'PM00000099'&#xA;&#xA;&#xA;Insert Into ventas.DimProductosFull(IdPrv, CodPro, NomPro, CodPrv, CodFam, NomFam, U_BKS_CATEGORIA, U_BKS_CATEGORIA_Nom, CodCat, NomCat, &#xA;CodFamNestle, NomFamNestle, catJes, U_BKS_GRUPO, CoUnidadMedidaCompra, QtdPiezas)&#xA;Select IdPrv, a.ItemCode CodPro, ItemName NomPro, a.CodPrv, IsNull(CodFam, '000'), IsNull(z.Name, 'NO DEFINIDO') NomFam, &#xA;Case When IsNull(U_BKS_CATEGORIA, '') = '' Then '000' Else U_BKS_CATEGORIA End U_BKS_CATEGORIA, &#xA;Case When IsNull(U_BKS_CATEGORIA, '') = '' Then 'NO DEFINIDO' Else y.name End U_BKS_CATEGORIA_Nom, &#xA;CodCat, Null NomCat, CodCat CodFamNestle, '*' NomFamNestle, catJes, SWW U_BKS_GRUPO, x.buyunitmsr, x.numinbuy&#xA;From SrvSAP.dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM x On a.ItemCode = x.ItemCode&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_CATEGORIA] y On x.U_BKS_CATEGORIA = y.Code&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] z On x.U_BKS_FAMILIA = z.Code&#xA;Inner Join Ventas.DimProveedores prv On prv.CodPrv = a.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where (/*a.FeRegistro &gt;= Getdate()-30 Or */a.ItemCode Collate SQL_Latin1_General_CP1_CI_AS In (Select CodPro From #ProdsInv))&#xA;And Not Exists (Select * From ventas.DimProductosFull b &#xA;&#x9;&#x9;Where a.codprv Collate SQL_Latin1_General_CP1_CI_AS = b.codprv &#xA;&#x9;&#x9;and a.itemcode Collate SQL_Latin1_General_CP1_CI_AS = b.codpro)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#xA;&#xA;&#xA;Update a Set CodCat = IsNull(b.CodCat, '000'), CodFam = IsNull(b.Codfam, 'FAM000'), CatJes=IsNull(b.catjes, 'NO DEFINIDO')&#x9;&#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.dw.Reportes.item_unidadvolumenpeso b &#xA;On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(b.CodCat, '000') &lt;&gt; '000'&#xA;And (&#xA;&#x9;IsNull(b.CodCat, '000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodCat, '000')&#xA;&#x9;Or &#xA;&#x9;IsNull(b.CodFam, 'FAM000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodFam, 'FAM000')&#xA;&#x9;Or &#xA;&#x9;IsNull(b.catjes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.catjes, 'NO DEFINIDO')&#xA;&#x9;)&#xA;&#xA;&#xA;;With dt As (Select Distinct a.CodPrv, a.ItemCode, CodFam, a.CodCat, b.NomCat, b.NomCat_Corto2, CatJes&#xA;&#x9;&#x9;&#x9;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#xA;&#x9;&#x9;&#x9;Left Join SrvSAP.Roma_Productiva.reportes.grupocategoria b On /*a.codprv = b.codprv And */ a.codcat=b.codcat)&#xA;Update a Set NomCat = Isnull(b.Nomcat, 'NO DEFINIDO'), NomCat_Abr = IsNull(b.nomcat_corto2, 'NO DEFINIDO')--, CatJes = IsNull(b.CatJes, 'NO DEFINIDO')&#x9;&#xA;From ventas.DimProductosFull a&#xA;Inner Join dt b On a.CodPrv = b.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.itemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where (IsNull(a.NomCat, '*') &lt;&gt; IsNull(b.Nomcat, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.NomCat_Abr, '*') &lt;&gt; IsNull(b.nomcat_corto2, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.CatJes, '*') &lt;&gt; IsNull(b.CatJes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;)&#xA;&#xA;&#xA;;With dt As (Select Distinct a.CodPrv, a.ItemCode, CodFam, a.CodCat, b.NomCat, b.NomCat_Corto2, CatJes&#xA;&#x9;&#x9;&#x9;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;&#x9;&#x9;&#x9;Left Join SrvSAP.Roma_Productiva.reportes.grupocategoria b On /*a.codprv = b.codprv And */ a.codcat=b.codcat&#x9;&#x9;&#x9;)&#xA;Update a Set CatJes = IsNull(b.CatJes, 'NO DEFINIDO')&#x9;&#xA;From ventas.DimProductosFull a&#xA;Inner Join dt b On a.CodPrv = b.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.itemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;where IsNull(a.CatJes, '*') &lt;&gt; IsNull(b.CatJes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#xA;UPDATE a Set CatJes = IsNull(b.catjes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;From ventas.DimProductosFull a&#xA;Inner Join SrvSAP.DW.Reportes.item_unidadvolumenpeso b On a.CodPro = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;And IsNull(a.CatJes,'NO DEFINIDO') &lt;&gt; IsNull(b.catjes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#xA;Update a Set NomFam = b.Name&#x9;&#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] b On a.CodFam = b.code Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(a.NomFam, '*') &lt;&gt; b.Name Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#x9;&#x9;&#x9;&#xA;Update Ventas.DimProductosFull Set CodCat = '000' Where CodCat Is Null&#xA;Update a Set NomCat = 'NO DEFINIDO', NomCat_Abr = 'NO DEFINIDO' From Ventas.DimProductosFull a Where CodCat = '000'&#xA;&#x9;&#x9;&#x9;&#xA;;With dt As (Select Distinct a.IdPrv, a.CodCat, c.NomCat, c.nomcat_corto2 NomCat_Abr &#xA;&#x9;&#x9;&#x9;From Ventas.DimProductosFull a&#xA;&#x9;&#x9;&#x9;Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv&#xA;&#x9;&#x9;&#x9;Inner Join srvSAP.roma_productiva.reportes.grupocategoria c &#xA;&#x9;&#x9;&#x9;On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS And a.CodCat = c.codcat Collate SQL_Latin1_General_CP1_CI_AS)&#xA;Insert Into Ventas.Dim_Categorias_xProveedor (IdPrv, CodCat, NomCat, NomCat_Abrv)&#xA;Select IdPrv, CodCat, NomCat, NomCat_Abr From dt a&#xA;Where Not Exists (Select * From Ventas.Dim_Categorias_xProveedor b Where a.IdPrv = b.IdPrv And a.CodCat = IsNull(b.CodCat, '000'))&#xA;&#xA;&#xA;&#xA;;With dt As (Select Distinct a.IdPrv, CodCat, NomCat, NomCat_Abr&#xA;&#x9;&#x9;&#x9;From Ventas.DimProductosFull a&#xA;&#x9;&#x9;&#x9;Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv)&#xA;Update x Set NomCat = y.NomCat, NomCat_Abrv = y.NomCat_Abr--, CatJes = y.CatJes&#xA;From ventas.Dim_Categorias_xProveedor x&#xA;Inner Join dt y On x.IdPrv = y.IdPrv And x.CodCat = y.CodCat&#xA;&#xA;&#xA;&#xA;/*&#xA;Insert Into ventas.Dim_Categorias_xProveedor (IdPrv, CodCat, NomCat, NomCat_Abrv, CatJes)&#xA;Select Distinct IdPrv, CodCat, NomCat, NomCat_Abr, IsNull(CatJes, 'NO DEFINIDO') CatJes &#xA;From ventas.DimProductosFull a&#xA;Where Not Exists (Select * From ventas.Dim_Categorias_xProveedor b &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Where a.IdPrv = b.IdPrv And a.CodCat = b.CodCat &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;And IsNull(a.CatJes, 'NO DEFINIDO') = IsNull(b.CatJes, 'NO DEFINIDO'))&#xA;&#xA;*/&#xA;&#xA;Update a Set IdCat_xPrv = b.IdCat_xPrv&#x9;&#xA;-- Select *&#xA;From ventas.DimProductosFull a&#xA;Inner Join Ventas.Dim_Categorias_xProveedor b On a.IdPrv = b.IdPrv And a.CodCat = b.CodCat --And a.CatJes = b.CatJes&#xA;Where IsNull(a.IdCat_xPrv, 0) != b.IdCat_xPrv&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Inserta Nuevos Items en la Nube"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{FAF8EE91-96BC-40A4-9479-32E82AD63EFD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Inserta Nuevos Items en la Nube"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D7F8252E-4B15-4E64-9890-03F0EC381A92}"
+          SQLTask:SqlStatementSource="/*&#xA;Insert Into SrvNube.dbAuxiliar.ROMA.Item_UnidadVolumenPeso&#xA;Select *, Null, Null From SrvSAP.dw.reportes.item_unidadvolumenpeso a&#xA;Where Not Exists (Select * From SrvNube.dbAuxiliar.ROMA.Item_UnidadVolumenPeso b &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Where a.ItemCode Collate SQL_Latin1_General_CP1_CI_AS = b.ItemCode)&#xA;*/&#xA;Insert Into ROMA_REPOSITORIO.Nube.Item_UnidadVolumenPeso(itemcode, ContenidoOriginal, CodPrv, CodFam, CodCat, CatJes, FeRegistro)&#xA;Select a.itemcode, a.ContenidoOriginal, a.CodPrv, a.CodFam, a.CodCat, a.CatJes, FeRegistro&#xA;From SrvSAP.dw.reportes.item_unidadvolumenpeso a&#xA;Where Not Exists (Select * From ROMA_REPOSITORIO.Nube.Item_UnidadVolumenPeso b &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Where a.ItemCode Collate SQL_Latin1_General_CP1_CI_AS = b.ItemCode)&#xA;&#xA;&#xA;Update a Set CodFam = b.CodFam&#xA;From ROMA_REPOSITORIO.Nube.Item_UnidadVolumenPeso a&#xA;Inner Join SrvSAP.dw.Reportes.Item_UnidadVolumenPeso b On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.ItemCode = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;And IsNull(a.codfam, 'FAM000') &lt;&gt; b.codfam Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#xA;/*&#xA;Update a Set fefactura=b.fefactura, feentrada=b.feentrada&#xA;From SrvNube.dbAuxiliar.ROMA.Item_UnidadVolumenPeso a&#xA;Inner Join SrvSAP.dw.Reportes.Item_UnidadVolumenPeso b On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.ItemCode = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where b.fefactura Is Not Null Or b.feentrada Is Not Null &#xA;*/" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Proceso de Dimensiones"
+      DTS:CreationName="Microsoft.ASExecuteDDLTask"
+      DTS:Description="Tarea Ejecutar DDL de Analysis Services"
+      DTS:DTSID="{A2847D50-89A1-4438-B511-5513A5F36D2C}"
+      DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Proceso de Dimensiones"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASDdlData
+          ConnectionName="RBI\OLAP.Cubo_ROMA"
+          SourceType="DirectInput"
+          Source="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Parallel&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Canales&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Dim Clientes&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Dim Productos Full&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Dim Sedes&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Carteras&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Supervisores&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Dim Mesas&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Dim Fechas&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;DimensionID&gt;Hora&lt;/DimensionID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;  &lt;/Parallel&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Proceso del Cubo de Digitacipon"
+      DTS:CreationName="Microsoft.ASExecuteDDLTask"
+      DTS:Description="Tarea Ejecutar DDL de Analysis Services"
+      DTS:DTSID="{825A01DE-6FFB-4AAE-961C-972FAB8A56B8}"
+      DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Proceso del Cubo de Digitacipon"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASDdlData
+          ConnectionName="RBI\OLAP.Cubo_ROMA"
+          SourceType="DirectInput"
+          Source="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Parallel&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;        &lt;MeasureGroupID&gt;Dim Vw Factor Proyectado&lt;/MeasureGroupID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Digitacion&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Digitacion&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Cartera 1&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Cartera&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Digitacion 1&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Digitacion&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#x9;  &#xA;  &lt;/Parallel&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Proceso del Cubo de Digitación Historia"
+      DTS:CreationName="Microsoft.ASExecuteDDLTask"
+      DTS:Description="Tarea Ejecutar DDL de Analysis Services"
+      DTS:DTSID="{3f7d6409-81a5-4c0d-94ef-9bbfaf2af917}"
+      DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Proceso del Cubo de Digitación Historia"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASDdlData
+          ConnectionName="RBI\OLAP.Cubo_ROMA"
+          SourceType="DirectInput"
+          Source="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Parallel&gt;&#xA;    &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;      &lt;Object&gt;&#xA;        &lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;        &lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;        &lt;MeasureGroupID&gt;Dim Vw Factor Proyectado&lt;/MeasureGroupID&gt;&#xA;      &lt;/Object&gt;&#xA;      &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;      &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;    &lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Digitacion&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Digitacion Historia&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Cartera 1&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Cartera Historia&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#xA;&#x9;&lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;&#x9;&#x9;&lt;Object&gt;&#xA;&#x9;&#x9;&#x9;&lt;DatabaseID&gt;Cubo_ROMA&lt;/DatabaseID&gt;&#xA;&#x9;&#x9;&#x9;&lt;CubeID&gt;CuboDigitacion&lt;/CubeID&gt;&#xA;&#x9;&#x9;&#x9;&lt;MeasureGroupID&gt;Fact Digitacion 1&lt;/MeasureGroupID&gt;&#xA;&#x9;&#x9;&#x9;&lt;PartitionID&gt;Fact Digitacion Historia&lt;/PartitionID&gt;&#xA;&#x9;&#x9;&lt;/Object&gt;&#xA;&#x9;&#x9;&lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;&#x9;&#x9;&lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;&#x9;&lt;/Process&gt;&#xA;&#x9;  &#x9;  &#xA;  &lt;/Parallel&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Registra y Actualiza Item_UnidadVolumenPeso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{AE3079E4-A7E4-4ACD-96B6-4BB70CC38D45}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Registra y Actualiza Item_UnidadVolumenPeso"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}"
+          SQLTask:SqlStatementSource="--Drop Table #itemsBase&#xA;--Drop Table #Prod_ConInvetario&#xA;&#xA;;With &#xA;dtBase As (Select Distinct CodPrv, CodFam, CodCat&#xA;&#x9;&#x9;&#x9;From dw.Reportes.item_unidadvolumenpeso&#xA;&#x9;&#x9;&#x9;Where IsNull(CodCat, '000')&lt;&gt; '000' And IsNull(CodFam, '000') &lt;&gt; '000'),&#xA;dt As (Select CodPrv, CodFam, Count(Distinct CodCat) QCats&#xA;&#x9;&#x9;&#x9;From dtBase x&#xA;&#x9;&#x9;&#x9;Group By CodPrv, CodFam&#xA;&#x9;&#x9;&#x9;Having Count(Distinct CodCat)=1&#xA;&#x9;&#x9;&#x9;)&#xA;Select a.*, c.nomcat, nomcat_corto2, QCats&#xA;Into #itemsBase&#xA;From dtBase a&#xA;Inner Join dt b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Inner Join reportes.grupocategoria c On c.codprv = a.CodPrv And c.codcat = a.codcat&#xA;&#xA;Update a Set CodCat = b.Codcat&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join #itemsBase b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Where a.CodCat Is Null And b.QCats = 1&#xA;&#xA;;With dt As (Select Distinct codpro From temp.Tmp_Inventarios Where cantidad &gt; 0)&#xA;Select * &#xA;Into #Prod_ConInvetario&#xA;From dt a&#xA;Where Not Exists (Select * From dw.Reportes.item_unidadvolumenpeso b Where a.codpro = b.itemcode)&#xA;&#xA;&#xA;;With dt As (Select Distinct ItemCode &#xA;&#x9;&#x9;&#x9;From INV1 &#xA;&#x9;&#x9;&#x9;Where Quantity &gt; 0 And Convert(Char(6), DocDate, 112)=Convert(Char(6), Getdate(), 112)&#xA;&#x9;&#x9;&#x9;And ItemCode &lt;&gt; 'PERCEPCIONES')&#xA;Insert Into #Prod_ConInvetario&#xA;Select * From dt a&#xA;Where Not Exists (Select * From dw.Reportes.item_unidadvolumenpeso b Where a.ItemCode = b.itemcode)&#xA;&#xA;;With &#xA;dtOITM As (Select Distinct IsNull(codprv_homo, a.CardCode) CardCode, U_BKS_FAMILIA, ItemCode, ItemName, CreateDate&#xA;&#x9;&#x9;&#x9;From OITM a&#xA;&#x9;&#x9;&#x9;Left Join reportes.rel_prv_homologos b On a.CardCode = b.codprv&#xA;&#x9;&#x9;&#x9;Where frozenFor = 'N' &#xA;&#x9;&#x9;&#x9;And (a.ItmsGrpCod Not In (181,208) Or (ItemCode In (Select ItemCode From #Prod_ConInvetario)))&#xA;&#x9;&#x9;&#x9;And CardCode Is Not Null And U_BKS_FAMILIA Is Not Null&#xA;&#x9;&#x9;&#x9;-- And itemcode In ('MOL800569', 'MOL800874')&#xA;&#x9;&#x9;&#x9;),&#xA;dtprdfamcat As (Select CardCode, U_BKS_FAMILIA, ItemCode, ItemName, b.*, CreateDate &#xA;&#x9;&#x9;&#x9;From dtOITM a&#xA;&#x9;&#x9;&#x9;Left Outer Join #itemsBase b On a.CardCode = b.codprv And a.U_BKS_FAMILIA = b.codfam And QCats = 1)&#xA;Insert Into dw.reportes.item_unidadvolumenpeso (itemcode, CodPrv, CodFam, CodCat, ContenidoOriginal, FeRegistro)&#xA;Select a.itemcode, CardCode CodPrv, U_BKS_FAMILIA CodFam, CodCat, ItemName ContenidoOriginal, a.CreateDate&#xA;From dtprdfamcat a&#xA;--Left  Join (Select Distinct itemcode &#xA;--&#x9;&#x9;&#x9;&#x9;From oitw &#xA;--&#x9;&#x9;&#x9;&#x9;Where substring(whscode,5,2)='PR' And OnHand &gt; 0) alm On a.ItemCode = alm.ItemCode &#xA;Where Not Exists (Select * From dw.Reportes.item_unidadvolumenpeso b Where a.ItemCode = b.itemcode)&#xA;&#xA;Update a Set CodFam = b.U_BKS_FAMILIA, FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join (Select Distinct ItemCode, U_BKS_FAMILIA, U_bks_categoria &#xA;&#x9;&#x9;&#x9;From OITM Where frozenFor = 'N') b On a.itemcode = b.ItemCode&#xA;Where a.CodPrv Not Like '%000027' And IsNull(a.CodFam, '*') &lt;&gt; b.U_BKS_FAMILIA&#xA;&#xA;Update a Set CodFam = Left(c.U_indice, 3)+'000', FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join OITM b On a.itemcode = b.ItemCode And a.CodPrv = b.CardCode And Left(SWW, 1) = 'H'&#xA;Inner Join [@BKS_CATEGORIA] c On b.U_bks_categoria = c.Code&#xA;Where CodPrv Like '%00027' And CodFam != Left(c.U_indice, 3)+'000'&#xA;&#xA;--;With dt As (Select Distinct CodPrv, codfam, codcat &#xA;--&#x9;&#x9;&#x9;From reportes.relfamcatgrupo Where codprv Like '%00027' And numano+nummes = 202108)&#xA;--Update a Set CodCat = b.CodCat&#xA;--From dw.Reportes.item_unidadvolumenpeso a&#xA;--Inner Join dt b On a.CodPrv = b.codprv And a.CodFam = b.codfam&#xA;--Inner Join OITM c On a.itemcode = c.ItemCode And a.CodPrv = c.CardCode And Left(SWW, 1) = 'H'&#xA;--Where a.CodPrv Like '%00027'&#xA;&#xA;&#xA;&#xA;--- Fecha Factura y Entrada&#xA;&#xA;;With &#xA;dtItems As (Select itemcode From dw.Reportes.item_unidadvolumenpeso),&#xA;dt As (Select t1.ItemCode, T0.Docdate, T1.Quantity, ROW_NUMBER() Over(Partition By t1.ItemCode Order By t0.DocDate Desc) Cor&#xA;&#x9;&#x9;From OPCH T0&#xA;&#x9;&#x9;INNER JOIN PCH1 T1 ON T0.DocEntry = T1.DocEntry&#xA;&#x9;&#x9;Where Year(t0.DocDate) &gt;= 2018 And T1.ItemCode In (Select * From dtItems))&#xA;Update a Set FeFactura = b.DocDate&#xA;--Select * &#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join dt b On a.itemcode = b.ItemCode&#xA;Where cor = 1&#xA;&#xA;&#xA;&#xA;;With &#xA;dtItems As (Select itemcode From dw.Reportes.item_unidadvolumenpeso),&#xA;dt As (Select t1.ItemCode, T0.Docdate, t1.ShipDate, T1.Quantity, ROW_NUMBER() Over(Partition By t1.ItemCode Order By t0.DocDate Desc) Cor&#xA;&#x9;&#x9;From OPDN T0&#xA;&#x9;&#x9;INNER JOIN PDN1 T1 ON T0.DocEntry = T1.DocEntry&#xA;&#x9;&#x9;Where Year(t0.DocDate) &gt;= 2018 And T1.ItemCode In (Select * From dtItems))&#xA;Update a Set FeEntrada = b.ShipDate&#xA;--Select * &#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join dt b On a.itemcode = b.ItemCode&#xA;Where cor = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sincroniza Atributos desde la Nube a SR3 (Item_UnidadVolumenPeso)"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{20dc1f2e-f136-458d-94fd-aa553dbf0b1f}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sincroniza Atributos desde la Nube a SR3 (Item_UnidadVolumenPeso)"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D7F8252E-4B15-4E64-9890-03F0EC381A92}"
+          SQLTask:SqlStatementSource="Update a &#xA;Set CodCat = b.CodCat,&#xA; CatJes = b.CatJes,&#xA; LineaRW = b.LineaRW,&#xA; Categoria = b.Categoria,&#xA; Familia = b.Familia,&#xA; Marca = b.Marca,&#xA; Contenido = b.Contenido, valor2=b.valor2&#xA;-- Select *&#xA;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;Inner Join ROMA_REPOSITORIO.Nube.item_unidadvolumenpeso b On a.ItemCode Collate SQL_Latin1_General_CP1_CI_AS = b.ItemCode" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SP_Fact_Digitacion"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{37003CA6-515C-4F6F-846C-4D562EE9BE1F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SP_Fact_Digitacion"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6603F4A0-7C8D-41DE-A9FC-9048126A5E5A}"
+          SQLTask:SqlStatementSource="[Ventas].[SP_Fact_Digitacion] ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::FechaProceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{89CA94D0-0F5C-4C78-9A3E-68524198C3AA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6603F4A0-7C8D-41DE-A9FC-9048126A5E5A}"
+          SQLTask:SqlStatementSource=";With dt As (Select Getdate() Fecha)&#xA;Select *, Convert(Char(8), Fecha, 112) FechaActual, Convert(Char(8), Fecha-1, 112) FechaAnterior&#xA;From dt"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="1"
+            SQLTask:DtsVariableName="User::FechaActual" />
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="2"
+            SQLTask:DtsVariableName="User::FechaAnterior" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{555233c2-9725-45d6-b9f5-b20bb0c4daf2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}"
+          SQLTask:SqlStatementSource="--Cajas=N&#xA;--Pzas=Y&#xA;--Declare @flagUM char(1)&#xA;&#xA;If OBJECT_ID('tempdb..#tmpreporte', N'U') Is Not Null Drop Table #tmpreporte&#xA;If OBJECT_ID('tempdb..#tmpproalm', N'U') Is Not Null Drop Table #tmpproalm&#xA;If OBJECT_ID('tempdb..#tmpfecmax', N'U') Is Not Null Drop Table #tmpfecmax&#xA;If OBJECT_ID('tempdb..#tmppreciocompra', N'U') Is Not Null Drop Table #tmppreciocompra&#xA;If OBJECT_ID('tempdb..#tmppa', N'U') Is Not Null Drop Table #tmppa&#xA;If OBJECT_ID('tempdb..#tmpalm', N'U') Is Not Null Drop Table #tmpalm &#xA;&#xA;Declare &#xA; @as_proveedor Varchar= '11',&#xA; @ls_flagH Char(1)&#xA; &#xA;Set @ls_flagH = Case When @as_proveedor='PM00000027' Then 'S' Else 'N' End&#xA;    &#xA;select itemcode, max(fecha) as fecha &#xA;into #tmpfecmax&#xA;from Reportes.ultpreciocompra &#xA;group by itemcode&#xA;&#xA;-- Precio compra--  &#xA;select a.itemcode as codpro,a.costo as price &#xA;into #tmppreciocompra &#xA;from Reportes.ultpreciocompra a,#tmpfecmax b &#xA;where  a.itemcode=b.itemcode and a.fecha=b.fecha&#xA;    &#xA;   &#xA;SELECT b.cardcode, a.itemcode as codpro,a.whscode as codalm,a.onhand as stock &#xA;into #tmpproalm&#xA;FROM oitw a, oitm b where a.itemcode=b.itemcode -- and b.cardcode=@as_proveedor &#xA;and substring(a.whscode,5,2)='PR'&#xA;and b.frozenfor='N'&#xA;and a.whscode in ('11ICPR1','11CHPR1','11NZPR1','05AYPR1')&#xA;and (&#xA;  (b.CardCode='PM00000027' and a.whscode in ('11ICPR1','11CHPR1','11NZPR1','05AYPR1')) &#xA;  Or &#xA;  (b.CardCode!='PM00000027' and a.whscode in ('11ICPR1','11CHPR1','11NZPR1','05AYPR1'))&#xA; )&#xA;-- Select * From #tmpproalm&#xA;&#xA;select &#xA;--c.grupo,c.pareto/cast(100 as numeric(15,2)) as pareto,&#xA;a.codalm, a.cardcode codprv,&#xA;a.codpro as codpro,b.itemname as nompro,b.buyunitmsr as uni_compra,&#xA;b.numinbuy as numpza_ucompra,&#xA;e.price*(1) as Precio_compra_xCajas,&#xA;e.price*(b.numinbuy) as Precio_compra_xPzas,&#xA;round(a.stock/cast((1) as numeric(15,2)),0) as stock_xPzas,&#xA;round(a.stock/cast((b.numinbuy) as numeric(15,2)),0) as stock_xCajas,&#xA;isnull(stock*(case b.U_BPP_TIPUNMED when '01' then isnull(ume.valor1,0) when '07' then 1/(ume.valor1) when '08' then isnull(ume.valor1,0) when '12' then 1/(ume.valor1) else 0 end ),0) stock_umes&#xA;--round(isnull(isnull(d.vtaprommes,0),0)/cast((case @flagUM when 'Y' then 1 else  b.numinbuy end ) as numeric(15,2)),2) as vta_um,&#xA;--round(isnull(d.vtapromdia/cast((case @flagUM when 'Y' then 1 else  b.numinbuy end ) as numeric(15,2)),0),2) as vta_ultdias,&#xA;--cast(0 as numeric(15,2)) as dias_stock,&#xA;--cast(0 as numeric(15,2)) as valorizado&#xA;--cast(0 as numeric(15,2)) as excedente_valorizado,&#xA;--cast(0 as numeric(15,2)) as stock_excedente,&#xA;--cast(0 as numeric(15,2)) as stock_tt,&#xA;--cast(0 as numeric(15,2)) as vta_um_tt,&#xA;--cast(0 as numeric(15,2)) as vta_ultdias_tt,&#xA;--cast(0 as numeric(15,2)) as dias_stock_tt,&#xA;--cast(0 as numeric(15,2)) as excedente_valorizado_tt,&#xA;--cast(0 as numeric(15,2)) as stock_umes_tt&#xA;Into #tmpreporte&#xA;-- Select *&#xA;From #tmpproalm a&#xA;inner join oitm b on (a.codpro=b.itemcode And a.CardCode = b.CardCode)&#xA;--left outer join Reportes.paretoprv c on (a.codpro=c.codpro)&#xA;--left outer join reportes.vtapromdm  d on (a.codalm=d.codalm and a.codpro=d.codpro)&#xA;left outer join #tmppreciocompra e on (a.codpro=e.codpro)&#xA;left outer join (select * from dw.reportes.item_unidadvolumenpeso where valor1 &gt;0) ume on b.ItemCode=ume.itemcode And ume.CodPrv = a.CardCode&#xA;--where cast(d.fecha as date)=cast(getdate() as date)&#xA;--and isnull(c.pareto/cast(100 as numeric(15,2)),0)&gt;0&#xA;--and a.codpro in ('INT130025','INT700066')&#xA;-- insertar con cero en los almcenes que no ha tenido venta&#xA;-- productos por almacen&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;select distinct codpro,codalm into #tmppa from #tmpreporte&#xA;select distinct codalm into #tmpalm from #tmpreporte&#xA;&#xA;&#xA;&#xA;-- Select * From #tmpreporte&#xA;&#xA;insert into #tmpreporte&#xA;select a.codalm, a.CardCode, a.codpro as codpro,b.itemname as nompro,b.buyunitmsr as uni_compra,&#xA;b.numinbuy as numpza_ucompra,e.price*b.numinbuy as Precio_compra, 0,&#xA;round(a.stock/cast((1)  as numeric(15,2)),0) as stock_xCajas,&#xA;round(a.stock/cast((b.numinbuy)  as numeric(15,2)),0) as stock_Pzas,&#xA;isnull(stock*(case b.U_BPP_TIPUNMED when '01' then isnull(ume.valor1,0) when '07' then 1/(ume.valor1) when '08' then isnull(ume.valor1,0) when '12' then 1/(ume.valor1) else 0 end ),0) stock_umes&#xA;----0 as vta_um,&#xA;----0 as vta_ultdias,&#xA;--cast(0 as numeric(15,2)) as dias_stock,&#xA;--cast(0 as numeric(15,2)) as valorizado,&#xA;--cast(0 as numeric(15,2)) as excedente_valorizado,&#xA;--cast(0 as numeric(15,2)) as stock_excedente,&#xA;--cast(0 as numeric(15,2)) as stock_tt,&#xA;--cast(0 as numeric(15,2)) as vta_um_tt,&#xA;--cast(0 as numeric(15,2)) as vta_ultdias_tt,&#xA;--cast(0 as numeric(15,2)) as dias_stock_tt,&#xA;--cast(0 as numeric(15,2)) as excedente_valorizado_tt,0&#xA;from #tmpproalm a inner join Reportes.paretoprv c on (a.codpro=c.codpro)&#xA;inner join oitm b on (a.codpro=b.itemcode)&#xA;left outer join #tmppreciocompra e on (a.codpro=e.codpro)&#xA;left outer join (select * from dw.reportes.item_unidadvolumenpeso where valor1 &gt;0) ume on b.ItemCode=ume.itemcode  &#xA;where  isnull(c.pareto/cast(100 as numeric(15,2)),0)&gt;0 &#xA;and not exists (select 1 from #tmppa pp where pp.codpro=a.codpro and pp.codalm=a.codalm)&#xA;--and a.codpro in ('INT130025','INT700066')&#xA;&#xA;Truncate Table temp.Tmp_Stock &#xA;Insert Into temp.Tmp_Stock &#xA;select * from #tmpreporte Where stock_xCajas&gt;0&#xA;&#xA;&#xA;Update a Set codprv = b.codprv_homo &#xA;-- Select *&#xA;From temp.Tmp_Stock a &#xA;Inner Join reportes.rel_prv_homologos b On a.codprv = b.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where a.codprv != b.codprv_homo Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL 1 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{82b0695d-4fe8-4950-b656-63ddd32d8bc0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL 1 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D7F8252E-4B15-4E64-9890-03F0EC381A92}"
+          SQLTask:SqlStatementSource="Truncate Table ROMA_REPOSITORIO.Temp.Inventarios" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{555a7369-74d6-450e-bbc7-8f9f62714f59}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Columna derivada"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Columna derivada"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada].Columns[codalm]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="codalm"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">(DT_STR,16,1252)#{Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,16,1252)codalm</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Conversión de datos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[uni_compra]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="uni_compra"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[uni_compra]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[codprv]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="codprv"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codprv]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[codalm]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="codalm"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[codpro]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="codpro"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codpro]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[uni_compra_New]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[uni_compra_New]"
+                      name="uni_compra_New"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[uni_compra]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codprv_New]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codprv_New]"
+                      name="codprv_New"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codprv]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codalm_New]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="8"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codalm_New]"
+                      name="codalm_New"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codpro_New]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="11"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codpro_New]"
+                      name="codpro_New"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codpro]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[Temp].[Inventarios]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{D7F8252E-4B15-4E64-9890-03F0EC381A92}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RBI]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[stock_xCajas]"
+                      cachedDataType="numeric"
+                      cachedName="stock_xCajas"
+                      cachedPrecision="37"
+                      cachedScale="22"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Stock]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_xCajas]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Precio_compra_xCajas]"
+                      cachedDataType="numeric"
+                      cachedName="Precio_compra_xCajas"
+                      cachedPrecision="17"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[PrecioCompra]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Precio_compra_xCajas]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[uni_compra_New]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="uni_compra_New"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CoUnidadMedidaCompra]"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[uni_compra_New]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[codprv_New]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="codprv_New"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodPrv]"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codprv_New]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[numpza_ucompra]"
+                      cachedDataType="numeric"
+                      cachedName="numpza_ucompra"
+                      cachedPrecision="19"
+                      cachedScale="6"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[QtdPiezas]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[numpza_ucompra]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[codalm_New]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="codalm_New"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodAlmacen]"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codalm_New]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[codpro_New]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="11"
+                      cachedName="codpro_New"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodPro]"
+                      lineageId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[codpro_New]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodAlmacen]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="CodAlmacen" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodPrv]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="CodPrv" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodPro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="CodPro" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CoUnidadMedidaCompra]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="CoUnidadMedidaCompra" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Stock]"
+                      dataType="numeric"
+                      name="Stock"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[PrecioCompra]"
+                      dataType="numeric"
+                      name="PrecioCompra"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[QtdPiezas]"
+                      dataType="numeric"
+                      name="QtdPiezas"
+                      precision="18"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select * From temp.Tmp_Stock</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SR3]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codalm]"
+                      length="8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codalm]"
+                      name="codalm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codpro]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codpro]"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codpro]"
+                      name="codpro"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nompro]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nompro]"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nompro]"
+                      name="nompro"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[uni_compra]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[uni_compra]"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[uni_compra]"
+                      name="uni_compra"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[numpza_ucompra]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[numpza_ucompra]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[numpza_ucompra]"
+                      name="numpza_ucompra"
+                      precision="19"
+                      scale="6"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Precio_compra_xCajas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Precio_compra_xCajas]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Precio_compra_xCajas]"
+                      name="Precio_compra_xCajas"
+                      precision="17"
+                      scale="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Precio_compra_xPzas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Precio_compra_xPzas]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Precio_compra_xPzas]"
+                      name="Precio_compra_xPzas"
+                      precision="35"
+                      scale="10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_xCajas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_xCajas]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_xCajas]"
+                      name="stock_xCajas"
+                      precision="37"
+                      scale="22"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_xPzas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_xPzas]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_xPzas]"
+                      name="stock_xPzas"
+                      precision="37"
+                      scale="22"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_umes]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_umes]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[stock_umes]"
+                      name="stock_umes"
+                      precision="38"
+                      scale="13"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codprv]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codprv]"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codprv]"
+                      name="codprv"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codalm]"
+                      dataType="wstr"
+                      length="8"
+                      name="codalm" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codpro]"
+                      dataType="wstr"
+                      length="20"
+                      name="codpro" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nompro]"
+                      dataType="wstr"
+                      length="100"
+                      name="nompro" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[uni_compra]"
+                      dataType="wstr"
+                      length="20"
+                      name="uni_compra" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[numpza_ucompra]"
+                      dataType="numeric"
+                      name="numpza_ucompra"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Precio_compra_xCajas]"
+                      dataType="numeric"
+                      name="Precio_compra_xCajas"
+                      precision="17"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Precio_compra_xPzas]"
+                      dataType="numeric"
+                      name="Precio_compra_xPzas"
+                      precision="35"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_xCajas]"
+                      dataType="numeric"
+                      name="stock_xCajas"
+                      precision="37"
+                      scale="22" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_xPzas]"
+                      dataType="numeric"
+                      name="stock_xPzas"
+                      precision="37"
+                      scale="22" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[stock_umes]"
+                      dataType="numeric"
+                      name="stock_umes"
+                      precision="38"
+                      scale="13" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codprv]"
+                      dataType="wstr"
+                      length="20"
+                      name="codprv" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codalm]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codalm]"
+                      name="codalm" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codprv]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codprv]"
+                      name="codprv" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codpro]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codpro]"
+                      name="codpro" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nompro]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nompro]"
+                      name="nompro" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[uni_compra]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[uni_compra]"
+                      name="uni_compra" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[numpza_ucompra]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[numpza_ucompra]"
+                      name="numpza_ucompra"
+                      precision="19"
+                      scale="6" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Precio_compra_xCajas]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Precio_compra_xCajas]"
+                      name="Precio_compra_xCajas"
+                      precision="17"
+                      scale="4" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Precio_compra_xPzas]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Precio_compra_xPzas]"
+                      name="Precio_compra_xPzas"
+                      precision="35"
+                      scale="10" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_xCajas]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_xCajas]"
+                      name="stock_xCajas"
+                      precision="37"
+                      scale="22" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_xPzas]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_xPzas]"
+                      name="stock_xPzas"
+                      precision="37"
+                      scale="22" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_umes]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[stock_umes]"
+                      name="stock_umes"
+                      precision="38"
+                      scale="13" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+              endId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de columna derivada"
+              startId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
+              endId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+              name="Salida de conversión de datos"
+              startId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+              endId="Package\Tarea Flujo de datos\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{EA1D61A8-3CB3-4F73-A594-CFC369BADBB0}"
+      DTS:From="Package\Registra y Actualiza Item_UnidadVolumenPeso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Actualiza CodFam Item_UnidadVolumenPeso" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{11FC8059-8D80-433E-A77A-61C2DC84D9C7}"
+      DTS:From="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\SP_Fact_Digitacion" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{286b1efa-5a3a-4af6-9fca-5692b98daa91}"
+      DTS:From="Package\Tarea Ejecutar SQL 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1 1"
+      DTS:To="Package\Tarea Ejecutar SQL 1 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F022D72-D410-49B8-93DC-59D85EA76745}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Hora]== @[User::HoraHistoria]"
+      DTS:From="Package\Proceso de Dimensiones"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 10"
+      DTS:To="Package\Actualiza Item_UnidadVolumenPeso en la Nube FeFactura y FeEntrada" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{B1ABFFD7-BE12-436C-86CA-3D318927FDB8}"
+      DTS:From="Package\Sincroniza Atributos desde la Nube a SR3 (Item_UnidadVolumenPeso)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 11"
+      DTS:To="Package\Registra y Actualiza Item_UnidadVolumenPeso" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{37BFBE32-2396-4CBC-A465-A20A2124F240}"
+      DTS:From="Package\SP_Fact_Digitacion"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Proceso de Dimensiones" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{b00e30ae-6b1e-41cc-8f99-a0931596970c}"
+      DTS:From="Package\Tarea Ejecutar SQL 1 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2 1"
+      DTS:To="Package\Tarea Flujo de datos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{CAFDB2DC-8218-4C72-83D0-2D0264ABEF43}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Hora] != @[User::HoraHistoria]"
+      DTS:From="Package\Proceso de Dimensiones"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\Proceso del Cubo de Digitacipon" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{8F0B4009-5454-4C09-91A5-7D61E17453CB}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\Sincroniza Atributos desde la Nube a SR3 (Item_UnidadVolumenPeso)" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{5B6BA551-70E0-4056-AAC5-950674C27A14}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Hora]== @[User::HoraHistoria]"
+      DTS:From="Package\Proceso de Dimensiones"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\Proceso del Cubo de Digitación Historia" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{9728758B-F02B-488C-ACAB-C92A0E719A95}"
+      DTS:From="Package\Registra y Actualiza Item_UnidadVolumenPeso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\Inserta Nuevos Items en la Nube" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{E788E160-55DD-44E8-89B2-5267FDF10F58}"
+      DTS:From="Package\Tarea Flujo de datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 7"
+      DTS:To="Package\Tarea Ejecutar SQL" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{F4250C91-346E-403A-96D4-40D5D4376489}"
+      DTS:From="Package\DimProductosFull Dim_Categorias_xProveedor"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 8"
+      DTS:To="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{1DE4F8B2-42BB-4974-8F55-FBCCECBECEDE}"
+      DTS:From="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 9"
+      DTS:To="Package\DimProductosFull Dim_Categorias_xProveedor" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
+        <NodeLayout
+          Size="202,59"
+          Id="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+          TopLeft="568.374998854473,471.833333333333" />
+        <NodeLayout
+          Size="230,61"
+          Id="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+          TopLeft="791.374998854473,343.833333333333" />
+        <NodeLayout
+          Size="185,96"
+          Id="Package\Actualiza Item_UnidadVolumenPeso en la Nube FeFactura y FeEntrada"
+          TopLeft="1048.00000014901,87.3500007089972" />
+        <NodeLayout
+          Size="213,69"
+          Id="Package\DimProductosFull Dim_Categorias_xProveedor"
+          TopLeft="801,461.166666666667" />
+        <NodeLayout
+          Size="145,67"
+          Id="Package\Inserta Nuevos Items en la Nube"
+          TopLeft="693,137" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Proceso de Dimensiones"
+          TopLeft="1044,264.333333333333" />
+        <NodeLayout
+          Size="145,68"
+          Id="Package\Proceso del Cubo de Digitación Historia"
+          TopLeft="1299.58333003645,250.18333659937" />
+        <NodeLayout
+          Size="153,67"
+          Id="Package\Proceso del Cubo de Digitacipon"
+          TopLeft="1058.49999903142,345.766666387717" />
+        <NodeLayout
+          Size="211,71"
+          Id="Package\Registra y Actualiza Item_UnidadVolumenPeso"
+          TopLeft="559,336.166666666667" />
+        <NodeLayout
+          Size="215,79"
+          Id="Package\Sincroniza Atributos desde la Nube a SR3 (Item_UnidadVolumenPeso)"
+          TopLeft="356.374998854473,211.166666666667" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\SP_Fact_Digitacion"
+          TopLeft="818.500000186265,265.166666666667" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="383.250000204891,114.816666190128" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="666.937499427237,407.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.6666666666659"
+              Start="0,0"
+              End="0,57.1666666666659">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.1666666666659" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="907.687499520369,343.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-36.6666666666659"
+              Start="0,0"
+              End="0,-29.1666666666659">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-29.1666666666659" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 10]"
+          TopLeft="1140.50000007451,264.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-80.9833326243358"
+              Start="0,0"
+              End="0,-73.4833326243358">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-73.4833326243358" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,-44.7416663121679,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 11]"
+          TopLeft="463.874998854473,290.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="166.791667812194,46.0000000000001"
+              Start="0,0"
+              End="166.791667812194,38.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.3922859830668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.3922859830668"
+                    Point2="0,27.3922859830668"
+                    Point3="4,27.3922859830668" />
+                  <mssgle:LineSegment
+                    End="162.791667812194,27.3922859830668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="162.791667812194,27.3922859830668"
+                    Point2="166.791667812194,27.3922859830668"
+                    Point3="166.791667812194,31.3922859830668" />
+                  <mssgle:LineSegment
+                    End="166.791667812194,38.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="999.500000186265,285.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.499999813735,0"
+              Start="0,0"
+              End="36.999999813735,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="36.999999813735,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="1137.74999951571,306.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.433333054384"
+              Start="0,0"
+              End="0,31.933333054384">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.933333054384" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,7.96666652719199,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="466.062499529682,156.816666190128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.350000476539"
+              Start="0,0"
+              End="0,46.850000476539">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.850000476539" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="1237,284.758334966352">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62.58333003645,0"
+              Start="0,0"
+              End="55.08333003645,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="55.08333003645,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="19.541665018225,5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="698.333333333333,336.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67.1666666666667,-132.166666666667"
+              Start="0,0"
+              End="67.1666666666667,-124.666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-49.4634681718409" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-49.4634681718409"
+                    Point2="0,-53.4634681718409"
+                    Point3="4,-53.4634681718409" />
+                  <mssgle:LineSegment
+                    End="63.1666666666667,-53.4634681718409" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.1666666666667,-53.4634681718409"
+                    Point2="67.1666666666667,-53.4634681718409"
+                    Point3="67.1666666666667,-57.4634681718409" />
+                  <mssgle:LineSegment
+                    End="67.1666666666667,-124.666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="266,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.250000204891,-64.183333809872"
+              Start="0,0"
+              End="109.750000204891,-64.183333809872">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="54.6250001024455,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54.6250001024455,0"
+                    Point2="58.6250001024455,0"
+                    Point3="58.6250001024455,-4" />
+                  <mssgle:LineSegment
+                    End="58.6250001024455,-60.183333809872" />
+                  <mssgle:CubicBezierSegment
+                    Point1="58.6250001024455,-60.183333809872"
+                    Point2="58.6250001024455,-64.183333809872"
+                    Point3="62.6250001024455,-64.183333809872" />
+                  <mssgle:LineSegment
+                    End="109.750000204891,-64.183333809872" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 8]"
+          TopLeft="906.937499427237,461.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-56.333333333334"
+              Start="0,0"
+              End="0,-48.833333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-48.833333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 9]"
+          TopLeft="770.374998854473,498.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.625001145527,0"
+              Start="0,0"
+              End="23.125001145527,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="23.125001145527,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Tarea Ejecutar SQL 1"
+          TopLeft="11.5,17.5" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="76.500000223517,92.3499989655619" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Tarea Ejecutar SQL 1 1"
+          TopLeft="22.5,175.349997803271" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1 1]"
+          TopLeft="101,59.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-17.1666666666667,115.849997803271"
+              Start="0,0"
+              End="-17.1666666666667,108.349997803271">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.8975757860863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.8975757860863"
+                    Point2="0,68.8975757860863"
+                    Point3="-4,68.8975757860863" />
+                  <mssgle:LineSegment
+                    End="-13.1666666666667,68.8975757860863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13.1666666666667,68.8975757860863"
+                    Point2="-17.1666666666667,68.8975757860863"
+                    Point3="-17.1666666666667,72.8975757860863" />
+                  <mssgle:LineSegment
+                    End="-17.1666666666667,108.349997803271" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2 1]"
+          TopLeft="141.166666666667,175.349997803271">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="23.3333335568504,-40.9999988377091"
+              Start="0,0"
+              End="23.3333335568504,-33.4999988377091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-12.6167396170451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-12.6167396170451"
+                    Point2="0,-16.6167396170451"
+                    Point3="4,-16.6167396170451" />
+                  <mssgle:LineSegment
+                    End="19.3333335568504,-16.6167396170451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.3333335568504,-16.6167396170451"
+                    Point2="23.3333335568504,-16.6167396170451"
+                    Point3="23.3333335568504,-20.6167396170451" />
+                  <mssgle:LineSegment
+                    End="23.3333335568504,-33.4999988377091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <GroupLayout
+          Text="Inventarios Carga TmpInventarios"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="277,276"
+          Size="277,319"
+          Id="83c73544-3a62-4723-a02e-c4740ddbe7a2"
+          TopLeft="13.3749986309562,43.5">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\Tarea Ejecutar SQL 1</s:String>
+            <s:String>Package\Tarea Flujo de datos</s:String>
+            <s:String>Package\Tarea Ejecutar SQL 1 1</s:String>
+            <s:String>Package.PrecedenceConstraints[Restricción 1 1]</s:String>
+            <s:String>Package.PrecedenceConstraints[Restricción 2 1]</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[RBI\OLAP.Cubo_ROMA]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="385,258" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Tarea Flujo de datos\Conversión de datos"
+          TopLeft="114,135" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Tarea Flujo de datos\Columna derivada"
+          TopLeft="363,132" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Tarea Flujo de datos\Origen de OLE DB"
+          TopLeft="142,32" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+          TopLeft="224,74">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.5,61"
+              Start="0,0"
+              End="-22.5,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="-4,30.5" />
+                  <mssgle:LineSegment
+                    End="-18.5,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,30.5"
+                    Point2="-22.5,30.5"
+                    Point3="-22.5,34.5" />
+                  <mssgle:LineSegment
+                    End="-22.5,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
+          TopLeft="289,154.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74,0"
+              Start="0,0"
+              End="66.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="66.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="445,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24,84"
+              Start="0,0"
+              End="24,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="20,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20,42"
+                    Point2="24,42"
+                    Point3="24,46" />
+                  <mssgle:LineSegment
+                    End="24,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

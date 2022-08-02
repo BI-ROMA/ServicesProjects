@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SR3"
+  DTS:DTSID="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=SR3\SBO;User ID=sasqllinux;Initial Catalog=roma_productiva;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4wriraLTfE+xRM6YiOfTTQAAAAACAAAAAAADZgAAwAAAABAAAABxc0ke1EuAUnsPFgzJztRsAAAAAASAAACgAAAAEAAAADnWX7Ad9Cl7M2m+oH5uqfV4AAAAFWAdZ6kw42eoBntVK/itOny9SWdY1oFS1IqCSrc/mJUVbBxyNd8tJZ4Ghcan+abylDSS5h1+VRYLjfSeo4K67eBOJ0YQZm87c9iO8dxa7qhI+EkUW6Sa9mBt8iaaNyIrQqivIjZBNXox3v/BH+zEHHvbUPtDYCfkFAAAAC0CZTZi3g8I+YIdhFri+RxCAPjQ</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

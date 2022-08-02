@@ -1,0 +1,400 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>dsCuboPlanillaVertical</ID>
+  <Name>dsCuboPlanillaVertical</Name>
+  <CreatedTimestamp>2021-11-30T20:11:37.616667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2022-01-14T07:04:11.12Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DS_ROMA_BI</DataSourceID>
+  <Schema>
+    <xs:schema id="dsCuboPlanillaVertical" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="dsCuboPlanillaVertical" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Planillas_Fact_Ventas_Resumen_xVertical" msprop:DbTableName="Fact_Ventas_Resumen_xVertical" msprop:FriendlyName="Fact_Ventas_Resumen_xVertical" msprop:DbSchemaName="Planillas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FechaKey" msprop:DbColumnName="FechaKey" msprop:FriendlyName="FechaKey" type="xs:int" />
+                  <xs:element name="IdSede" msprop:DbColumnName="IdSede" msprop:FriendlyName="IdSede" type="xs:short" />
+                  <xs:element name="IdProveedor" msprop:DbColumnName="IdProveedor" msprop:FriendlyName="IdProveedor" type="xs:short" />
+                  <xs:element name="IdCat_xPrv" msprop:DbColumnName="IdCat_xPrv" msprop:FriendlyName="IdCat_xPrv" type="xs:short" />
+                  <xs:element name="IdVendedor" msprop:DbColumnName="IdVendedor" msprop:FriendlyName="IdVendedor" type="xs:short" />
+                  <xs:element name="IdCartera" msprop:DbColumnName="IdCartera" msprop:FriendlyName="IdCartera" type="xs:short" />
+                  <xs:element name="IdCanal" msprop:DbColumnName="IdCanal" msprop:FriendlyName="IdCanal" type="xs:short" />
+                  <xs:element name="IdMesa" msprop:DbColumnName="IdMesa" msprop:FriendlyName="IdMesa" type="xs:short" />
+                  <xs:element name="IdMetrica" msprop:DbColumnName="IdMetrica" msprop:FriendlyName="IdMetrica" type="xs:short" />
+                  <xs:element name="VaMetrica" msprop:DbColumnName="VaMetrica" msprop:FriendlyName="VaMetrica" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimVendedores" msprop:DbTableName="DimVendedores" msprop:FriendlyName="DimVendedores" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdVen" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdVen" msprop:FriendlyName="IdVen" type="xs:short" />
+                  <xs:element name="CodVen" msprop:DbColumnName="CodVen" msprop:FriendlyName="CodVen" type="xs:short" minOccurs="0" />
+                  <xs:element name="NomVen" msprop:DbColumnName="NomVen" msprop:FriendlyName="NomVen">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeRegistro" msprop:DbColumnName="FeRegistro" msprop:FriendlyName="FeRegistro" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Origen" msprop:DbColumnName="Origen" msprop:FriendlyName="Origen" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DiaSemana" msprop:DbColumnName="DiaSemana" msprop:FriendlyName="DiaSemana" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DiaVisita" msprop:DbColumnName="DiaVisita" msprop:FriendlyName="DiaVisita" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="U_Login" msprop:DbColumnName="U_Login" msprop:FriendlyName="U_Login" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CodCartera" msprop:DbColumnName="CodCartera" msprop:FriendlyName="CodCartera" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeNacimiento" msprop:DbColumnName="FeNacimiento" msprop:FriendlyName="FeNacimiento" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Sexo" msprop:DbColumnName="Sexo" msprop:FriendlyName="Sexo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeIngreso" msprop:DbColumnName="FeIngreso" msprop:FriendlyName="FeIngreso" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimSedes" msprop:DbTableName="DimSedes" msprop:FriendlyName="DimSedes" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdSede" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdSede" msprop:FriendlyName="IdSede" type="xs:short" />
+                  <xs:element name="CodSede" msprop:DbColumnName="CodSede" msprop:FriendlyName="CodSede" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomSede" msprop:DbColumnName="NomSede" msprop:FriendlyName="NomSede" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sucursal" msprop:DbColumnName="Sucursal" msprop:FriendlyName="Sucursal" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Zona" msprop:DbColumnName="Zona" msprop:FriendlyName="Zona" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OrdSede" msprop:DbColumnName="OrdSede" msprop:FriendlyName="OrdSede" type="xs:short" minOccurs="0" />
+                  <xs:element name="OrdSucursal" msprop:DbColumnName="OrdSucursal" msprop:FriendlyName="OrdSucursal" type="xs:short" minOccurs="0" />
+                  <xs:element name="OrdZona" msprop:DbColumnName="OrdZona" msprop:FriendlyName="OrdZona" type="xs:short" minOccurs="0" />
+                  <xs:element name="Activo" msprop:DbColumnName="Activo" msprop:FriendlyName="Activo" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="IdAlmacen" msprop:DbColumnName="IdAlmacen" msprop:FriendlyName="IdAlmacen" type="xs:short" minOccurs="0" />
+                  <xs:element name="Peso" msprop:DbColumnName="Peso" msprop:FriendlyName="Peso" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CodProveedor" msprop:DbColumnName="CodProveedor" msprop:FriendlyName="CodProveedor" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cod_dJyJ" msprop:DbColumnName="Cod_dJyJ" msprop:FriendlyName="Cod_dJyJ" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CodSedeSAP" msprop:DbColumnName="CodSedeSAP" msprop:FriendlyName="CodSedeSAP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_Dim_Categorias_xProveedor" msprop:DbTableName="Dim_Categorias_xProveedor" msprop:FriendlyName="Dim_Categorias_xProveedor" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdCat_xPrv" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdCat_xPrv" msprop:FriendlyName="IdCat_xPrv" type="xs:short" />
+                  <xs:element name="CodCat" msprop:DbColumnName="CodCat" msprop:FriendlyName="CodCat" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomCat" msprop:DbColumnName="NomCat" msprop:FriendlyName="NomCat" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomCat_Abrv" msprop:DbColumnName="NomCat_Abrv" msprop:FriendlyName="NomCat_Abrv" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IdPrv" msprop:DbColumnName="IdPrv" msprop:FriendlyName="IdPrv" type="xs:short" minOccurs="0" />
+                  <xs:element name="CodFam" msprop:DbColumnName="CodFam" msprop:FriendlyName="CodFam" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CatJes" msprop:DbColumnName="CatJes" msprop:FriendlyName="CatJes" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimCanales" msprop:DbTableName="DimCanales" msprop:FriendlyName="DimCanales" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdCan" msprop:DbColumnName="IdCan" msprop:FriendlyName="IdCan" type="xs:short" />
+                  <xs:element name="CodCan" msprop:DbColumnName="CodCan" msprop:FriendlyName="CodCan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomCan" msprop:DbColumnName="NomCan" msprop:FriendlyName="NomCan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimMetricas" msprop:DbTableName="DimMetricas" msprop:FriendlyName="DimMetricas" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdMetrica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdMetrica" msprop:FriendlyName="IdMetrica" type="xs:short" />
+                  <xs:element name="IdGrupo" msprop:DbColumnName="IdGrupo" msprop:FriendlyName="IdGrupo" type="xs:short" minOccurs="0" />
+                  <xs:element name="Posicion" msprop:DbColumnName="Posicion" msprop:FriendlyName="Posicion" type="xs:short" minOccurs="0" />
+                  <xs:element name="NoMetrica" msprop:DbColumnName="NoMetrica" msprop:FriendlyName="NoMetrica" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimProveedores" msprop:DbTableName="DimProveedores" msprop:FriendlyName="DimProveedores" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdPrv" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdPrv" msprop:FriendlyName="IdPrv" type="xs:short" />
+                  <xs:element name="CodPrv" msprop:DbColumnName="CodPrv" msprop:FriendlyName="CodPrv" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomPrv" msprop:DbColumnName="NomPrv" msprop:FriendlyName="NomPrv" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomPrvAbr" msprop:DbColumnName="NomPrvAbr" msprop:FriendlyName="NomPrvAbr" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeRegistro" msprop:DbColumnName="FeRegistro" msprop:FriendlyName="FeRegistro" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Origen" msprop:DbColumnName="Origen" msprop:FriendlyName="Origen" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Ventas_DimMesas" msprop:DbTableName="DimMesas" msprop:FriendlyName="DimMesas" msprop:DbSchemaName="Ventas" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdMesa" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:DbColumnName="IdMesa" msprop:FriendlyName="IdMesa" type="xs:short" />
+                  <xs:element name="CodMesa" msprop:DbColumnName="CodMesa" msprop:FriendlyName="CodMesa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomMesa" msprop:DbColumnName="NomMesa" msprop:FriendlyName="NomMesa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="FechaKey" />
+          <xs:field xpath="IdSede" />
+          <xs:field xpath="IdProveedor" />
+          <xs:field xpath="IdCat_xPrv" />
+          <xs:field xpath="IdVendedor" />
+          <xs:field xpath="IdCartera" />
+          <xs:field xpath="IdCanal" />
+          <xs:field xpath="IdMesa" />
+          <xs:field xpath="IdMetrica" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimVendedores_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimVendedores" />
+          <xs:field xpath="IdVen" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimSedes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimSedes" />
+          <xs:field xpath="IdSede" />
+        </xs:unique>
+        <xs:unique name="Ventas_Dim_Categorias_xProveedor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_Dim_Categorias_xProveedor" />
+          <xs:field xpath="IdCat_xPrv" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimCanales_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimCanales" />
+          <xs:field xpath="IdCan" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimMetricas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimMetricas" />
+          <xs:field xpath="IdMetrica" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimProveedores_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimProveedores" />
+          <xs:field xpath="IdPrv" />
+        </xs:unique>
+        <xs:unique name="Ventas_DimMesas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Ventas_DimMesas" />
+          <xs:field xpath="IdMesa" />
+        </xs:unique>
+        <xs:keyref name="FK_Dim_Categorias_xProveedor_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Dim_Categorias_xProveedor" />
+          <xs:field xpath="IdPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdVendedor" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdProveedor" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMesas" refer="Ventas_DimMesas_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdMesa" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimCanales" refer="Ventas_DimCanales_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdCanal" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdCat_xPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdSede" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMetricas" refer="Ventas_DimMetricas_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdMetrica" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <dsCuboPlanillaVertical xmlns="" />
+  </Schema>
+</DataSourceView>

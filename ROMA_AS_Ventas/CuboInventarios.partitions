@@ -1,0 +1,117 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="65c7dbe7-45c9-49e5-937e-fd1b75e85213" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CuboInventarios</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Inventarios</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="38bb8dcb-be9a-4f1b-bbf9-8d2445e670c8">
+          <ID>Fact Inventarios</ID>
+          <Name>Fact Inventarios</Name>
+          <CreatedTimestamp>2021-09-16T20:40:28.786667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:04:57.136667Z</LastSchemaUpdate>
+          <LastProcessed>2022-02-03T06:16:35.146667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3bc2d997-05e8-4038-88d5-ed90884e349d">
+            <DataSourceViewID>dsCuboInventarios</DataSourceViewID>
+            <TableID>Ventas_Fact_Inventarios</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="91f0a06a-31ef-453a-bb30-1bafb897e613">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="fbe3e27f-308b-446b-8cae-4aa0e8d7acda" />
+          </ProactiveCaching>
+          <EstimatedSize>235790</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Digitacion</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8622cf3f-ee7c-4ae9-81aa-7d8e66d27b34">
+          <ID>Fact Digitacion</ID>
+          <Name>Fact Digitacion</Name>
+          <CreatedTimestamp>2021-09-16T20:40:28.803333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:04:57.166667Z</LastSchemaUpdate>
+          <LastProcessed>2022-02-03T06:16:36.726667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e8a1264d-7ec3-44cf-81fa-fd32d71f238d">
+            <DataSourceViewID>dsCuboInventarios</DataSourceViewID>
+            <TableID>Ventas_Fact_Digitacion</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="bd0a5410-b98c-49cd-9030-d31bb1f5328e">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="05defdcb-44c8-4ae8-86f6-28a2b67bf5f0" />
+          </ProactiveCaching>
+          <EstimatedSize>29155980</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Productos Full</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4b02aac0-900d-4fde-b456-da7a8fe2ea8f">
+          <ID>Dim Productos Full</ID>
+          <Name>Dim Productos Full</Name>
+          <CreatedTimestamp>2021-09-20T14:54:59.97Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:04:57.183333Z</LastSchemaUpdate>
+          <LastProcessed>2022-01-31T12:47:28.773333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b6ea59e3-7991-4e75-8451-a5fe662246e0">
+            <DataSourceViewID>dsCuboInventarios</DataSourceViewID>
+            <TableID>Ventas_DimProductosFull</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="dd5a9fa3-02e2-4645-8285-96e6af5cf57a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ef91131c-eb6d-423c-913f-31a1c1fe0c7f" />
+          </ProactiveCaching>
+          <EstimatedSize>178262</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Vw Factor Proyectado</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9c167bea-5142-4ff4-98e3-aaf9ca863bfe">
+          <ID>Dim Vw Factor Proyectado</ID>
+          <Name>Dim Vw Factor Proyectado</Name>
+          <CreatedTimestamp>2021-09-16T20:40:28.816667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-14T07:04:57.216667Z</LastSchemaUpdate>
+          <LastProcessed>2022-02-03T06:13:27.816667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e1590622-5025-42fb-b6d0-4f02b71189ca">
+            <DataSourceViewID>dsCuboInventarios</DataSourceViewID>
+            <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="48c1cd9a-68d4-45cb-85e8-2174776d5efc">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f82c9739-c1ca-430d-b64c-b6fc000e861a" />
+          </ProactiveCaching>
+          <EstimatedSize>226</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

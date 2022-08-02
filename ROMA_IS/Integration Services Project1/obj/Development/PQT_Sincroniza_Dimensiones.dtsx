@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/23/2021 11:28:19 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CI59-054"
+  DTS:CreatorName="DSROMASAC\g_lopez"
+  DTS:DTSID="{833EBF12-3DA7-48B0-8BC5-10DD52264562}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{724B530B-BCF6-45D7-884D-AA6D5CAA7BF6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{7926AAD4-ADB0-4EA0-861F-791F8D0B93DE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}"
+          SQLTask:SqlStatementSource="--Drop Table #itemsBase&#xA;;With &#xA;dtBase As (Select Distinct CodPrv, CodFam, CodCat&#xA;&#x9;&#x9;&#x9;From dw.Reportes.item_unidadvolumenpeso&#xA;&#x9;&#x9;&#x9;Where IsNull(CodCat, '000')&lt;&gt; '000' And IsNull(CodFam, '000') &lt;&gt; '000'),&#xA;dt As (Select CodPrv, CodFam, Count(Distinct CodCat) QCats&#xA;&#x9;&#x9;&#x9;From dtBase x&#xA;&#x9;&#x9;&#x9;Group By CodPrv, CodFam&#xA;&#x9;&#x9;&#x9;Having Count(Distinct CodCat)=1&#xA;&#x9;&#x9;&#x9;)&#xA;Select a.*, c.nomcat, nomcat_corto2, QCats&#xA;Into #itemsBase&#xA;From dtBase a&#xA;Inner Join dt b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Inner Join reportes.grupocategoria c On c.codprv = a.CodPrv And c.codcat = a.codcat&#xA;&#xA;Update a Set CodCat = b.Codcat&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join #itemsBase b On a.CodPrv = b.CodPrv And a.CodFam = b.CodFam&#xA;Where a.CodCat Is Null And b.QCats = 1&#xA;&#xA;;With &#xA;dtOITM As (Select Distinct IsNull(codprv_homo, a.CardCode) CardCode, U_BKS_FAMILIA, ItemCode, ItemName &#xA;&#x9;&#x9;&#x9;From OITM a&#xA;&#x9;&#x9;&#x9;Left Join reportes.rel_prv_homologos b On a.CardCode = b.codprv&#xA;&#x9;&#x9;&#x9;Where frozenFor = 'N' And a.ItmsGrpCod Not In (181,208) &#xA;&#x9;&#x9;&#x9;And CardCode Is Not Null And U_BKS_FAMILIA Is Not Null Or itemcode In ('UNI235841')),&#xA;dtprdfamcat As (Select CardCode, U_BKS_FAMILIA, ItemCode, ItemName, b.* &#xA;&#x9;&#x9;&#x9;From dtOITM a&#xA;&#x9;&#x9;&#x9;Left Join #itemsBase b On a.CardCode = b.codprv And a.U_BKS_FAMILIA = b.codfam&#xA;&#x9;&#x9;&#x9;Where QCats = 1)&#xA;Insert Into dw.reportes.item_unidadvolumenpeso (itemcode, CodPrv, CodFam, CodCat, ContenidoOriginal)&#xA;Select itemcode, CodPrv, U_BKS_FAMILIA CodFam, CodCat, ItemName ContenidoOriginal &#xA;From dtprdfamcat a&#xA;Where Not Exists (Select * From dw.Reportes.item_unidadvolumenpeso b Where a.ItemCode = b.itemcode)&#xA;&#xA;Update a Set CodFam = b.U_BKS_FAMILIA, FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join (Select Distinct ItemCode, U_BKS_FAMILIA, U_bks_categoria &#xA;&#x9;&#x9;&#x9;From OITM Where frozenFor = 'N') b On a.itemcode = b.ItemCode&#xA;Where a.CodPrv Not Like '%000027' And IsNull(a.CodFam, '*') &lt;&gt; b.U_BKS_FAMILIA&#xA;&#xA;&#xA;Update a Set CodFam = Left(c.U_indice, 3)+'000', FeModifica = Getdate()&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join OITM b On a.itemcode = b.ItemCode And a.CodPrv = b.CardCode And Left(SWW, 1) = 'H'&#xA;Inner Join [@BKS_CATEGORIA] c On b.U_bks_categoria = c.Code&#xA;Where CodPrv Like '%00027' And CodFam != Left(c.U_indice, 3)+'000'&#xA;&#xA;;With dt As (Select Distinct CodPrv, codfam, codcat From reportes.relfamcatgrupo Where codprv Like '%00027' And numano+nummes = 202108)&#xA;Update a Set CodCat = b.CodCat&#xA;From dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join dt b On a.CodPrv = b.codprv And a.CodFam = b.codfam&#xA;Inner Join OITM c On a.itemcode = c.ItemCode And a.CodPrv = c.CardCode And Left(SWW, 1) = 'H'&#xA;Where a.CodPrv Like '%00027'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{4A6470C5-F259-4B2F-A7D1-12F2A2287967}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6603F4A0-7C8D-41DE-A9FC-9048126A5E5A}"
+          SQLTask:SqlStatementSource="/*&#xA;Select Distinct U_BKS_GRUPO, itemcode &#xA;Into #ItemCodeVta&#xA;From SrvSAP.Roma_Productiva.dbo.OINV a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.INV1 b On a.DocEntry = b.DocEntry&#x9;&#xA;Where Convert(Varchar(6), Taxdate, 112) &gt;= Convert(Varchar(6), DateAdd(Month, -1, Getdate()), 112) And ItemCode Is Not Null&#xA;*/&#xA;&#xA;Select Distinct SWW U_BKS_GRUPO, a.itemcode &#xA;Into #ItemCodeVta&#xA;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM aa On a.ItemCode = aa.ItemCode And a.CodPrv = aa.CardCode&#xA;Where Convert(char(6), feregistro, 112) &gt;= Convert(char(6), getdate()-60, 112) &#xA;And Not Exists(Select * From Ventas.DimProductosFull b Where a.codprv = b.CodPrv  Collate SQL_Latin1_General_CP850_CI_AS And a.itemcode = b.codpro  Collate SQL_Latin1_General_CP850_CI_AS)&#xA;&#xA;&#xA;Insert Into ventas.DimProductosFull(IdPrv, CodPro, NomPro, CodPrv, CodFam, NomFam, U_BKS_CATEGORIA, U_BKS_CATEGORIA_Nom, CodCat, NomCat, &#xA;CodFamNestle, NomFamNestle, catJes, U_BKS_GRUPO)&#xA;Select IdPrv, a.ItemCode CodPro, ItemName NomPro, a.CodPrv, CodFam, z.Name NomFam, U_BKS_CATEGORIA, y.name U_BKS_CATEGORIA_Nom, &#xA;CodCat, Null NomCat, CodCat CodFamNestle, '*' NomFamNestle, catJes, SWW U_BKS_GRUPO&#xA;From SrvSAP.dw.Reportes.item_unidadvolumenpeso a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.OITM x On a.ItemCode = x.ItemCode&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_CATEGORIA] y On x.U_BKS_CATEGORIA = y.Code&#xA;Left Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] z On x.U_BKS_FAMILIA = z.Code&#xA;Inner Join Ventas.DimProveedores prv On prv.CodPrv = a.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where Not Exists (Select * From ventas.DimProductosFull b &#xA;&#x9;&#x9;Where a.codprv Collate SQL_Latin1_General_CP1_CI_AS = b.codprv &#xA;&#x9;&#x9;and a.itemcode Collate SQL_Latin1_General_CP1_CI_AS = b.codpro)&#xA;And a.codcat Is Not Null And a.itemcode In (Select itemcode From #ItemCodeVta)&#xA;&#xA;&#xA;Update a Set CodCat = IsNull(b.CodCat, '000'), CodFam = IsNull(b.Codfam, 'FAM000'), CatJes=IsNull(b.catjes, 'NO DEFINIDO')&#x9;&#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.dw.Reportes.item_unidadvolumenpeso b &#xA;On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.ItemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(b.CodCat, '000') &lt;&gt; '000'&#xA;And (&#xA;&#x9;IsNull(b.CodCat, '000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodCat, '000')&#xA;&#x9;Or &#xA;&#x9;IsNull(b.CodFam, 'FAM000') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.CodFam, 'FAM000')&#xA;&#x9;Or &#xA;&#x9;IsNull(b.catjes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&lt;&gt; IsNull(a.catjes, 'NO DEFINIDO')&#xA;&#x9;)&#xA;&#xA;&#xA;;With dt As (Select Distinct a.CodPrv, a.ItemCode, CodFam, a.CodCat, b.NomCat, b.NomCat_Corto2, CatJes&#xA;&#x9;&#x9;&#x9;From SrvSAP.DW.Reportes.item_unidadvolumenpeso a&#xA;&#x9;&#x9;&#x9;Left Join (Select Distinct codcat, nomcat, nomcat_corto, nomcat_corto2&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;From SrvSAP.Roma_Productiva.reportes.grupocategoria) b On a.codcat=b.codcat)&#xA;Update a Set NomCat = Isnull(b.Nomcat, 'NO DEFINIDO'), NomCat_Abr = IsNull(b.nomcat_corto2, 'NO DEFINIDO'), CatJes = IsNull(b.CatJes, 'NO DEFINIDO')&#x9;&#xA;From ventas.DimProductosFull a&#xA;Inner Join dt b On a.CodPrv = b.codprv Collate SQL_Latin1_General_CP1_CI_AS&#xA;And a.CodPro = b.itemCode Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where (IsNull(a.NomCat, '*') &lt;&gt; IsNull(b.Nomcat, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.NomCat_Abr, '*') &lt;&gt; IsNull(b.nomcat_corto2, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;Or&#xA;IsNull(a.CatJes, '*') &lt;&gt; IsNull(b.CatJes, 'NO DEFINIDO') Collate SQL_Latin1_General_CP1_CI_AS&#xA;)&#xA;&#xA;Update a Set NomFam = b.Name&#x9;&#xA;From Ventas.DimProductosFull a&#xA;Inner Join SrvSAP.Roma_Productiva.dbo.[@BKS_FAMILIAS] b On a.CodFam = b.code Collate SQL_Latin1_General_CP1_CI_AS&#xA;Where IsNull(a.NomFam, '*') &lt;&gt; b.Name Collate SQL_Latin1_General_CP1_CI_AS&#xA;&#x9;&#x9;&#x9;&#xA;Update Ventas.DimProductosFull Set CodCat = '000' Where CodCat Is Null&#xA;Update a Set NomCat = 'NO DEFINIDO', NomCat_Abr = 'NO DEFINIDO' From Ventas.DimProductosFull a Where CodCat = '000'&#xA;&#x9;&#x9;&#x9;&#xA;;With dt As (Select Distinct a.IdPrv, a.CodCat, c.NomCat, c.nomcat_corto2 NomCat_Abr &#xA;&#x9;&#x9;&#x9;From Ventas.DimProductosFull a&#xA;&#x9;&#x9;&#x9;Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv&#xA;&#x9;&#x9;&#x9;Inner Join srvSAP.roma_productiva.reportes.grupocategoria c &#xA;&#x9;&#x9;&#x9;On a.CodPrv = b.CodPrv Collate SQL_Latin1_General_CP1_CI_AS And a.CodCat = c.codcat Collate SQL_Latin1_General_CP1_CI_AS)&#xA;Insert Into Ventas.Dim_Categorias_xProveedor (IdPrv, CodCat, NomCat, NomCat_Abrv)&#xA;Select IdPrv, CodCat, NomCat, NomCat_Abr From dt a&#xA;Where Not Exists (Select * From Ventas.Dim_Categorias_xProveedor b Where a.IdPrv = b.IdPrv And a.CodCat = IsNull(b.CodCat, '000'))&#xA;&#xA;;With dt As (Select Distinct a.IdPrv, CodCat, NomCat, NomCat_Abr, CatJes&#xA;&#x9;&#x9;&#x9;From Ventas.DimProductosFull a&#xA;&#x9;&#x9;&#x9;Inner Join Ventas.DimProveedores b On a.CodPrv = b.CodPrv)&#xA;Update x Set NomCat = y.NomCat, NomCat_Abrv = y.NomCat_Abr, CatJes = y.CatJes&#xA;From ventas.Dim_Categorias_xProveedor x&#xA;Inner Join dt y On x.IdPrv = y.IdPrv And x.CodCat = y.CodCat&#xA;&#x9;&#xA;Update a Set IdCat_xPrv = b.IdCat_xPrv&#x9;&#xA;From ventas.DimProductosFull a&#xA;Inner Join Ventas.Dim_Categorias_xProveedor b On a.IdPrv = b.IdPrv And a.CodCat = b.CodCat&#xA;Where IsNull(a.IdCat_xPrv, 0) != b.IdCat_xPrv" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{8AAB6F43-256E-4E22-A8EC-C3387E472CFE}"
+      DTS:From="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="202,59"
+          Id="Package\Actualiza CodFam Item_UnidadVolumenPeso"
+          TopLeft="131,47" />
+        <NodeLayout
+          Size="230,61"
+          Id="Package\Actualiza Dimensiones DimProductosFull y Dim_Categorias_xProveedor"
+          TopLeft="123,158" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="235,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

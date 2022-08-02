@@ -1,0 +1,61 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2ed2fd55-3da1-4d38-a911-4d4d5cd9b44c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ROMA Repositorio</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Extractor Ventas</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c10d5186-73de-48ea-9c9e-04334278fce7">
+          <ID>Extractor Ventas</ID>
+          <Name>Extractor Ventas</Name>
+          <CreatedTimestamp>2021-04-19T15:43:07.213333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-07-13T01:51:19.666667Z</LastSchemaUpdate>
+          <LastProcessed>2021-08-02T10:25:10.953333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2346c091-28a0-4370-a976-311733860dba">
+            <DataSourceViewID>ROMA Repositorio</DataSourceViewID>
+            <TableID>Gloria_Extractor_Ventas</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="00ee6672-9f06-4f87-add4-e7f40ecae608">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="349184f9-c80d-4018-a392-a3f7af332c92" />
+          </ProactiveCaching>
+          <EstimatedSize>166653165</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Vw Factor Proyectado</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="62b99f6e-05e9-49a2-86c4-a577c7aa6bc5">
+          <ID>Dim Vw Factor Proyectado</ID>
+          <Name>Dim Vw Factor Proyectado</Name>
+          <CreatedTimestamp>2021-04-19T15:43:07.273333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-07-13T01:51:19.713333Z</LastSchemaUpdate>
+          <LastProcessed>2021-08-02T10:24:16.64Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dc537cb2-3092-469f-b7ad-47d69359af5d">
+            <DataSourceViewID>ROMA Repositorio</DataSourceViewID>
+            <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="29321b34-21bd-482b-bd42-91e99be613b4">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="69c9d49a-7e32-4e2e-90ab-21fc7ba53343" />
+          </ProactiveCaching>
+          <EstimatedSize>218</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

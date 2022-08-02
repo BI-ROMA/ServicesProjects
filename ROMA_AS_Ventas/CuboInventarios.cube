@@ -1,0 +1,3412 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27a25bea-4e9c-4657-bdd8-dcef8601a875" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CuboStock</ID>
+  <Name>CuboInventarios</Name>
+  <CreatedTimestamp>2021-09-16T20:40:28.77Z</CreatedTimestamp>
+  <LastSchemaUpdate>2022-01-14T07:04:56.98Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="54" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11001" scrolltop="-1993" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="47202" y="29281" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Digitacion" left="-10148" top="-819" logicalid="27" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="13704" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000088350000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Fact_Digitacion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimProductosFull" left="4538" top="4227" logicalid="28" controlid="2" masterid="0" hint1="0" hint2="0" width="4683" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004b12000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimProductosFull" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Inventarios" left="20044" top="7213" logicalid="29" controlid="3" masterid="0" hint1="0" hint2="0" width="3344" height="4472" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000100d000078110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Fact_Inventarios" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAlmacenes" left="20521" top="-612" logicalid="30" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimAlmacenes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimMesas" left="-4443" top="11850" logicalid="31" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimMesas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimProveedores" left="10570" top="-1036" logicalid="32" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimProveedores" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Categorias_xProveedor" left="4420" top="-1169" logicalid="33" controlid="7" masterid="0" hint1="0" hint2="0" width="4667" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b1200009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Dim_Categorias_xProveedor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimSedes" left="14510" top="-1222" logicalid="34" controlid="8" masterid="0" hint1="0" hint2="0" width="3043" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimSedes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFechas" left="12246" top="9678" logicalid="35" controlid="9" masterid="0" hint1="0" hint2="0" width="3889" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000310f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimFechas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_vw_FactorProyectado" left="-5106" top="3148" logicalid="36" controlid="10" masterid="0" hint1="0" hint2="0" width="4551" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c711000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_Dim_vw_FactorProyectado" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-855" top="7548" logicalid="37" controlid="11" masterid="0" hint1="0" hint2="0" width="13401" height="3930" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_vw_FactorProyectado-DimFechas]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="10" sourceattachpoint="18" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12246" y="11078" />
+              <point x="5846" y="11078" />
+              <point x="5846" y="7848" />
+              <point x="-555" y="7848" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimTipoPedido" left="-4048" top="27" logicalid="38" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimTipoPedido" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17253" top="-410" logicalid="39" controlid="13" masterid="0" hint1="0" hint2="0" width="3568" height="2538" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimSedes_DimAlmacenes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="8" sourceattachpoint="10" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20521" y="-11" />
+              <point x="19037" y="-11" />
+              <point x="19037" y="1828" />
+              <point x="17553" y="1828" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8787" top="-1299" logicalid="40" controlid="14" masterid="0" hint1="0" hint2="0" width="2083" height="1877" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Dim_Categorias_xProveedor_DimProveedores]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="10" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10570" y="-900" />
+              <point x="9829" y="-900" />
+              <point x="9829" y="278" />
+              <point x="9087" y="278" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4154" top="2327" logicalid="41" controlid="15" masterid="0" hint1="0" hint2="0" width="1375" height="2200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimProductosFull_Dim_Categorias_xProveedor]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4553" y="2826" />
+              <point x="4553" y="3526" />
+              <point x="5229" y="3526" />
+              <point x="5229" y="4227" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8921" top="2037" logicalid="42" controlid="16" masterid="0" hint1="0" hint2="0" width="2449" height="4990" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimProductosFull_DimProveedores]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="1" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10970" y="2536" />
+              <point x="10970" y="6727" />
+              <point x="9221" y="6727" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-6638" top="6328" logicalid="43" controlid="17" masterid="0" hint1="0" hint2="0" width="11476" height="3855" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Digitacion_DimProductosFull]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="26" destattachpoint="53" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4538" y="6727" />
+              <point x="-900" y="6727" />
+              <point x="-900" y="9883" />
+              <point x="-6338" y="9883" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-6638" top="17" logicalid="44" controlid="18" masterid="0" hint1="0" hint2="0" width="2890" height="816" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Digitacion_DimTipoPedido]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="1" sourceattachpoint="10" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4048" y="416" />
+              <point x="-5193" y="416" />
+              <point x="-5193" y="533" />
+              <point x="-6338" y="533" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-6638" top="10133" logicalid="45" controlid="19" masterid="0" hint1="0" hint2="0" width="19184" height="1895" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Digitacion_DimFechas]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="20" destattachpoint="55" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12246" y="11628" />
+              <point x="2954" y="11628" />
+              <point x="2954" y="10433" />
+              <point x="-6338" y="10433" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-6638" top="11783" logicalid="46" controlid="20" masterid="0" hint1="0" hint2="0" width="2495" height="1068" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Digitacion_DimMesas]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="10" destattachpoint="61" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4443" y="12451" />
+              <point x="-5390" y="12451" />
+              <point x="-5390" y="12083" />
+              <point x="-6338" y="12083" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-6638" top="-1721" logicalid="47" controlid="21" masterid="0" hint1="0" hint2="0" width="22519" height="1454" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Digitacion_DimSedes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="2" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15481" y="-1222" />
+              <point x="15481" y="-567" />
+              <point x="-6338" y="-567" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8921" top="7428" logicalid="48" controlid="22" masterid="0" hint1="0" hint2="0" width="12545" height="4557" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Inventarios_DimProductosFull]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="31" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9221" y="7827" />
+              <point x="21166" y="7827" />
+              <point x="21166" y="11685" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="20522" top="1191" logicalid="49" controlid="23" masterid="0" hint1="0" hint2="0" width="1494" height="6322" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Inventarios_DimAlmacenes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="1" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20921" y="1690" />
+              <point x="20921" y="4451" />
+              <point x="21716" y="4451" />
+              <point x="21716" y="7213" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12771" top="2037" logicalid="50" controlid="24" masterid="0" hint1="0" hint2="0" width="8695" height="5476" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Inventarios_DimProveedores]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="9" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13170" y="2536" />
+              <point x="13170" y="4874" />
+              <point x="21166" y="4874" />
+              <point x="21166" y="7213" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15835" top="8599" logicalid="51" controlid="25" masterid="0" hint1="0" hint2="0" width="4509" height="2329" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Inventarios_DimFechas]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="3" sourceattachpoint="17" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16135" y="10528" />
+              <point x="18089" y="10528" />
+              <point x="18089" y="8899" />
+              <point x="20044" y="8899" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8787" top="2079" logicalid="52" controlid="26" masterid="0" hint1="0" hint2="0" width="11557" height="6570" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_Inventarios_Dim_Categorias_xProveedor]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="3" sourceattachpoint="31" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9087" y="2478" />
+              <point x="14565" y="2478" />
+              <point x="14565" y="8349" />
+              <point x="20044" y="8349" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-11001</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1993</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-10148</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1222</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2022-02-03T06:40:03.983333Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ee568c78-f116-4c2f-9524-5cd7c5a9b7b2">
+      <ID>Almacenes</ID>
+      <Name>Almacenes</Name>
+      <DimensionID>Almacenes</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91e32702-a631-4051-b930-8efc1f01029f">
+          <AttributeID>Id Almacen</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0e101b1-e0d8-41fb-885b-3689a7bf1cc4">
+          <AttributeID>Cod Almacen</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="478e0778-7861-4600-acd4-ea2379060eb2">
+          <AttributeID>Nom Almacen</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="03783038-263a-4b14-b72a-8102faa6d7fb">
+      <ID>Productos Full</ID>
+      <Name>Productos Full</Name>
+      <DimensionID>Dim Productos Full</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="780a66c3-d56c-42cb-8d40-84d2e8c982eb">
+          <AttributeID>Id Pro</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="4902e297-4818-4e9a-b1ab-913ec8378ff6">
+          <AttributeID>Cod Pro</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ab46cb9-a542-4af4-9c09-74a5a6caa369">
+          <AttributeID>Cat Jes</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf749299-4ced-42d7-afd1-c8d237a5e941">
+          <AttributeID>Cod Cat</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a750bb3e-2aa4-4989-b307-dc54f67cfb7e">
+          <AttributeID>Cat Jes 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a6b1462-bead-47e2-b619-94e88cd04e6f">
+          <AttributeID>Es Promocionable</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6df37603-4074-4853-9586-9f45f1748d61">
+          <AttributeID>Nom Prv Abr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60bffb6f-85db-4124-bd1d-b0fec88c70b3">
+          <AttributeID>Nom Cat</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="10703370-ec81-4673-87a9-4bfdf022aef4">
+          <AttributeID>Fl Va En Visi Cooler</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e070b7a-7471-4c44-853a-4c045099d281">
+          <AttributeID>Categoria Roma</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28480222-da5a-42ba-b3ba-c8b2cb31f472">
+          <AttributeID>Marca Roma</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44ad0c51-7161-4cf3-8b61-ccf0d7a7db29">
+          <AttributeID>Familia Roma</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf657201-546d-45c4-bbfa-fd620c291857">
+          <AttributeID>Contenido Roma</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a857ea5-3c64-46d3-8fd7-3501bb53ddc7">
+          <AttributeID>Nom Pro</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47f92d0a-5389-48ea-986e-625b944783c1">
+          <AttributeID>Cod Fam</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f18979d9-a852-4452-8f8a-9ed0ac539128">
+          <AttributeID>Nom Fam</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f80635a-34ac-4c07-b59d-4254ceb09b4c">
+          <AttributeID>Cod Prv 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3647651c-5ad8-488f-acb8-0c00dceacae6">
+          <AttributeID>Id Prv 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="28663de3-916d-4d35-9aa8-ed74ba81a52e">
+          <AttributeID>Co Unidad Medida Compra</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0890f104-d44a-4386-9238-aceedd6e3aff">
+          <AttributeID>Qtd Piezas</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c910802-3af8-464c-a5e4-9fe698640c3f">
+          <AttributeID>Nom Cat Abr</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="709c9556-0dbc-463f-87e7-979dcc04b836">
+          <AttributeID>Grupo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4874925-322e-40a9-b711-b876ca134d75">
+          <AttributeID>Cod Pro 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="7840a4c1-0aef-4f46-ac44-47bc6ff84981">
+          <AttributeID>Importancia Orden</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49245a41-d42a-423e-a6c6-e37321cd8ef9">
+          <AttributeID>Pareto</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="45a34b04-3874-413c-9847-190cd7df2c6c">
+          <AttributeID>Pareto 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72b1e1ca-3b66-4161-99e3-3897bb611ae3">
+          <AttributeID>Cod Cat 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="fe77cd98-ff3f-4c49-87f7-c69e517f32a2">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ebdd208a-9652-4cd5-90d6-f3ab7dd7d54f">
+          <HierarchyID>Jerarquía 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="cfaadf81-ebcc-44a0-acd1-efd49f0dae34">
+          <HierarchyID>Jerarquía 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="b7ebd459-5550-4159-82e7-af12f51d344b">
+          <HierarchyID>Jerarquía 3</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="711c1306-d76d-4c9b-b15a-28656deb2a3c">
+      <ID>Fechas</ID>
+      <Name>Fechas</Name>
+      <DimensionID>Dim Fechas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e0724e5a-bd31-4666-b6c0-642cd894fd15">
+          <AttributeID>Fecha Key</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2ed5028-01c4-4ee6-b725-2cbaaec89b87">
+          <AttributeID>Año</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="34319220-6a77-443e-af0d-23c57282e11e">
+          <AttributeID>Dia</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="d445895a-2fc8-40e2-9206-a87ca7259f2f">
+          <AttributeID>Nombre Dia Full</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="69e77bcf-689c-49f1-aca7-2923f3230d9a">
+          <AttributeID>Nombre Mes Abr</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea575c3c-f4f0-4b91-8daa-bc7617e3c169">
+          <AttributeID>Nombre Dia Abr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa99a976-5e34-4444-8c6e-22b948438296">
+          <AttributeID>No Trimestre 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb8efb6c-261a-4fb3-8747-2f013e71212d">
+          <AttributeID>No Trimestre Full</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="a063eb31-9cbe-4118-bccf-0373ab71376f">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c3ea7f6c-4763-4ed6-98b4-92aa44e00e1f">
+          <AttributeID>Id Diez Dias</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="61d84a2f-650d-4b16-82bf-2493330aaf7e">
+          <AttributeID>Dia 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86d4c637-81f9-48e8-af41-b60988d4e373">
+          <AttributeID>Nu Diez Dias</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6def9f61-542d-41ab-9aac-75c0b1d4e926">
+          <AttributeID>Nu Dia Laboral</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7d86bb0-d951-46d5-8684-16593a6449c7">
+          <AttributeID>Fl4 Ult Meses Cerrados</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f648276-d017-4470-afba-bb8ee88fe4d5">
+          <AttributeID>Nu Nombre Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ebf60fac-38b0-4efc-95b7-5ec18a823341">
+          <AttributeID>Fl Ult30 Dias Habiles</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ad63ec07-21d4-4a15-ba88-5f3339dffe41">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="3113b139-3aa3-472f-9125-73a884602fec">
+          <HierarchyID>Jerarquía 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="db5e04e4-c5a9-4c8a-b271-864faee249f9">
+          <HierarchyID>Jerarquía 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="c71be057-efc0-4263-a3fe-73ed602734d8">
+          <HierarchyID>Jerarquía 3</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ea948ad-5288-4f4f-839b-fa60c1442ecd">
+      <ID>TipoPedido</ID>
+      <Name>TipoPedido</Name>
+      <DimensionID>TipoPedido</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad7661d7-fc90-439d-b982-f45a4fca0f7b">
+          <AttributeID>Ti Pedido</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="006bb17c-0be0-4002-87ea-17e17c106548">
+      <ID>Proveedores_CatJes</ID>
+      <Name>Proveedores_CatJes</Name>
+      <DimensionID>Proveedores_CatJes</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d1ca7686-7d71-45ae-8bc6-9e04fc8c78ac">
+          <AttributeID>Id Cat x Prv</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa85716b-d657-4b43-aba1-b56f3b39a63c">
+          <AttributeID>Cod Cat</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="07ea2a0b-c52a-4061-96b0-846d7ef8ba43">
+          <AttributeID>Nom Cat</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2189b41d-3c34-472f-a00a-ecd45191167f">
+          <AttributeID>Nom Cat Abrv</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89c9321d-8ea0-45ed-99a1-154ce1df6bfd">
+          <AttributeID>Cod Fam</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe928418-e85e-4bfb-94f3-09841afc3aa1">
+          <AttributeID>Cat Jes</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="4043d7b3-3e95-4dde-9edd-b3d20aa53af8">
+          <AttributeID>Cod Prv</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="16081bb8-7e13-45c6-a682-c31476c7024c">
+          <AttributeID>Id Prv</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="4fb59c9d-eeda-4fc8-b741-ad1c970ff1e3">
+          <AttributeID>Cat Jes 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="10332776-1ba8-4090-a80f-1e4ed21e6a00">
+          <AttributeID>Cod Cat 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9bfe3668-b8e2-4738-975f-d7fb67c771e6">
+          <AttributeID>Nom Prv Abr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6277c4dd-7ab9-40fe-849d-e3b4074d4242">
+          <AttributeID>Cod Prv 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0a1d74a6-8612-4758-9edb-c852eecde053">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="09048b09-ae26-4657-a6f6-4c46b02a6af8">
+          <HierarchyID>Jerarquía 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <CubePermissions>
+    <CubePermission dwd:design-time-name="8f9c7b86-8c50-4fd8-bea1-e49b87324f8b">
+      <ID>CubePermission</ID>
+      <Name>CubePermission</Name>
+      <CreatedTimestamp>2021-09-24T16:13:12.63Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.23Z</LastSchemaUpdate>
+      <RoleID>Role 5</RoleID>
+      <Read>Allowed</Read>
+      <ReadSourceData>None</ReadSourceData>
+    </CubePermission>
+    <CubePermission dwd:design-time-name="551d043a-1a52-4116-9cde-094029c906f1">
+      <ID>CubePermission 1</ID>
+      <Name>CubePermission 1</Name>
+      <CreatedTimestamp>2021-10-04T17:02:19.97Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.23Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <ReadSourceData>None</ReadSourceData>
+    </CubePermission>
+  </CubePermissions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="59819f63-4719-4862-a770-3c3e78dea943">
+      <ID>Fact Inventarios</ID>
+      <Name>Fact Inventarios</Name>
+      <CreatedTimestamp>2021-09-16T20:40:28.786667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.013333Z</LastSchemaUpdate>
+      <LastProcessed>2022-02-03T06:40:03.766667Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f013d65e-41fc-4468-95e0-548614f6c54a">
+          <ID>Cantidad</ID>
+          <Name>Cantidad</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="1465753c-1c26-447c-8fe3-b7fb3bf8df99">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="246e432a-0093-4489-890c-617c1f56af84">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>Cantidad</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1288a175-3196-4ccc-847c-118068335293">
+          <ID>Valorizado</ID>
+          <Name>Valorizado</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="b07d6fd7-74a3-4ba0-95d6-34939b577490">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="813bff31-b12b-448f-96ec-c9df65cc32fd">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>Valorizado</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="28757cb4-9b97-45c0-a1af-4f11ccc361af">
+          <ID>Qtd</ID>
+          <Name>Qtd</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="056f9f25-6fe9-4d4a-8294-7d4356db4c59">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="377e0887-45a1-457f-9fdb-f9b8635b87bf">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>Qtd</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cf514021-ef4b-4f5a-a2eb-91119e8725a5">
+          <ID>Qtd Pry</ID>
+          <Name>Qtd Pry</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="185c36c3-4be9-4bdb-adea-810c04b22ddf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="29f44806-3eb5-4211-8a6f-51356a80d8d3">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>QtdPry</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7e0303cc-ac73-4599-a9d5-570073b5ed80">
+          <ID>Vta</ID>
+          <Name>Vta</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="8b1769cd-78c5-413f-8209-5f55a345e381">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e80f3acc-8b64-44b5-a215-65d5a75e2202">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>Vta</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4d0f7915-45f5-4e7d-b362-f821c81386c0">
+          <ID>Vta Pry</ID>
+          <Name>Vta Pry</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="9a438765-e896-47d7-9316-55b275669bf7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="da6d59c3-0b70-41c4-9b3a-89936074c2c1">
+              <TableID>Ventas_Fact_Inventarios</TableID>
+              <ColumnID>VtaPry</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>235790</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="be091a5e-fea2-4f0d-8179-fd37360f8bb2">
+          <CubeDimensionID>Almacenes</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="a37e817a-53ad-4bf4-90ec-0abd8f7cc146">
+              <AttributeID>Id Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4758b73b-7ac0-4401-a384-9f391414a173">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41f0d5f9-9db4-4fb4-912f-395f28dea569">
+                    <TableID>Ventas_Fact_Inventarios</TableID>
+                    <ColumnID>IdAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="36e1cde4-018c-4a41-8e8a-97709ebd1b60">
+              <AttributeID>Cod Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b36e1614-ce34-43f9-9007-ac79d29c1e74">
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36733302-9764-4e51-8f5e-a2adde45be40">
+                    <TableID>Ventas_DimAlmacenes</TableID>
+                    <ColumnID>CodAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f7991a5d-b80a-4e5b-91eb-2399d8ac5c67">
+              <AttributeID>Nom Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6ef08048-0564-49e6-9156-06f81d5650a6">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a97bbe94-9759-41c5-bfe9-0ff42a61bbdb">
+                    <TableID>Ventas_DimAlmacenes</TableID>
+                    <ColumnID>NomAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ab79fe2f-006d-4736-bee1-93dd61f89366">
+          <CubeDimensionID>Productos Full</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="adda0951-b5a1-4281-b216-3bb3e4f03faf">
+              <AttributeID>Id Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc0ddb50-8ce8-4d45-ac31-3021cfe48a6b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="50051a2c-0594-4903-8906-c2ef736367c7">
+                    <TableID>Ventas_Fact_Inventarios</TableID>
+                    <ColumnID>IdProducto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="0c065825-079f-4074-8ad4-356da1e874a8">
+              <AttributeID>Cod Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="500896b6-e209-4974-bf66-8f515c191048">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17283e58-ba0a-4018-af50-2e748c5ceb6b">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7b0c9153-2730-416d-9d04-5935c45a40fd">
+              <AttributeID>Cat Jes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="db367245-34f0-4383-a3e7-871d023f8c6c">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53c6201b-c56f-425d-a03b-307197f279ac">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="66e21db9-3e6a-470e-8542-dc0df6b5a8e7">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49b22bac-fd7d-4d9f-ad8d-14584d1010ff">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="648551e6-bf06-45bc-be3a-c867560cac49">
+              <AttributeID>Cod Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1c45a941-28cc-48cc-9f6d-34f873308357">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1936b8b9-a16a-4bb4-ae4b-b9491886c125">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e6c7c3e-5443-4f1b-b362-8278229e1b36">
+              <AttributeID>Cat Jes 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="21b51301-7482-4a15-ad80-28cdd6f6ffc1">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62ef167a-7c66-45df-9834-a1e4247813e7">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7778fb73-d28c-46e2-9cc8-1c1afcb0997d">
+              <AttributeID>Es Promocionable</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80b0c8f1-e77e-4935-bb92-9c3e841de494">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="27f1fb1d-7b97-4b86-8b21-afb83bd467c4">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>EsPromocionable</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="36c75b80-0509-45dd-b632-4a08c681e060">
+              <AttributeID>Nom Prv Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="222a5259-2ebb-4579-8654-5aacf2054217">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36b31fd6-f578-478c-9f1c-d564495f1e17">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>NomPrvAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b7efbe28-2c71-4b31-866c-ec990ca5e73a">
+              <AttributeID>Nom Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="529e06ea-1027-4893-a3ba-d2fa4f794a6d">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cef1d53-b817-4808-afa3-20c29adbdf81">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fbf150d2-6895-407f-b3f3-99e232654283">
+              <AttributeID>Fl Va En Visi Cooler</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c8eae047-fab7-4688-bd26-3802f4088e82">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90c2f7a1-4b17-442b-bc4f-a104ca0f626f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>FlVaEnVisiCooler</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9aa85bef-b9a9-4a4b-afa9-a4c7a0befb39">
+              <AttributeID>Categoria Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="800201e4-fc61-440a-b138-ee5c34fd5c32">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04204ea1-6371-48ff-b56e-f10f5720d63a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Categoria_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="46632782-e262-40d8-96c1-584dd487971d">
+              <AttributeID>Marca Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="29183364-070e-4e78-a9e4-ae1b39c7a9f3">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6d701008-abda-4e19-86cc-445031a954e3">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Marca_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1c644ff0-3176-4a13-89bc-881b151429dc">
+              <AttributeID>Familia Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="98e3fbb5-a60b-4296-9166-7f17abbc6248">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f68dcb46-767b-44d1-8136-b39c39311c90">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Familia_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e948ad0-39d0-447f-8927-ae785557bff6">
+              <AttributeID>Contenido Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1aa243b7-b47e-4615-b41f-8eedfc2a024d">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce6f2d3e-00fc-465f-b93d-0b3c68fcc7f3">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Contenido_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ffb5859b-9784-42dc-955b-eb8a34cc44cc">
+              <AttributeID>Nom Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="785f7474-276f-4079-aa4e-d53f8c3b5138">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d244dc50-b93a-4663-9f38-c4a899a8117c">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fd3b7b42-c528-47f6-ad2c-5d0655b5d395">
+              <AttributeID>Cod Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fe4d5642-c3ac-4755-afd8-ece1a83d8397">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef77ec77-6c28-4656-ab58-652a53741e32">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5c5718ac-cb21-490a-90f8-c53e0fb7ac84">
+              <AttributeID>Nom Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3793012a-42cc-4239-be78-c9e47f16a96d">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c8ea272-40dd-48eb-8975-8f187f58d513">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b71191f0-0fa8-45cf-8857-002d5b102daa">
+              <AttributeID>Cod Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8de630d9-7bbd-49b4-81eb-4e1e8b9e9b8d">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1f97eb2c-cccb-45e8-aac7-e9f7ac584a29">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e5fa745a-9344-4995-a807-6e98a39ee6c5">
+              <AttributeID>Id Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d15a2d68-009e-4f54-ba1c-87cce254bc88">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="55f57205-7837-407a-9f20-84a8c49b924a">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fd9ee612-7a40-4fee-8e15-655cc77b91cd">
+              <AttributeID>Co Unidad Medida Compra</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="32ed2e7c-4266-47c4-aaf9-56de774d1e13">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97a36ddb-1ee1-4de2-8005-b9bafd6c4378">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CoUnidadMedidaCompra</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b2963f63-afe4-4e95-8590-b63b73107c89">
+              <AttributeID>Qtd Piezas</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="38283db0-b6d9-4bc5-bfaa-315a32fa254b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2611370-c77b-4099-b003-bede293c012b">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>QtdPiezas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9eb22584-5ab1-423f-b24e-e5c6438cec4e">
+              <AttributeID>Nom Cat Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="19e28c0d-754b-4e46-a974-9e2867ae3663">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="07f2d361-6e98-4908-bd37-c0ae19d02282">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6c1118ce-8cbd-4839-aa38-e859e9017f0e">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8fa1bf2f-8174-4d51-832d-f943c03d2368">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d599c9d4-2566-4614-a945-012b35d86108">
+              <AttributeID>Grupo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0410c5bf-2780-4b82-96c9-b99dee5affbf">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f55a8ec7-703a-4840-95fc-7c8a4840c3dd">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="b840231a-9e5a-4cd2-8457-321a2221c83d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="458c09e2-1e27-40dd-b28e-09ffdf15e206">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Grupo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d377e723-1f26-4ee2-ad28-be66752dc2b8">
+              <AttributeID>Cod Pro 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a7e5d77e-0404-4a51-a233-7a73c2591b90">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9e894ba-559b-401c-bc50-55ee23278c40">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="57744290-22aa-4b01-8bc1-5377698b466a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="24d8ff3f-3b79-4361-b8f9-80e1cea7afd1">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="32c33e70-2738-495a-a1bd-4db1199cab20">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="914deca0-d139-4a0b-abcd-011fef13966a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f61cd7b1-4457-40ff-8383-ae131f23e2e0">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0dbb8629-1c51-4a69-8602-8cfc11a49eb0">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="47585a34-7562-4322-b228-2324d1603f5c">
+              <AttributeID>Importancia Orden</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd8a97b9-a813-4837-b12c-d11bc1809bc6">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aca5ebfa-fabd-458e-a9e5-d068fb8657ef">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="dc5caa47-064a-403c-a958-2751e6072364">
+              <AttributeID>Pareto</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2c94fce7-a68a-42f9-a1cd-9767a1ffbb35">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a70a9f1-a298-45d2-95f4-231ff38199b6">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="399c99a4-b606-4bb4-8653-56208ba8b210">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e434408d-4aab-4b8d-9928-5f4a4801b015">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="20f4eab2-53ce-471b-b253-281a2b554f88">
+              <AttributeID>Pareto 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11bea344-dff0-40b2-bc6c-a0ca9caa1bc9">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="93932506-8a04-42ff-ab83-2a14f64c28b7">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1d92425d-d339-4be5-ad4b-81167e99abaa">
+              <AttributeID>Cod Cat 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="10b5cf2d-88f7-4d77-afb3-ad1f63f098fe">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ffada238-2de7-458c-b35a-a7877a5994a8">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2618928e-5825-421d-8c1a-01143f6f0a99">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="534c27c7-3f25-4d7b-ac01-c0d3a93a4b20">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9dfdabbc-d00f-4178-bc94-31c485966d74">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f52a4d3-6957-4eb3-ab41-ae17bfda54cc">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d115d953-593d-455e-b293-e98edcc66a2a">
+          <CubeDimensionID>Fechas</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="904e2246-52f2-460f-950b-a801867b180d">
+              <AttributeID>Fecha Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3e71dd83-2b1c-4dd5-92b8-6d01a9f67e4c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d54d56c1-5152-4f1c-bb1e-a5e2f6d2346d">
+                    <TableID>Ventas_Fact_Inventarios</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="c046ac64-0e82-44ce-9cff-99bfc9d7a19b">
+              <AttributeID>Año</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="01b04557-1eee-4375-93a4-27410983725e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3546d53-94d3-4d30-8152-f10d45120a4a">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Año</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e1270607-8339-4bee-baca-8896db06cd67">
+              <AttributeID>Dia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="50ac1c99-31b9-48d4-bd74-c05e3ab450f6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49790c26-b212-4642-98dc-808b1de9aaee">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4b6c9ad8-ed56-48db-a6f5-fea97ebd5b13">
+              <AttributeID>Nombre Dia Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ff2fc8c5-c901-449e-b4eb-0f97561e4572">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3a1fd9d-1e20-4ef1-9a35-464cb0a2bec7">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaFull</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="af32c576-d888-4f15-9a47-c8f7abe04d4a">
+              <AttributeID>Nombre Mes Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5422ed01-e1fa-4244-a352-f12f9b7e1bf3">
+                  <DataType>Integer</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e0f552f-4faf-41a6-9b7d-c6d287431ade">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5a385508-4c78-41aa-b0de-101713a9ea05">
+              <AttributeID>Nombre Dia Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b4f3ca4-5184-456b-98cb-55aba8171a9c">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e69f536-9859-42ce-add5-e0913077a0ca">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="464b53f7-c506-4c45-b2d2-b1fd1266464d">
+              <AttributeID>No Trimestre 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c2b5f3a1-c210-40dc-a06e-bdf55679f363">
+                  <DataType>WChar</DataType>
+                  <DataSize>5</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d630df82-0b01-4486-914d-815af4f5c049">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NoTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="84720334-b951-4533-8226-c7b74fe01f44">
+              <AttributeID>No Trimestre Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="16201c3b-f49e-4e0e-b0e6-1b85bb1519ac">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dcb9fdbb-b037-4f50-bd86-86a6b2b23a89">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="340a654c-aaac-4f00-a3e0-67ff777c86c7">
+              <AttributeID>Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="82ebf62d-a5d5-4163-b430-43154e6d2c84">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="72ad59a4-bff5-4b7f-88d1-6415149ce9d5">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Mes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e0106619-6767-4668-8b40-198dc02e8c09">
+              <AttributeID>Id Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd1d45fe-ff02-48b8-9c5c-1975ff991855">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d11006ed-58be-45d2-908a-00eb401207b4">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="290351e5-430a-43c0-9ae0-406099462ccb">
+              <AttributeID>Dia 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2f22d80b-edff-4476-ad84-512aa4249af8">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4e4d329-8145-4812-b1d2-92131772b918">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Dia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1946dd80-fe3f-4794-9945-170da3ac35d8">
+              <AttributeID>Nu Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="803f52e3-79f5-4b8b-b708-fd83190b2e38">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5715a094-6968-4d77-bbbd-5c871cc61714">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1fec96e2-048c-4364-a7a2-91138efdffda">
+              <AttributeID>Nu Dia Laboral</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a25d7e5a-eb8c-47cf-98a0-772c081d10b2">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bb55f7f7-9f93-4b2b-ae3c-ede9b9af0e6b">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiaLaboral</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="70a084c3-38cb-46ca-a82a-ef852e24fbbe">
+              <AttributeID>Fl4 Ult Meses Cerrados</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="efc7a8d1-ae81-4cfa-ab1d-cd87bac01476">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6d3a9787-6683-47fb-818f-bbce2557162e">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Fl4UltMesesCerrados</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="86352706-473d-47ec-837f-64b254cbc7ac">
+              <AttributeID>Nu Nombre Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11005d4a-ac27-4902-8adc-8b059218c611">
+                  <DataType>WChar</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e5ce96b-b4a4-4056-9461-27239de13491">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4ca5421c-b29c-4224-b493-9b9eabd988ac">
+              <AttributeID>Fl Ult30 Dias Habiles</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="84373ff8-93ce-4861-a872-c6387f88d51b">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd161dc-3c9e-492e-9a30-1fc1f9d6c341">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FlUlt30DiasHabiles</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4b9bad22-fd00-4924-853e-fd08a101efdc">
+          <CubeDimensionID>Proveedores_CatJes</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="b0a71f09-40e1-46b0-8269-b77815912eec">
+              <AttributeID>Id Cat x Prv</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9b7177ab-e7de-461c-b6bd-fdcfe6c7380b">
+                  <DataType>SmallInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6d5a6cb1-2fa2-4e50-aa65-801677134663">
+                    <TableID>Ventas_Fact_Inventarios</TableID>
+                    <ColumnID>IdCat_xPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="66c5e013-44d4-484c-a47d-11e96410a896">
+              <AttributeID>Cod Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="07ffcdba-4f89-4d03-9433-07b843641317">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4b963ee5-d2a8-44d1-97a5-c435b1776206">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cc048a51-e919-4031-8d07-78db79b7dadd">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd4f8eca-a826-4719-9659-4c0285863dee">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="56fbbbe2-719d-4277-ad8f-82a927dfcff7">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61f0c1eb-8044-46f9-bf29-d1351e97452b">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e697dccb-2486-434f-a632-4112afdce782">
+              <AttributeID>Nom Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b87eb3e9-19df-48fc-a8ca-26539e61aed1">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b6781edc-adc6-48bb-a1fd-0b7f56f83485">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>NomCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4f5de099-0b5b-40f1-9524-6fc0080185cb">
+              <AttributeID>Nom Cat Abrv</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0cf54d15-9407-4dae-8613-6e471a64fb41">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4781fd99-c4f1-4e89-913b-d361369232ae">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>NomCat_Abrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f121ea5d-820c-46ec-a9a4-0ae6c2273ecd">
+              <AttributeID>Cod Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4aada22a-4926-4f2c-9c74-fa7a5b179772">
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a5b9c54-be16-4997-b080-692bdb3f3f5f">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CodFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="66bfc5a5-fdc7-4c1c-8a39-9bfb2e63e2eb">
+              <AttributeID>Cat Jes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7b246118-c061-4904-a2c0-1ae37f06b50a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6cb91019-a6c7-4e66-9ee7-f2441d8c5a81">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fe663d01-13c1-477d-8113-494595f25b3f">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8d00be33-c8c0-435f-bb58-740c198b77c8">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8a3f41c5-a4fa-4808-b6f5-2f4ba5a1c83b">
+              <AttributeID>Cod Prv</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="21fc839d-5579-419c-9f3f-63cf3c7e4f7c">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30e44a0c-dcf7-4129-89dc-e4ad7b8d5320">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>CodPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="229d8e41-03a6-4cac-a5a7-d6bdff5514fe">
+              <AttributeID>Id Prv</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7e89403-dfef-4b18-a9d4-78ccf1e5fee5">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b17432e-898b-4a0a-842d-f311fcce6848">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="673b2f95-ac13-4624-a017-fb76fbd3152d">
+              <AttributeID>Cat Jes 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="24527c6b-a44e-4744-b572-262a4f95d9d4">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53b8c4b2-cbd5-4cf3-8f86-9f396c593d59">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3b5f562f-c171-4712-84d3-cd2f1dea4f2f">
+              <AttributeID>Cod Cat 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d172fed0-5db0-4475-815d-a7bf553994aa">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c242fac6-d8ac-4ec2-8725-84705e354806">
+                    <TableID>Ventas_Dim_Categorias_xProveedor</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a8206c3d-8ec2-4dce-9489-3bac30715805">
+              <AttributeID>Nom Prv Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0d1b2858-ac1f-4631-9285-fba56a94ad41">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="92697b82-61c5-4207-93b8-d25865e49789">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>NomPrvAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2a8fb85c-1f7c-4066-affa-672766952c7d">
+              <AttributeID>Cod Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a6cc3c2-946c-4cd6-8b20-4deb66ae99ac">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8dd4857-b842-4173-89d1-303075519fb1">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>CodPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="1ae337b7-cba1-4b83-9def-4ffd3adc9340">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ff4470fb-6524-4013-9cb2-fd26663fdbdb" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b8eced9a-f748-4690-b2e2-6be63c4b621d">
+      <ID>Fact Digitacion</ID>
+      <Name>Fact Digitacion</Name>
+      <CreatedTimestamp>2021-09-16T20:40:28.803333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.153333Z</LastSchemaUpdate>
+      <LastProcessed>2022-02-03T06:40:03.766667Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="959fc35a-3f0b-4927-bd32-295c7e9e1613">
+          <ID>Soles</ID>
+          <Name>_Soles</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="54a25e94-a591-4de6-ba7a-d15fa5b20b08">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c701960e-ce76-4e87-b16d-9db38a79bc74">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>Soles</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="8f96d229-2ba5-463d-9e8e-7724a84b0b15">
+          <ID>UMES</ID>
+          <Name>_UMES</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="bca24b7f-5a00-4bb2-96d2-3753d2fa739d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e6b35611-e8a6-4822-8e43-5c6b81872131">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>UMES</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="06b065f0-3d4b-4180-bcfc-852a4a34b715">
+          <ID>Cantidad OC</ID>
+          <Name>_Cantidad_OC</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="00013e5e-ed57-4da7-8540-c76ec09e8f0e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6837d29e-d694-4f40-b79a-a4d9e6f17929">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>Cantidad_OC</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="7b4ab1ef-e8e8-42c8-a10e-57991c51a366">
+          <ID>Mon IGV OC</ID>
+          <Name>_Soles_OC</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="5b134f79-6d2d-44a7-bff2-399d8342edd3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bbd26b66-22f8-4127-b918-b960ba5029d7">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>MonIGV_OC</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="4b4744cf-0345-4500-9f36-e84e61d40635">
+          <ID>UMES OC</ID>
+          <Name>_UMES_OC</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="0aa5cf3b-1cb9-41ff-9f9a-860da55640b8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fbd08c93-99b7-41c3-b4a9-8d04ae33d8d9">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>UMES_OC</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ea97cf08-b08b-4e0a-86ea-ea1de3bec22b">
+          <ID>Cantidad - Fact Digitacion</ID>
+          <Name>_Cantidad</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="06362c62-302f-4d64-9f83-40db75e9be49">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e300d4fe-5150-4e0f-898e-94d7bdcd9157">
+              <TableID>Ventas_Fact_Digitacion</TableID>
+              <ColumnID>Cantidad</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>29155980</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="28c27f45-0b78-435e-a2c0-26e7bb4e24a6">
+          <CubeDimensionID>Productos Full</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="38c588b4-0a02-48f6-9520-77fc2ccdcc20">
+              <AttributeID>Id Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce697c31-8dd9-40cc-bd6a-d9a00d9d11f1">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1a0735a-82a5-4706-99f2-51a286b79b05">
+                    <TableID>Ventas_Fact_Digitacion</TableID>
+                    <ColumnID>IdProducto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="27f240bc-f16d-4992-909d-3e9d88221d60">
+              <AttributeID>Cod Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79c9b103-de05-4912-a7b0-3a1d874afcc0">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ec4654c-b6c2-45db-a4e5-a019530acc96">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="bdf0e8f5-ff68-468d-a13c-919a8c16c8bc">
+              <AttributeID>Cat Jes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c31149ee-41e1-4479-bc54-95388c9c846d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e09c16bb-382b-440e-8c4c-9f79bfc869cf">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="281aaa90-4d5d-4acb-81eb-7e8e3f8374f2">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f015369-7c30-43d6-a5d7-930128253deb">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="924cfeb7-d402-4e22-b159-778f4c2d680e">
+              <AttributeID>Cod Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="319ceb2a-88a8-466d-a4e2-b4e80cdaa8b3">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="72fd8706-3549-4451-90e5-7ca9d8cc956e">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e8cc11aa-4389-452d-9474-429f3a7e9802">
+              <AttributeID>Cat Jes 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18f366f7-2071-49e0-947d-f16dee236999">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a0ec101-2e2c-4590-b7dd-07d286471cdf">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9fe97a64-a036-4465-be4c-e4b212ef731d">
+              <AttributeID>Es Promocionable</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dfbc8595-edb5-4fba-8809-fd0e45f85e90">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62b1cf6e-7224-4b30-9d33-09828a1fb513">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>EsPromocionable</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="be0ea8f1-5699-4823-b7f7-c15247f7160a">
+              <AttributeID>Nom Prv Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f7816581-f104-4990-9957-1f0509c87ac1">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41ca4f66-8fbd-4b41-8116-1955d795ca6f">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>NomPrvAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="71d468ef-dc57-4a18-abaa-98033599d698">
+              <AttributeID>Nom Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0cd425f9-a7bf-466a-ba88-999c64ad2842">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c0c83be-e5a9-4f5b-bb69-f74db3ddb2f4">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="29c34ba8-23c4-4204-986e-79b24d973c84">
+              <AttributeID>Fl Va En Visi Cooler</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="90733070-6c6b-45b3-b8a1-6e44d24ebb6d">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8dfcca3-f3f1-4c00-9119-607841b2ad9d">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>FlVaEnVisiCooler</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5cf14958-96b8-4d36-ab75-0162bccc5fbe">
+              <AttributeID>Categoria Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91fcf284-f3a7-45ab-92ab-ade4aa722a87">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="92a59a93-fe1f-47dc-be67-29d52b58b9b9">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Categoria_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1ad8087c-24cf-4558-a72f-eb01c8c718f7">
+              <AttributeID>Marca Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a5e7dcf-386a-4a8b-9906-174b5778d31a">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a1b6f6c-4b38-436d-87ac-cd86448d4674">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Marca_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c5c57dac-faed-42d8-a098-029f44bc7030">
+              <AttributeID>Familia Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8fc32ad3-afa5-4075-8848-1fd874ba0931">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b0953330-3839-45aa-869a-79ddc3edec22">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Familia_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e5961643-a752-49de-86a6-293b1c8d2b7c">
+              <AttributeID>Contenido Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a33655b6-117d-4d7f-bbad-b33d3dde2f9e">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a0c64521-3078-42ed-8bbd-3d7e08443fa0">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Contenido_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="167b9b11-62eb-4a0e-895e-3fc9e3e46860">
+              <AttributeID>Nom Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cf269ca3-7606-46e2-ba22-1ae35502ba21">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ca4167a7-19c6-40be-8fbe-3ac00612f574">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3536bd49-082b-46fe-a116-cc5ec07706b3">
+              <AttributeID>Cod Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7d629c21-dc1f-4f08-a1d2-1d47a946f561">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6416e0a8-f85e-487f-876e-d8d83ef2160f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9a3a3ac7-6eee-4ed0-ba14-6a7ebd6a4e5a">
+              <AttributeID>Nom Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d127d7c3-aa5a-485c-b7db-1d51554fe0a0">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05ebbf1d-29bb-4133-b941-cea003150948">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9cf93df2-1afb-4f8c-aeb5-987e20ba9cdc">
+              <AttributeID>Cod Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f3c6abcc-539c-4774-989e-457f6458224c">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b05bd72c-b868-4b47-9148-87fb44fd5437">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7d3ed73a-5116-4d46-a337-8b814f9fa73a">
+              <AttributeID>Id Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad744a24-7a68-4c0b-868a-87e58f2e7bad">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37def51c-9e89-4e74-a4bb-e8bee3dd91c0">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6d33cefb-fdce-4288-8cba-bd38cb260883">
+              <AttributeID>Co Unidad Medida Compra</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0c7ada0a-9ffd-458e-888b-34d76ef7d9f4">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ff5d8b8-d156-45da-872c-b33d32e4f186">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CoUnidadMedidaCompra</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="57bb08f4-a2ea-480c-95d4-d50be3696c85">
+              <AttributeID>Qtd Piezas</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="93920a44-e6f9-40a7-abc8-c3df2970b180">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6db1a218-b759-41bf-9a66-b3802fc00b85">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>QtdPiezas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5d1d7b14-1d18-4964-8279-32bfa2f3a33d">
+              <AttributeID>Nom Cat Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a13cb5a-a15e-4f90-9580-8920aec605a4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="02467b21-07b5-4875-b8bd-5f81ebf23e8b">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2da0b6f7-610e-4b83-89ce-8bd88ee1feff">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3015d7a1-0961-497b-a94b-9ecba9c5bd3f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="74ee791a-e12a-4003-bf1c-c9a20bddff58">
+              <AttributeID>Grupo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c296fc95-3632-43b8-b0ce-809f3535fd36">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e628f5c-e072-49e3-88b7-9cb10d21674f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c8096971-c193-4f6c-92f8-2b2ce2575491">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="439272ac-3abe-408a-874e-f1f031739022">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Grupo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b257e26d-06bd-4cd9-9d6f-51b614e3d4fb">
+              <AttributeID>Cod Pro 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="93aaeb2c-a86d-4d19-8b17-9b85354ebaf6">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="24d88c38-b0f0-4633-bae1-f3be770b3f60">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="032ca66b-f6df-487f-b562-9a9753990e81">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="06f2b40e-51f0-4690-8774-cd2b7ecea7c0">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cb810898-7818-4d28-941d-93e2fcaa5ba3">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e2b65355-20df-4921-9b25-801b5800cf62">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="17b4925b-2ae2-4d0b-aa05-42496a18c1e4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e64f3f28-829e-4b35-aadf-e404ad40863a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ba1d5f65-6d8c-45f1-ae81-0d268ae2697d">
+              <AttributeID>Importancia Orden</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4754b6e0-e000-40a4-9b3a-5e21324f1c44">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f6e3d93-5432-4042-aae3-d0f915320d6e">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c3803942-e098-4f64-902a-85cdc7c1a59e">
+              <AttributeID>Pareto</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="23618258-8414-491a-a6df-15db11f86b4e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46720c4b-fee3-43a5-8da5-d5a4e3f39a5d">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c90ac7eb-02d2-48c5-854d-c936e23c9f06">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9d828d39-da75-4013-bb15-0096209acdcb">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4e7e1b9c-94da-496d-8873-b183d6a94d30">
+              <AttributeID>Pareto 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a938acde-ab72-45f6-a677-bbcad7478bfb">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="816ddd53-3907-49d7-b8ee-8db3a5b834d7">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="aead2cce-2531-4123-8bc2-39055ce26984">
+              <AttributeID>Cod Cat 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="02c0e089-b2d3-48d7-9fb6-d07a8858079d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53b1dc64-851c-4ede-84d5-4646f18670fe">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fef4cf2d-ee8b-4a8a-83ed-9cacd3595873">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed0b3c64-367e-4660-911d-0066953256e0">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c2cec4b7-2477-4857-b0aa-b06bdca61f89">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97851f1c-bb70-4b2f-b48b-41c58b0e953b">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bad220e4-7ac1-4af1-a687-899ef62a5507">
+          <CubeDimensionID>Almacenes</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="6f187b5a-8046-4537-82a4-31219a213fd1">
+              <AttributeID>Id Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="35eb2c34-7c16-4828-8f9f-fc785efd1897">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c6b368c8-ac2f-41c2-aeae-32d83a15b058">
+                    <TableID>Ventas_Fact_Digitacion</TableID>
+                    <ColumnID>IdAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="18bdab10-d085-474e-8d14-8b601c2f813d">
+              <AttributeID>Cod Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="810e43bc-8d07-41ba-bde6-dfbb7bf4a763">
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4a3e9889-7cf4-43df-b9ef-af863001e56f">
+                    <TableID>Ventas_DimAlmacenes</TableID>
+                    <ColumnID>CodAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2a8a8a40-f0e1-4a20-81d1-22a49c6e4fab">
+              <AttributeID>Nom Almacen</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a08262f-4d00-4539-a2e4-8cd7890a6576">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4408ea72-7c1d-41ad-8427-21ae0c37921f">
+                    <TableID>Ventas_DimAlmacenes</TableID>
+                    <ColumnID>NomAlmacen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="565019b1-4998-48d0-a4d8-2f1d308ba930">
+          <CubeDimensionID>Fechas</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="211dedce-282b-413f-a1c6-823f0690fde7">
+              <AttributeID>Fecha Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="97f07568-1179-45ab-90f1-74538f434e50">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef4f1a46-ae69-4985-aff7-f1750d8c65b3">
+                    <TableID>Ventas_Fact_Digitacion</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="333047c7-a1fd-49f6-8dd8-991c7cb0bd64">
+              <AttributeID>Año</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66b07138-3513-4957-97b8-c1ba6dc15503">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e6d6a5c-7f2a-490b-8e09-0490cb331d41">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Año</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="56222161-1886-44a7-b288-0c9775ed98fc">
+              <AttributeID>Dia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a85fb2d4-58ce-4eea-bcdb-1136d6a9a7bf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b23a1bb2-b5ad-465d-8fe3-052a0e38f0b9">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5891c555-a7a0-4ce6-a702-3e26889402a8">
+              <AttributeID>Nombre Dia Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a966b62b-827b-4480-8a72-5b3badcd6fd4">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="abb86b7c-a75c-4ad8-b6aa-2ec3f6fdfb00">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaFull</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="88ed9487-f7e8-40b2-bd05-778faeec8c7d">
+              <AttributeID>Nombre Mes Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="94253745-85f4-42a9-a54e-1541f3ba3ee4">
+                  <DataType>Integer</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bca47983-c3a4-4d31-ac48-edfee6f51cfb">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1c9f184-0047-4db4-b01a-8f9ee0ff519c">
+              <AttributeID>Nombre Dia Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a16ea4c2-9e0a-40a7-93f4-fc4f1ce1dd6c">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3bf8e00c-04a7-4995-9125-0472c89a247e">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="56841adc-69fd-4491-8c27-6f74c52382ab">
+              <AttributeID>No Trimestre 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6ca85f2e-3164-47de-9a8a-23e6de518b99">
+                  <DataType>WChar</DataType>
+                  <DataSize>5</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15f3a930-19e1-4f76-b017-459806a57f4b">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NoTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="94bb5cec-d192-4232-ab92-fc7e3afd24c7">
+              <AttributeID>No Trimestre Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="740c5c73-de6c-4a86-b87b-9b203838e262">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="34e79ccd-be53-4f9a-bac5-7d08ecb69e5a">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="678cd392-7c37-4929-88e4-ca41fbebebcb">
+              <AttributeID>Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="421d338d-1ac4-4625-827c-eda0f1e97074">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c19e2337-47c9-44fb-a422-3a089c65a4c8">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Mes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1a1fa826-8987-4456-97bb-1f6e44d393c1">
+              <AttributeID>Id Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4d8944ce-8afb-486a-a900-924030d1b68e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56453960-1972-4d78-b273-f74cf7528e5a">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6ebb1af9-2608-42d2-8f77-eac1f7699c04">
+              <AttributeID>Dia 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd8ad360-0325-4c84-bc48-1763abe789ea">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9d9d5d7-5a50-4d21-9b43-1f0ef1fb322c">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Dia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="10f2bf70-4e7c-4577-a21e-12f32edd315f">
+              <AttributeID>Nu Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a99bc1ea-645c-4e5c-8726-3684647eea5b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ba56171-acdc-4db5-abca-1553066f1bc5">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="0c95ab25-5fa6-400c-b91a-a8ea62ed1201">
+              <AttributeID>Nu Dia Laboral</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b66e7ba2-b45e-4b47-8f1c-99f3e72ce8de">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b3a8c51c-a2ef-49a8-a0df-1d6f623cbfbe">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiaLaboral</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6c2d213d-f133-4aac-8456-54aef26e96fb">
+              <AttributeID>Fl4 Ult Meses Cerrados</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="31d8a2fc-0140-4b90-a587-468054b16bb4">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef985045-950d-4acc-970d-2987fcf3453c">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Fl4UltMesesCerrados</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ce63ec07-2beb-4257-9b38-48ad50abadf0">
+              <AttributeID>Nu Nombre Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="12abbfbe-eb9d-4960-ad1b-e46debeed00d">
+                  <DataType>WChar</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="866a33a4-db41-4bd2-8c45-a9d4d2ce479f">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="07e371ff-da1a-44f3-903d-d65c0735674c">
+              <AttributeID>Fl Ult30 Dias Habiles</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3831123f-5a47-4ba7-bb7a-286d4637e4ab">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="27127e80-56cb-4caa-a633-e8bef79f08ac">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FlUlt30DiasHabiles</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3d53bb70-0122-44a2-8a46-a6a90f0d0215">
+          <CubeDimensionID>TipoPedido</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="5e647e54-84c9-4813-9498-d3fa6b2f2164">
+              <AttributeID>Ti Pedido</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4836268d-b972-4ff6-8f31-a27d8023a483">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79116a70-37af-422c-9313-f750f94c8e53">
+                    <TableID>Ventas_Fact_Digitacion</TableID>
+                    <ColumnID>TiPedido</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="1c60d134-58a6-4f61-a394-81366a3cd0ed">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="939f2a16-fe16-4e97-bad4-4d2a9cb8b860" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="965d4a52-875c-49e7-906f-f46d1ba17ff4">
+      <ID>Dim Productos Full</ID>
+      <Name>Productos</Name>
+      <CreatedTimestamp>2021-09-20T14:54:58.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.183333Z</LastSchemaUpdate>
+      <LastProcessed>2022-02-03T06:40:03.783333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9174ca87-a234-4950-80b9-dbf52af56971">
+          <ID>Máximo Qtd Piezas</ID>
+          <Name>QtdPiezas</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="09a28132-4545-4263-b6f9-bfbf08eb273b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c05155ba-ecf6-4702-9469-ab373872f24f">
+              <TableID>Ventas_DimProductosFull</TableID>
+              <ColumnID>QtdPiezas</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c7f3a6e9-9316-4d77-a7c0-ddd6eaccd9a4">
+          <ID>Máximo Precio d Compra</ID>
+          <Name>Precio_dCompra</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="55ecd22b-eb77-4826-b193-25224306cc06">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="04eef836-dc9e-4401-8cd5-8927c96f1ff5">
+              <TableID>Ventas_DimProductosFull</TableID>
+              <ColumnID>Precio_dCompra</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>178262</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7e640023-e446-4852-a11b-4bed53186a71">
+          <CubeDimensionID>Productos Full</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ce07c09a-1c48-4fca-834a-8513169eeb65">
+              <AttributeID>Id Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4aa0b03-4e9e-491c-bc58-21a94962296a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="03f2291c-ebb8-4b4e-a643-16b9c4aa79d5">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="06cb5b22-1bc5-44c1-8def-a094ace1f7f6">
+              <AttributeID>Cod Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4d6aac4-c041-446d-bcb5-527b3d79f983">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a57ae2b-4efd-45fe-9463-2b23bd86d5ff">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f6bdf711-9f6f-4701-9c70-47d4aab5db83">
+              <AttributeID>Cat Jes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a3786a9c-b2d7-40b9-b318-cd0fc45aa4a2">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b7966c4c-4025-437c-a443-d3ca9bf5729f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c63e8bf8-84d4-4414-93d3-dd8622c5e73a">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="943770c9-bc01-4a52-a206-5625afcf98b4">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a506f0d4-ee19-4d27-8538-a6a6f21f8e4f">
+              <AttributeID>Cod Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="247ebbb3-1dda-4a46-8bd7-bebc827b061d">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="269b6657-d6e0-45a5-b04b-b6740106508e">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="119c2be4-4aad-486a-870c-03ae11a9d6be">
+              <AttributeID>Cat Jes 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0055aa04-d5bb-49ed-a0b3-ddfe3c86a24b">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aab27b83-d4ef-47e0-b91a-2c919285c8e6">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d8bbbfc9-dab7-49b3-9cda-4d2fe28666a3">
+              <AttributeID>Es Promocionable</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e6cf7051-d679-4f78-ae30-ae7294d41d7d">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="13568aa1-e4db-4077-9bf3-252ef46a6412">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>EsPromocionable</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3a2e425c-8d4d-4f1f-8b3c-2169493f1a82">
+              <AttributeID>Nom Prv Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="995b5157-032a-4266-9a3b-3d24e76109cd">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49a7043e-e093-4480-afd5-62fbfb7cbfdc">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>NomPrvAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2a89ee3b-473a-4111-8cf8-aa685c06bf2e">
+              <AttributeID>Nom Cat</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f462bc8-3e77-4938-8f12-bbbfa50a9d31">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b653e37d-8a9e-4ad5-8be7-90302a2f111d">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8b22e16c-4c18-421e-b185-3ad9b54ddd10">
+              <AttributeID>Fl Va En Visi Cooler</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b2585578-554b-4248-8002-7b62bd9d79d5">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2378375e-422e-4939-9af3-5a132248de6f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>FlVaEnVisiCooler</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6566e87e-2ab4-424d-843d-db3ed3223287">
+              <AttributeID>Categoria Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91835fd6-7e3c-4a68-b28f-bc00a75dc633">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d6c01395-82db-4bb6-8b62-086949ef336a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Categoria_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2c083acf-5b62-4b2b-8cb4-da0cf0738596">
+              <AttributeID>Marca Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c6028305-e27f-485e-a58e-05ccc52a086a">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cf126e9b-4593-4818-8288-195d441f4a00">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Marca_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e43c3f53-0c1b-40a1-9d49-49a2f7700e76">
+              <AttributeID>Familia Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4aee9da3-3678-4d94-b389-d71b8cecad67">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1060aa9c-a32d-470a-96c4-bb4ba61f480f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Familia_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="82a57f8a-6a7f-459d-b9f3-85294283780e">
+              <AttributeID>Contenido Roma</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3692d1f5-99e2-433b-a782-987656c883c2">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01816048-f424-492d-af17-9327a39da7f2">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Contenido_Roma</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d3f13069-de41-42a7-980d-f042539b4a1c">
+              <AttributeID>Nom Pro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0210c46b-80db-48ed-9885-406caad4ba0e">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1c631d5-d85f-472c-be81-c96d044e9151">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c207bef-0281-4dae-9b91-3ffb94b08395">
+              <AttributeID>Cod Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c75a6a9f-0ea3-4dec-bb61-c781767400f5">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a24f4520-7976-4c1a-bbe4-d05705963cb2">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e252f491-7e9c-4f4a-9ed9-79858b90c567">
+              <AttributeID>Nom Fam</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a1fc8993-b0ec-4403-9974-0421c2139ecd">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c65ce5e-390a-4874-9271-bb224a349959">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>NomFam</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="9476c95b-3e86-4354-93ce-008cb6b7bbbd">
+              <AttributeID>Cod Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7bfd08d5-a260-4a76-9a23-9dbf5abd2733">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="883dc8b4-25b1-45cf-b5e8-29a483058fb4">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d61bff56-9812-4903-b7e5-3931a865d10c">
+              <AttributeID>Id Prv 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2a43ef28-26df-4b66-a582-86ff4628f244">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17ef69ce-be80-450a-ab5d-c1b3a45d9eeb">
+                    <TableID>Ventas_DimProveedores</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="35435979-8411-4955-bb15-248d7f041bac">
+              <AttributeID>Co Unidad Medida Compra</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="56010eb7-ddfa-4603-9856-04fa31439492">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9d5a0345-1946-4841-a4d6-79d6df62dabe">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CoUnidadMedidaCompra</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1bc5d1fe-6543-468f-9976-468b80141b5c">
+              <AttributeID>Qtd Piezas</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66a0fabc-e624-4948-b483-ca3eb279a1d4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4bd6aff5-4afe-48cb-b2b9-37d12c2316ff">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>QtdPiezas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7b1c7c16-397f-4fd3-8e8f-7cb5f6048b06">
+              <AttributeID>Nom Cat Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3338e240-4606-4797-b4ec-beb959285e43">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="40cc7e54-0548-493b-91a7-e2e7526a7cf7">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7408a2fc-b6d2-4a74-855b-a530b03db2ad">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c70aab1-08ad-4426-a937-a5aeefd712a4">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b6ad2f84-39dc-4ed0-ae46-294cb80f2a23">
+              <AttributeID>Grupo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="04cf7826-487c-41e6-b82e-7ed42859de9e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e9ef119-f5e1-4ed6-85ed-478477f02d08">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="b3e11f63-0110-4929-986f-3bd0e3b40371">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="40263dc9-e0a0-491c-b10d-9c4dfa4a4887">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Grupo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d537e70-20df-4559-b2cd-fd6d83552ea8">
+              <AttributeID>Cod Pro 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c721acb-d1c5-4fa2-9f55-4ae939ff4c0d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="42301da9-6f01-4802-9325-1231fc24a41f">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="361768a1-3531-4d83-8461-2bb1679915fe">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="441342c8-8c71-4905-82c5-3a7f89b13de1">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8ff2adc7-e5ed-4772-afe0-c695da4ccbaf">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c0628dc9-f64c-401c-923f-28fb65a7c1dd">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodPro</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="5a71f656-75c0-496b-834e-55f358e08d00">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5abec52a-26b9-4275-ac46-5677a770d4f5">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6adfa616-9664-42f3-997a-b4ca85b3e347">
+              <AttributeID>Importancia Orden</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="73560b0d-da6c-49ae-a380-42f83c315633">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1859dcfd-9a2f-43a8-bd15-441ae938c060">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>ImportanciaOrden</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="08fcbf60-2ee1-46f3-8bde-2cccdae05ac2">
+              <AttributeID>Pareto</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a16edcec-d1a8-47cc-8541-a8ffe33afdab">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d8a9fba-a94f-452e-b161-9b23e5810f4b">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c3007068-3618-4716-adbb-b4658535dec2">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4b826c4-3ffe-4d1d-bd22-ef04224a1439">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4cbc79cf-b9b3-4ba6-af97-48c8f034dbbd">
+              <AttributeID>Pareto 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2c928bf8-f4ea-40d1-bb9e-36958f25df5c">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c7c4032-773b-482a-91d8-8143b2e88679">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>Pareto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5824f644-8086-4dec-9056-cdfd9c86fe6e">
+              <AttributeID>Cod Cat 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fbef81cc-1850-4cc3-b89d-f17130549848">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="333d618c-c32e-40b2-bc38-b9603d3094e1">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>IdPrv</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="44dff0a0-fed0-459a-b865-ee9ee3c3df57">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0765ba03-818d-4371-a402-c4e678bdc17a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CatJes</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="56a11e3c-6082-41eb-bd1c-284abf7be764">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dc55e017-736b-4ebf-a29a-6c483f03f48a">
+                    <TableID>Ventas_DimProductosFull</TableID>
+                    <ColumnID>CodCat</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="ff2a775c-4cf6-4dea-9969-c48fff5d04e9">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ce89e38f-7357-41bd-80b4-b059d12babfd" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e6464fb9-89b5-4813-83c7-9af2a2bde41c">
+      <ID>Dim Vw Factor Proyectado</ID>
+      <Name>Factor Proyectado</Name>
+      <CreatedTimestamp>2021-09-16T20:40:28.816667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.2Z</LastSchemaUpdate>
+      <LastProcessed>2022-02-03T06:40:03.453333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e6c38b82-5fd0-44fb-9aa7-cb6c35b2a103">
+          <ID>Factor Pry</ID>
+          <Name>Factor Pry</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="17bab28d-3144-4909-99a5-b4619d0e1863">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="21dc37f8-43d8-4c24-9d77-c97728ac7fc1">
+              <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
+              <ColumnID>FactorPry</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>226</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b35c5a4f-6886-4cab-a109-9d4f70dfa810">
+          <CubeDimensionID>Fechas</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute dwd:design-time-name="309ac708-b531-402e-81b0-825f741cd129">
+              <AttributeID>Fecha Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="632e4a4d-ff11-406c-8347-5767b93a2ea1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f89c73b0-6796-41e4-8477-efbd3d641d68">
+                    <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="fd0e9eae-6eaf-426b-8dad-54a1145d6449">
+              <AttributeID>Año</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8da808cc-dab7-47f2-bf34-45543fffad74">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3febe8e2-c979-42a8-9543-976408fac4f0">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Año</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="841e0037-b131-4cd5-a19e-9396dec0082a">
+              <AttributeID>Dia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a94bf141-18e7-47b9-af7b-d7616f05fdf4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80ad2071-9bc7-471e-bf56-c2c7e54207c7">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FechaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="04b5c92b-ab33-41cd-87de-7340e67f8753">
+              <AttributeID>Nombre Dia Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2078824c-2988-4d36-bd57-0351dd19a1a3">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bdbc1df2-1b18-495b-ac24-e0ec198dee57">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaFull</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6714c6e4-462d-488c-920a-38de0fce74d3">
+              <AttributeID>Nombre Mes Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3a88dfab-3bb2-4197-8049-02b9aeed4311">
+                  <DataType>Integer</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7d8d1563-a045-44a4-ae27-b6636b394f17">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="541aa780-ad28-4ffb-bc10-1ce505856c78">
+              <AttributeID>Nombre Dia Abr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="354a1fc4-ce5d-4fce-b447-3dc1262aafd0">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="897d667a-e9f8-47e0-8333-0d470bfc732c">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NombreDiaAbr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d1fd62ed-056d-49fb-b95f-3df2d4605b02">
+              <AttributeID>No Trimestre 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="834ce068-c118-4be2-a32f-2552478ec14b">
+                  <DataType>WChar</DataType>
+                  <DataSize>5</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="543323a4-4866-4eaf-9160-78665d7180a4">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NoTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8aad8b7c-e5d5-4e8b-9213-81edef505891">
+              <AttributeID>No Trimestre Full</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb4da5c9-8216-4e08-9906-8a1bd8281057">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e182bc23-6735-41c7-8dd3-371fae648311">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdTrimestre</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="92584707-f3ae-4788-9bbd-ef3dac15edae">
+              <AttributeID>Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad56486a-9396-457a-87d3-a05b4320476d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8bf4c19-1f37-4b71-b3f7-ea2f7e805d4f">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Mes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ac03444d-ae4d-48ac-9874-084ccddbe62f">
+              <AttributeID>Id Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b7cb9394-c327-4722-91bb-1e296fe7f0d3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="466ac1bf-7899-4f0d-a683-423c9c1d8efe">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>IdDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="0a00514c-4473-4d73-9030-d8c6745329f0">
+              <AttributeID>Dia 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="688596d4-7470-4083-8be4-a386e0580d40">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6be457c6-c3f7-4a14-a304-244626b32969">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Dia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2d96bd88-a8d9-4ad7-bd8b-b3ac24547510">
+              <AttributeID>Nu Diez Dias</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e323e61-f745-4479-ad6c-20a1184a28b9">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fcddb951-5ac4-43e6-bc04-ee8e6eaec28a">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiezDias</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7ad73666-a310-4278-9b66-3bbcdc3994f2">
+              <AttributeID>Nu Dia Laboral</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4baecc2f-d73e-44e0-801e-cc74e78d8f08">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="366134e5-be5b-49f9-a38d-4fa2df67aba8">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuDiaLaboral</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="311afca5-8515-48fe-9534-3ee08b75e902">
+              <AttributeID>Fl4 Ult Meses Cerrados</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="085e2af0-c035-42d0-a4a5-4ec88d1e6d87">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5196493c-167e-4be3-9e93-c441655fbde4">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>Fl4UltMesesCerrados</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f009eb0f-94dd-4097-9113-7e50075f54ae">
+              <AttributeID>Nu Nombre Mes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1bce56a9-a9a0-4573-97cf-23e9852224bd">
+                  <DataType>WChar</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5705f1e-d9ef-430c-9050-a60ff4bd9e7b">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>NuNombreMes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="36bb383c-4c47-47f4-8969-e4a946098edf">
+              <AttributeID>Fl Ult30 Dias Habiles</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c40d938d-e55a-4d89-bdda-fc1416007ddf">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="647ea84c-38f4-41ac-b615-4e3d1bcf409c">
+                    <TableID>Ventas_DimFechas</TableID>
+                    <ColumnID>FlUlt30DiasHabiles</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="e767318e-e883-46e3-954d-19ce60dfa0de">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="24995ac2-6595-48c5-a65a-ce408d2e270c" />
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="4e85fa5d-edc3-44f9-b97c-0f380bea5314">
+    <DataSourceViewID>dsCuboInventarios</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="a7445b83-da58-460f-b26f-5ef0085c2a11">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>2021-09-16T20:40:28.833333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:57.216667Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+El comando CALCULATE controla la agregación de celdas hoja en el cubo.
+Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
+Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
+*/
+CALCULATE;                   
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_Ped_Pry]
+ AS IIF(IsEmpty([Measures].[_Soles]) Or [Measures].[_Soles]=0, 
+Null, 
+IIf([Fechas].[Año - Mes].CurrentMember Is [Fechas].[Año - Mes].[Mes].&amp;[202204],
+    [Measures].[_Soles]*[Measures].[Factor Pry],
+    [Measures].[_Soles])
+), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_Ped]
+ AS [Measures].[_Soles], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos]
+ AS [Measures].[_Cantidad], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';                
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d]
+ AS IIF(IsEmpty([Measures].[_Cantidad]), Null,
+Sum([Measures].[_Cantidad],[Fechas].[Fl4UltMesesCerrados].&amp;[1])/180/[Measures].[QtdPiezas]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';               
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]
+ AS IIF(IsEmpty([Measures].[_Cantidad]), Null,
+Sum([Measures].[_Cantidad],[Fechas].[FlUlt30DiasHabiles].&amp;[1])/30/[Measures].[QtdPiezas]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';               
+CREATE MEMBER CURRENTCUBE.[Measures].[Dias_Stock]
+ AS IIF(IsEmpty([Measures].[Qtd_Pedidos_PrmDiario_Ult.180d]) 
+    And IsEmpty([Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]), Null,
+
+[Measures].[Stock]*[Measures].[QtdPiezas]/
+(Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})
+*[Measures].[QtdPiezas])
+), 
+FORMAT_STRING = "#,##0;-#,##0", 
+BACK_COLOR = IIF([Dias_Stock]&gt;=0 And [Dias_Stock]&lt;30, 4366591, 
+    IIF([Dias_Stock]&gt;=30 And [Dias_Stock]&lt;45, 4259584, 
+        IIF([Dias_Stock]&gt;=45 And [Dias_Stock]&lt;60, 65535, 255))), 
+FORE_COLOR = IIF([Dias_Stock]&gt;=60, 16777215, 0), 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';                   
+CREATE MEMBER CURRENTCUBE.[Measures].[SolesPrm_Ult4M]
+ AS IIF(IsEmpty([Measures].[_Soles]), Null,
+Sum([Measures].[_Soles],[Fechas].[Fl4UltMesesCerrados].&amp;[1])/4), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';              
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_Ult6M]
+ AS IIF(IsEmpty([Measures].[_Soles]), Null,
+Sum([Measures].[_Soles],[Fechas].[Fl4UltMesesCerrados].&amp;[1])
+), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';              
+CREATE MEMBER CURRENTCUBE.[Measures].[Importancia_Soles]
+ AS 100*Sum([Measures].[_Soles],[Fechas].[Fl4UltMesesCerrados].&amp;[1]) /
+Sum([Productos Full].[Cod Pro].Parent, [Soles_Ult6M]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Digitación';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_OC_Pry]
+ AS IIF(IsEmpty([Measures].[_Soles_OC]) Or [Measures].[_Soles_OC]=0, 
+Null, 
+IIf([Fechas].[Año - Mes].CurrentMember Is [Fechas].[Año - Mes].[Mes].&amp;[202204],
+    [Measures].[_Soles_OC]*[Measures].[Factor Pry],
+    [Measures].[_Soles_OC])
+), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_OC]
+ AS [Measures].[_Soles_OC], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos_OC]
+ AS [Measures].[_Cantidad_OC], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';               
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos_OC_PrmDiario_Ult.180d]
+ AS IIF(IsEmpty([Measures].[_Cantidad_OC]), Null,
+Sum([Measures].[_Cantidad_OC],[Fechas].[Fl4UltMesesCerrados].&amp;[1])/180/[Measures].[QtdPiezas]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';               
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_Pedidos_OC_PrmDiario_Ult.30d]
+ AS IIF(IsEmpty([Measures].[_Cantidad_OC]), Null,
+Sum([Measures].[_Cantidad_OC],[Fechas].[FlUlt30DiasHabiles].&amp;[1])/30/[Measures].[QtdPiezas]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';                  
+CREATE MEMBER CURRENTCUBE.[Measures].[SolesPrm_OC_Ult4M]
+ AS IIF(IsEmpty([Measures].[_Soles_OC]), Null,
+Sum([Measures].[_Soles_OC],[Fechas].[Fl4UltMesesCerrados].&amp;[1])/4), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Orden_dCompra';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Stock]
+ AS [Measures].[Cantidad], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Inventario';                 
+CREATE MEMBER CURRENTCUBE.[Measures].[Stock_Valorizado]
+ AS [Measures].[Valorizado], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Inventario';              
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_10d]
+ AS (IIF(10*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(10*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+10*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';       
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_15d]
+ AS (IIF(15*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(15*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+15*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';              
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_20d]
+ AS (IIF(20*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(20*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+20*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';       
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_25d]
+ AS (IIF(25*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(25*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+25*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';              
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_30d]
+ AS (IIF(30*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(30*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+30*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';            
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_45d]
+ AS (IIF(45*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(45*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+45*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';            
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_60d]
+ AS (IIF(60*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]})-
+Int(60*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))&gt;0, 1, 0)
++
+60*Max({[Measures].[Qtd_Pedidos_PrmDiario_Ult.180d], [Measures].[Qtd_Pedidos_PrmDiario_Ult.30d]}))-[Measures].[Stock], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';       
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_dCompra_15d]
+ AS IIF([Measures].[Sugerido_15d]&lt;= 0, Null,
+[Measures].[Sugerido_15d]*[Measures].[Precio_dCompra]), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';       
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_dCompra_25d]
+ AS [Measures].[Sugerido_25d]*[Measures].[Precio_dCompra], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';          
+CREATE MEMBER CURRENTCUBE.[Measures].[Sugerido_dCompra_30d]
+ AS [Measures].[Sugerido_30d]*[Measures].[Precio_dCompra], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Compras';      
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_PrmDiario_MesActual]
+ AS [Measures].[Qtd]/[Measures].[QtdPiezas], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Venta';     
+CREATE MEMBER CURRENTCUBE.[Measures].[Qtd_PrmDiarioPry_MesActual]
+ AS [Measures].[Qtd Pry]/[Measures].[QtdPiezas], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Venta';     
+CREATE MEMBER CURRENTCUBE.[Measures].[Vta_PrmDiario_MesActual]
+ AS [Measures].[Vta], 
+VISIBLE = 0 ,  DISPLAY_FOLDER = 'Venta';     
+CREATE MEMBER CURRENTCUBE.[Measures].[Vta_PrmDiarioPry_MesActual]
+ AS [Measures].[Vta Pry], 
+VISIBLE = 0 ,  DISPLAY_FOLDER = 'Venta';        
+CREATE MEMBER CURRENTCUBE.[Measures].[Soles_Perdidos_rOC]
+ AS ([Measures].[Soles_Ped] - [Measures].[Soles_OC]), 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Gerencia'; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <ProactiveCaching dwd:design-time-name="ecaba2a3-0783-4d36-b48f-31113b708a7e">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="81b0fab9-410a-4c78-92b4-ae609187cc1a" />
+  </ProactiveCaching>
+</Cube>

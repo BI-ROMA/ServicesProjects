@@ -1,0 +1,765 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Fechas</ID>
+  <Name>Fechas</Name>
+  <CreatedTimestamp>2021-04-19T16:08:52.126667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2022-01-14T07:04:12.246667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4372" scrolltop="-5821" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8123" y="9181" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFechas" left="-3155" top="-3811" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5689" height="15637" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000039160000153d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Ventas_DimFechas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4372</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5821</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-3155</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3811</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="75" ViewPortX="-236" ViewPortY="-164" xmlns="">
+          <Shapes NodeWidth="112">
+            <Shape Id="Fecha Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Fecha Key" />
+                <Attribute Id="Nombre Dia Abr" />
+                <Attribute Id="Dia 1" />
+                <Attribute Id="Nu Dia Laboral" />
+                <Attribute Id="Nu Diez Dias" />
+                <Attribute Id="Mes" />
+                <Attribute Id="Nombre Dia Full" />
+                <Attribute Id="No Trimestre 1" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Dia" Expanded="false">
+              <Attributes>
+                <Attribute Id="Dia" />
+              </Attributes>
+              <Position x="165" y="20" />
+            </Shape>
+            <Shape Id="Id Diez Dias" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Diez Dias" />
+              </Attributes>
+              <Position x="310" y="20" />
+            </Shape>
+            <Shape Id="Nombre Mes Abr" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nombre Mes Abr" />
+              </Attributes>
+              <Position x="455" y="20" />
+            </Shape>
+            <Shape Id="No Trimestre Full" Expanded="false">
+              <Attributes>
+                <Attribute Id="No Trimestre Full" />
+              </Attributes>
+              <Position x="600" y="20" />
+            </Shape>
+            <Shape Id="Año" Expanded="false">
+              <Attributes>
+                <Attribute Id="Año" />
+              </Attributes>
+              <Position x="745" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2022-02-03T06:37:53.093333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>dsCuboRoma</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission>
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2021-05-05T14:07:11.753333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:12.84Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission>
+          <AttributeID>Año</AttributeID>
+        </AttributePermission>
+        <AttributePermission>
+          <AttributeID>Nombre Dia Full</AttributeID>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2021-09-16T20:40:16.6Z</CreatedTimestamp>
+      <LastSchemaUpdate>2022-01-14T07:04:14.166667Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Fecha Key</ID>
+      <Name>Fecha Key</Name>
+      <Type>Date</Type>
+      <Usage>Key</Usage>
+      <EstimatedCount>855</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>FechaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NombreDiaFull</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Dia</AttributeID>
+          <Name>Dia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nombre Dia Full</AttributeID>
+          <Name>NombreDiaFull</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nombre Dia Abr</AttributeID>
+          <Name>Día de la Semana Abrv</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>No Trimestre 1</AttributeID>
+          <Name>Trimestre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Mes</AttributeID>
+          <Name>Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Dia 1</AttributeID>
+          <Name>Dia del Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nu Diez Dias</AttributeID>
+          <Name>Diez Dias del Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nu Dia Laboral</AttributeID>
+          <Name>Dia Laboral</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Fl4 Ult Meses Cerrados</AttributeID>
+          <Name>Fl4UltMesesCerrados</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Nu Nombre Mes</AttributeID>
+          <Name>AñoMes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Fl Ult30 Dias Habiles</AttributeID>
+          <Name>FlUlt30DiasHabiles</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>FechaKey</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Año</ID>
+      <Name>Año</Name>
+      <Type>Years</Type>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>Año</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>Año</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn>
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>Año</ColumnID>
+        </Source>
+      </ValueColumn>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Dia</ID>
+      <Name>Dia</Name>
+      <Type>Days</Type>
+      <EstimatedCount>923</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>FechaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>Dia</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Id Diez Dias</AttributeID>
+          <Name>Diez Dias</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nombre Dia Full</ID>
+      <Name>NombreDiaFull</Name>
+      <EstimatedCount>217</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NombreDiaFull</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NombreDiaFull</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nombre Mes Abr</ID>
+      <Name>NombreMesAbr</Name>
+      <Type>Months</Type>
+      <EstimatedCount>29</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NuNombreMes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NombreMesAbr</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>No Trimestre Full</AttributeID>
+          <Name>No Trimestre Full</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NuNombreMes</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nombre Dia Abr</ID>
+      <Name>Día de la Semana Abrv</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NombreDiaAbr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NombreDiaAbr</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>No Trimestre 1</ID>
+      <Name>Trimestre</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NoTrimestre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NoTrimestre</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>No Trimestre Full</ID>
+      <Name>No Trimestre Full</Name>
+      <Type>QuarterOfYear</Type>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>IdTrimestre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NoTrimestreFull</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Año</AttributeID>
+          <Name>Año</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NoTrimestreFull</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Mes</ID>
+      <Name>Mes</Name>
+      <Type>Months</Type>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>Mes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NombreMes</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Id Diez Dias</ID>
+      <Name>Diez Dias</Name>
+      <Type>DayOfTenDays</Type>
+      <EstimatedCount>92</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>IdDiezDias</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NoDiezDias</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Nombre Mes Abr</AttributeID>
+          <Name>NombreMesAbr</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Dia 1</ID>
+      <Name>Dia del Mes</Name>
+      <EstimatedCount>31</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>Dia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>Dia</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nu Diez Dias</ID>
+      <Name>Diez Dias del Mes</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NuDiezDias</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NoDiezDias</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nu Dia Laboral</ID>
+      <Name>Dia Laboral</Name>
+      <EstimatedCount>28</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NuDiaLaboral</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NuDiaLaboral</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Fl4 Ult Meses Cerrados</ID>
+      <Name>Fl4UltMesesCerrados</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>Fl4UltMesesCerrados</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>Fl4UltMesesCerrados</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Nu Nombre Mes</ID>
+      <Name>AñoMes</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>NuNombreMes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>NuNombreMes</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Fl Ult30 Dias Habiles</ID>
+      <Name>FlUlt30DiasHabiles</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Ventas_DimFechas</TableID>
+            <ColumnID>FlUlt30DiasHabiles</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Ventas_DimFechas</TableID>
+          <ColumnID>FlUlt30DiasHabiles</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Jerarquía</ID>
+      <Name>Año - Mes - Día</Name>
+      <AllMemberName>All</AllMemberName>
+      <Levels>
+        <Level>
+          <ID>_Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>Año</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>_NombreMesAbr</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>Nombre Mes Abr</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Fecha Key</ID>
+          <Name>Fecha</Name>
+          <SourceAttributeID>Fecha Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Jerarquía 1</ID>
+      <Name>Año - Mes</Name>
+      <Levels>
+        <Level>
+          <ID>_Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>Año</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>_NombreMesAbr</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>Nombre Mes Abr</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Jerarquía 2</ID>
+      <Name>Año - Tri - Mes</Name>
+      <Levels>
+        <Level>
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>Año</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>No Trimestre Full</ID>
+          <Name>Trimestre</Name>
+          <SourceAttributeID>No Trimestre Full</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>NombreMesAbr</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>Nombre Mes Abr</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Jerarquía 3</ID>
+      <Name>Año - Mes - Diez Días - Día</Name>
+      <Levels>
+        <Level>
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>Año</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>NombreMesAbr</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>Nombre Mes Abr</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Id Diez Dias</ID>
+          <Name>Diez Dias</Name>
+          <SourceAttributeID>Id Diez Dias</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Dia</ID>
+          <Name>Dia</Name>
+          <SourceAttributeID>Dia</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

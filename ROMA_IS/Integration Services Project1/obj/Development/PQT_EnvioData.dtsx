@@ -1,0 +1,1656 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/6/2022 8:56:23 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CI59-054"
+  DTS:CreatorName="DSROMASAC\r_mejia"
+  DTS:DTSID="{344F47FF-4859-43EA-A25D-C89F8589EBA6}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package4"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{49CAA335-24FC-4CA8-83C0-39830165FB33}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A59FA76B-CEB5-4E7C-A4FF-AC54121F3D3F}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Send\DataMolitalia.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoArticulos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{93B1C106-D6DF-4DCF-BA4E-43DA0DF47A64}"
+      DTS:ObjectName="ArchivoArticulos">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\AR" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\AR.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{3A398119-31BD-48B9-ABDB-2D486F9C1761}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{2C21644C-612A-4D49-A934-EA3B526C4B0D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="unit"
+              DTS:DTSID="{08A0F5FF-E6B6-4CAE-A80D-F1316D008B42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tipo"
+              DTS:DTSID="{2D95F555-527E-4440-B3A9-4A57714DD5AA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoBonificaciones]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FA11E3CC-EC92-40DD-952A-503FEDB75761}"
+      DTS:ObjectName="ArchivoBonificaciones">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\BN" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\BN.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DocEntry"
+              DTS:DTSID="{167CEB5B-2842-4531-A0EF-A96F7F3E5430}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bonificacion"
+              DTS:DTSID="{559EBA0F-87EE-4D96-9CBC-1B31E8C655BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="itemcode"
+              DTS:DTSID="{29275E98-7548-4CDA-8047-202265E75F87}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Factor"
+              DTS:DTSID="{C2106F43-36C6-4925-AA8F-EB1B44AB8087}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecini"
+              DTS:DTSID="{7580724C-FD50-4BE7-BFA6-33DFF406EABE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecfin"
+              DTS:DTSID="{23D1330F-309B-4B81-A350-9249A9F3D686}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoClientes]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A480CFF8-83E0-42D6-9058-D0787BC26333}"
+      DTS:ObjectName="ArchivoClientes">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\CL" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\CL.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{C63B263A-4EC1-4A40-B231-9DC58D3FB3B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tiponegocio"
+              DTS:DTSID="{5E4FBF17-970A-476E-8774-81D8BC617715}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ubigeo"
+              DTS:DTSID="{B95909F4-9258-4BE1-82CF-7433B6F7058D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="32"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LicTradNum"
+              DTS:DTSID="{5AC02FE8-440E-4657-BBBC-FEFB4D1DDCA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{C04E5AAE-94CA-49FF-947C-7DEF1435329E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Street"
+              DTS:DTSID="{0BF2B7A7-2D9A-434D-B568-CDB1DE575D01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="20"
+              DTS:DataScale="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="refx"
+              DTS:DTSID="{C05C1F43-59A4-4A96-8A12-09C07730060B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="20"
+              DTS:DataScale="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="refy"
+              DTS:DTSID="{698DFED2-13C7-40C9-BC9C-DA2AF454390A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="19"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreditLine"
+              DTS:DTSID="{A429766F-0B60-4A2B-9820-EAB196F93356}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dia"
+              DTS:DTSID="{74D80871-F485-406F-A65A-74C765FD8C3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="frecuencia"
+              DTS:DTSID="{2B372800-7554-42BE-834D-985F78286003}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tipodocidentidad"
+              DTS:DTSID="{81013598-0564-4573-A18F-16CB65F83432}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="canal"
+              DTS:DTSID="{AC12A602-6939-486F-ADD2-B9F71398423F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ruta"
+              DTS:DTSID="{2A19362D-6EB3-4CC8-9168-1229120782D7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoDevolucion]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BA6FECB0-632A-466A-943C-CD7C93E8631F}"
+      DTS:ObjectName="ArchivoDevolucion">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\DV" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\DV.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{BD60AAAB-BA38-446D-9B75-E485F789F21D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{770ACE25-AB12-41E4-A22F-34B5EB7F5CBE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoGiros_dNegocio]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{28D5A236-AE2B-43F6-8A43-54707388AD3C}"
+      DTS:ObjectName="ArchivoGiros_dNegocio">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\CN" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\CN.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="codigo"
+              DTS:DTSID="{34A2E9D5-C9B3-4471-A2B9-4FBACE93B530}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{5A91B4BA-2FB3-409C-84DC-CAD9F0071032}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoStock]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5242230E-A946-4946-9B24-DC4F0A2DC4CC}"
+      DTS:ObjectName="ArchivoStock">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\ST" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\ST.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Idx"
+              DTS:DTSID="{47799974-1CA7-4271-B2BD-A177C3E76EB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecha"
+              DTS:DTSID="{BB11257A-D34F-4254-97E2-8E7A6B03678E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="12"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="quantity"
+              DTS:DTSID="{E9A35AE8-4F67-421C-ABE0-FDED875939C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="12"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="valorizado"
+              DTS:DTSID="{CF466FF4-0378-4CE8-9E95-E1507E313680}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="U_BKS_ALM"
+              DTS:DTSID="{1EA41CE7-E55A-43E4-80DD-E206D72636C2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoVendedores]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{67502F31-564F-421A-BA35-81DC639BFC34}"
+      DTS:ObjectName="ArchivoVendedores">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\VD" + @[User::vCodAchivo] + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\VD.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Codigo"
+              DTS:DTSID="{8FCA7BC1-90E3-416B-9A25-1D8FBAB6EB0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{7FF9E6E5-382F-4BF1-B805-748003168C52}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ArchivoVentas]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F814FDC5-9425-424D-AFD0-A2BAB870F8DD}"
+      DTS:ObjectName="ArchivoVentas">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\VT" + @[User::vCodAchivo]  + ".txt"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Proyectos\IS\InfoProveedores\Molitalia\Results\VT.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CardCode"
+              DTS:DTSID="{B427CBF3-2195-4D53-85AC-48BC00DA46E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="8000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxDate"
+              DTS:DTSID="{D0D31587-9914-450F-A54F-ACD0B4823B1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodVendedor"
+              DTS:DTSID="{28BC9871-677F-4E2F-A694-0D4564B436B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="codigo_supervisor"
+              DTS:DTSID="{2FC11675-4139-4A91-A13B-EDB1DC1E2D3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemCode"
+              DTS:DTSID="{746C8881-22DC-4B94-8CBB-B2C6F142D448}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:TextQualified="True"
+              DTS:ObjectName="unidades_vendidas"
+              DTS:DTSID="{BBBCEAC4-E1C5-4029-80E7-D2CBC42EB769}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="valor_sinigv"
+              DTS:DTSID="{4835BDD9-C0D9-4AC2-8136-786C71284C26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="mesa"
+              DTS:DTSID="{2E300A2C-49AE-498D-A3E7-DFAB89CD0845}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ruta"
+              DTS:DTSID="{34413AD8-A6AE-4CAF-BE1E-15B18DDD140E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tipo_venta"
+              DTS:DTSID="{C4B98D24-1A50-4B6E-951C-30D59257359B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tipo_documento"
+              DTS:DTSID="{EAAEBF92-8D51-4680-A2F1-F6F8C7961CB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nro_documento"
+              DTS:DTSID="{83FC4A95-0BC7-45BC-AC13-EA6719081031}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="indicadorboni"
+              DTS:DTSID="{660C8BD2-035A-41F8-955B-12EEA378B140}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="codigoboni"
+              DTS:DTSID="{8CBD1537-2C3E-44AF-B6D9-F9B6F119FA41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="codigomotivodev"
+              DTS:DTSID="{9A801025-574E-4A64-B143-D1269DBB72DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="descuentosinigv"
+              DTS:DTSID="{B38093C7-F355-4437-97F8-5A94CF705983}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="importecostosinigv"
+              DTS:DTSID="{62636FDA-2EB5-40F2-A9DF-8B3881AA891E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Contenedor de secuencias"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{A6D4FC42-D9A9-41ED-B0EA-8600B65EBACC}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de secuencias">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de secuencias\Tarea Flujo de datos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{298EE591-E1DB-456C-A7DF-6270ADA460AA}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel"
+                  componentClassID="Microsoft.ExcelDestination"
+                  contactInfo="Destino de Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Destino de Excel"
+                  name="Destino de Excel"
+                  usesDispositions="true">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Comando SQL para ejecutar."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel]"
+                      errorOrTruncationOperation="Insertar"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrada de destino de Excel">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[U_BKS_ALM]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="U_BKS_ALM"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[U_BKS_ALM]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[U_BKS_ALM]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[SlpCode]"
+                          cachedDataType="i2"
+                          cachedName="SlpCode"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[SlpCode]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SlpCode]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[mesa]"
+                          cachedDataType="wstr"
+                          cachedLength="5"
+                          cachedName="mesa"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[mesa]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mesa]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[domi]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="domi"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[domi]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[domi]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[docentry]"
+                          cachedDataType="i4"
+                          cachedName="docentry"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[docentry]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[docentry]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[CardCode]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="CardCode"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[CardCode]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CardCode]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[TaxDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="TaxDate"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[TaxDate]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TaxDate]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[codigo_supervisor]"
+                          cachedDataType="wstr"
+                          cachedLength="8"
+                          cachedName="codigo_supervisor"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[codigo_supervisor]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigo_supervisor]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[ItemCode]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="ItemCode"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[ItemCode]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ItemCode]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[unidades_vendidas]"
+                          cachedDataType="numeric"
+                          cachedName="unidades_vendidas"
+                          cachedPrecision="38"
+                          cachedScale="11"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[unidades_vendidas]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[unidades_vendidas]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[valor_sinigv]"
+                          cachedDataType="numeric"
+                          cachedName="valor_sinigv"
+                          cachedPrecision="38"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[valor_sinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[valor_sinigv]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[ruta]"
+                          cachedDataType="wstr"
+                          cachedLength="8"
+                          cachedName="ruta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[ruta]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ruta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[tipo_venta]"
+                          cachedDataType="i4"
+                          cachedName="tipo_venta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[tipo_venta]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_venta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[tipo_documento]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="tipo_documento"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[tipo_documento]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_documento]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[nro_documento]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="nro_documento"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[nro_documento]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nro_documento]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[codigoboni]"
+                          cachedDataType="i4"
+                          cachedName="codigoboni"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[codigoboni]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigoboni]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[descuentosinigv]"
+                          cachedDataType="numeric"
+                          cachedName="descuentosinigv"
+                          cachedPrecision="38"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[descuentosinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[descuentosinigv]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].Columns[importecostosinigv]"
+                          cachedDataType="numeric"
+                          cachedName="importecostosinigv"
+                          cachedPrecision="38"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[importecostosinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[importecostosinigv]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[U_BKS_ALM]"
+                          dataType="wstr"
+                          length="255"
+                          name="U_BKS_ALM" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[SlpCode]"
+                          dataType="wstr"
+                          length="255"
+                          name="SlpCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[mesa]"
+                          dataType="wstr"
+                          length="255"
+                          name="mesa" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[domi]"
+                          dataType="wstr"
+                          length="255"
+                          name="domi" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[docentry]"
+                          dataType="wstr"
+                          length="255"
+                          name="docentry" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[CardCode]"
+                          dataType="wstr"
+                          length="255"
+                          name="CardCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[TaxDate]"
+                          dataType="wstr"
+                          length="255"
+                          name="TaxDate" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[codigo_supervisor]"
+                          dataType="wstr"
+                          length="255"
+                          name="codigo_supervisor" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[ItemCode]"
+                          dataType="wstr"
+                          length="255"
+                          name="ItemCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[unidades_vendidas]"
+                          dataType="wstr"
+                          length="255"
+                          name="unidades_vendidas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[valor_sinigv]"
+                          dataType="wstr"
+                          length="255"
+                          name="valor_sinigv" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[ruta]"
+                          dataType="wstr"
+                          length="255"
+                          name="ruta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[tipo_venta]"
+                          dataType="wstr"
+                          length="255"
+                          name="tipo_venta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[tipo_documento]"
+                          dataType="wstr"
+                          length="255"
+                          name="tipo_documento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[nro_documento]"
+                          dataType="wstr"
+                          length="255"
+                          name="nro_documento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[indicadorboni]"
+                          dataType="wstr"
+                          length="255"
+                          name="indicadorboni" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[codigoboni]"
+                          dataType="wstr"
+                          length="255"
+                          name="codigoboni" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[codigomotivodev]"
+                          dataType="wstr"
+                          length="255"
+                          name="codigomotivodev" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[descuentosinigv]"
+                          dataType="wstr"
+                          length="255"
+                          name="descuentosinigv" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[importecostosinigv]"
+                          dataType="wstr"
+                          length="255"
+                          name="importecostosinigv" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel].ExternalColumns[FeRegistro]"
+                          dataType="wstr"
+                          length="255"
+                          name="FeRegistro" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Outputs[Salida de error de destino de Excel]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de destino de Excel"
+                      synchronousInputId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Outputs[Salida de error de destino de Excel].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Outputs[Salida de error de destino de Excel].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Outputs[Salida de error de destino de Excel].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Outputs[Salida de error de destino de Excel].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+                  description="Origen de OLE DB"
+                  name="Origen de OLE DB"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Comando SQL para ejecutar."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from Molitalia.Ventas_Cab
+where FeRegistro = (select top(1) feRegistro from Molitalia.Ventas_Cab order by FeRegistro desc)</property>
+                    <property
+                      dataType="System.String"
+                      description="Variable que contiene el comando SQL para ejecutar."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="Asignaciones entre los parámetros del comando SQL y las variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="{D7F8252E-4B15-4E64-9890-03F0EC381A92}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RBI]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                      name="Salida de origen de OLE DB">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[U_BKS_ALM]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[U_BKS_ALM]"
+                          length="10"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[U_BKS_ALM]"
+                          name="U_BKS_ALM"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SlpCode]"
+                          dataType="i2"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[SlpCode]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SlpCode]"
+                          name="SlpCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mesa]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mesa]"
+                          length="5"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mesa]"
+                          name="mesa"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[domi]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[domi]"
+                          length="20"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[domi]"
+                          name="domi"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[docentry]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[docentry]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[docentry]"
+                          name="docentry"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CardCode]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CardCode]"
+                          length="15"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CardCode]"
+                          name="CardCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TaxDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TaxDate]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TaxDate]"
+                          name="TaxDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigo_supervisor]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigo_supervisor]"
+                          length="8"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigo_supervisor]"
+                          name="codigo_supervisor"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ItemCode]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ItemCode]"
+                          length="20"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ItemCode]"
+                          name="ItemCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[unidades_vendidas]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[unidades_vendidas]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[unidades_vendidas]"
+                          name="unidades_vendidas"
+                          precision="38"
+                          scale="11"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[valor_sinigv]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[valor_sinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[valor_sinigv]"
+                          name="valor_sinigv"
+                          precision="38"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ruta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ruta]"
+                          length="8"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ruta]"
+                          name="ruta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_venta]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo_venta]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_venta]"
+                          name="tipo_venta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_documento]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo_documento]"
+                          length="10"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo_documento]"
+                          name="tipo_documento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nro_documento]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nro_documento]"
+                          length="30"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nro_documento]"
+                          name="nro_documento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[indicadorboni]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[indicadorboni]"
+                          length="1"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[indicadorboni]"
+                          name="indicadorboni"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigoboni]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigoboni]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigoboni]"
+                          name="codigoboni"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigomotivodev]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigomotivodev]"
+                          length="2"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[codigomotivodev]"
+                          name="codigomotivodev"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[descuentosinigv]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[descuentosinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[descuentosinigv]"
+                          name="descuentosinigv"
+                          precision="38"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[importecostosinigv]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[importecostosinigv]"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[importecostosinigv]"
+                          name="importecostosinigv"
+                          precision="38"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[FeRegistro]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[FeRegistro]"
+                          length="12"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[FeRegistro]"
+                          name="FeRegistro"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[U_BKS_ALM]"
+                          dataType="wstr"
+                          length="10"
+                          name="U_BKS_ALM" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[SlpCode]"
+                          dataType="i2"
+                          name="SlpCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mesa]"
+                          dataType="wstr"
+                          length="5"
+                          name="mesa" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[domi]"
+                          dataType="wstr"
+                          length="20"
+                          name="domi" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[docentry]"
+                          dataType="i4"
+                          name="docentry" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CardCode]"
+                          dataType="wstr"
+                          length="15"
+                          name="CardCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TaxDate]"
+                          dataType="dbTimeStamp"
+                          name="TaxDate" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigo_supervisor]"
+                          dataType="wstr"
+                          length="8"
+                          name="codigo_supervisor" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ItemCode]"
+                          dataType="wstr"
+                          length="20"
+                          name="ItemCode" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[unidades_vendidas]"
+                          dataType="numeric"
+                          name="unidades_vendidas"
+                          precision="38"
+                          scale="11" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[valor_sinigv]"
+                          dataType="numeric"
+                          name="valor_sinigv"
+                          precision="38"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ruta]"
+                          dataType="wstr"
+                          length="8"
+                          name="ruta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo_venta]"
+                          dataType="i4"
+                          name="tipo_venta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo_documento]"
+                          dataType="wstr"
+                          length="10"
+                          name="tipo_documento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nro_documento]"
+                          dataType="wstr"
+                          length="30"
+                          name="nro_documento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[indicadorboni]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="indicadorboni" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigoboni]"
+                          dataType="i4"
+                          name="codigoboni" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[codigomotivodev]"
+                          codePage="1252"
+                          dataType="str"
+                          length="2"
+                          name="codigomotivodev" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[descuentosinigv]"
+                          dataType="numeric"
+                          name="descuentosinigv"
+                          precision="38"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[importecostosinigv]"
+                          dataType="numeric"
+                          name="importecostosinigv"
+                          precision="38"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[FeRegistro]"
+                          codePage="1252"
+                          dataType="str"
+                          length="12"
+                          name="FeRegistro" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de OLE DB">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[U_BKS_ALM]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[U_BKS_ALM]"
+                          name="U_BKS_ALM" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[SlpCode]"
+                          dataType="i2"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[SlpCode]"
+                          name="SlpCode" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mesa]"
+                          dataType="wstr"
+                          length="5"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mesa]"
+                          name="mesa" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[domi]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[domi]"
+                          name="domi" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[docentry]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[docentry]"
+                          name="docentry" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CardCode]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CardCode]"
+                          name="CardCode" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TaxDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TaxDate]"
+                          name="TaxDate" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigo_supervisor]"
+                          dataType="wstr"
+                          length="8"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigo_supervisor]"
+                          name="codigo_supervisor" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ItemCode]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ItemCode]"
+                          name="ItemCode" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[unidades_vendidas]"
+                          dataType="numeric"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[unidades_vendidas]"
+                          name="unidades_vendidas"
+                          precision="38"
+                          scale="11" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[valor_sinigv]"
+                          dataType="numeric"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[valor_sinigv]"
+                          name="valor_sinigv"
+                          precision="38"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ruta]"
+                          dataType="wstr"
+                          length="8"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ruta]"
+                          name="ruta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo_venta]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo_venta]"
+                          name="tipo_venta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo_documento]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo_documento]"
+                          name="tipo_documento" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nro_documento]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nro_documento]"
+                          name="nro_documento" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[indicadorboni]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[indicadorboni]"
+                          name="indicadorboni" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigoboni]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigoboni]"
+                          name="codigoboni" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigomotivodev]"
+                          codePage="1252"
+                          dataType="str"
+                          length="2"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[codigomotivodev]"
+                          name="codigomotivodev" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[descuentosinigv]"
+                          dataType="numeric"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[descuentosinigv]"
+                          name="descuentosinigv"
+                          precision="38"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[importecostosinigv]"
+                          dataType="numeric"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[importecostosinigv]"
+                          name="importecostosinigv"
+                          precision="38"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[FeRegistro]"
+                          codePage="1252"
+                          dataType="str"
+                          length="12"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[FeRegistro]"
+                          name="FeRegistro" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Contenedor de secuencias\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+                  endId="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel.Inputs[Entrada de destino de Excel]"
+                  name="Salida de origen de OLE DB"
+                  startId="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Contenedor de secuencias\Tarea Flujo de datos"
+          TopLeft="25,72" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,226"
+          Size="282,269"
+          Id="Package\Contenedor de secuencias"
+          TopLeft="338,117" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Contenedor de secuencias\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB"
+          TopLeft="418,92" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel"
+          TopLeft="420,202" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+          TopLeft="499.25,134">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias\Tarea Flujo de datos\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias\Tarea Flujo de datos\Destino de Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

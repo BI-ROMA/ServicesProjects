@@ -1,0 +1,319 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.19623.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>ROMA_AS.database</Name>
+    <FullPath>ROMA_AS.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>CuboComercial.cube</Name>
+      <FullPath>CuboComercial.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboComercial.partitions</Name>
+          <FullPath>CuboComercial.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CuboComercial3UltMeses.cube</Name>
+      <FullPath>CuboComercial3UltMeses.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboComercial3UltMeses.partitions</Name>
+          <FullPath>CuboComercial3UltMeses.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CuboContable.cube</Name>
+      <FullPath>CuboContable.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboContable.partitions</Name>
+          <FullPath>CuboContable.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CuboDigitacion.cube</Name>
+      <FullPath>CuboDigitacion.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboDigitacion.partitions</Name>
+          <FullPath>CuboDigitacion.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CuboInventarios.cube</Name>
+      <FullPath>CuboInventarios.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboInventarios.partitions</Name>
+          <FullPath>CuboInventarios.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CuboObjetivos.cube</Name>
+      <FullPath>CuboObjetivos.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>CuboObjetivos.partitions</Name>
+          <FullPath>CuboObjetivos.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Almacenes.dim</Name>
+      <FullPath>Almacenes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Canales.dim</Name>
+      <FullPath>Canales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Carteras.dim</Name>
+      <FullPath>Carteras.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clientes.dim</Name>
+      <FullPath>Clientes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Documentos.dim</Name>
+      <FullPath>Documentos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>EsBonificacion.dim</Name>
+      <FullPath>EsBonificacion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fechas.dim</Name>
+      <FullPath>Fechas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hora.dim</Name>
+      <FullPath>Hora.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Jefes dVenta.dim</Name>
+      <FullPath>Jefes dVenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mesas.dim</Name>
+      <FullPath>Mesas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Motivos Pedido.dim</Name>
+      <FullPath>Motivos Pedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Métricas.dim</Name>
+      <FullPath>Métricas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Productos Full.dim</Name>
+      <FullPath>Productos Full.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Promociones.dim</Name>
+      <FullPath>Promociones.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Proveedores.dim</Name>
+      <FullPath>Proveedores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Proveedores_CatJes.dim</Name>
+      <FullPath>Proveedores_CatJes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sedes.dim</Name>
+      <FullPath>Sedes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Supervisores.dim</Name>
+      <FullPath>Supervisores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TipoPedido.dim</Name>
+      <FullPath>TipoPedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TipoVenta.dim</Name>
+      <FullPath>TipoVenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedores Rel.dim</Name>
+      <FullPath>Vendedores Rel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedores Rel2.dim</Name>
+      <FullPath>Vendedores Rel2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedores.dim</Name>
+      <FullPath>Vendedores.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DS_ROMA_BI.ds</Name>
+      <FullPath>DS_ROMA_BI.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>dsCuboDigitacionRoma.dsv</Name>
+      <FullPath>dsCuboDigitacionRoma.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsCuboInventarios.dsv</Name>
+      <FullPath>dsCuboInventarios.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsCuboPlanillasRoma.dsv</Name>
+      <FullPath>dsCuboPlanillasRoma.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsCuboPlanillaVertical.dsv</Name>
+      <FullPath>dsCuboPlanillaVertical.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsCuboUlt3Meses.dsv</Name>
+      <FullPath>dsCuboUlt3Meses.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsCuboVentasRoma.dsv</Name>
+      <FullPath>dsCuboVentasRoma.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsObjetivos.dsv</Name>
+      <FullPath>dsObjetivos.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Admin.role</Name>
+      <FullPath>Admin.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comercial.role</Name>
+      <FullPath>Comercial.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Jefes_dVenta.role</Name>
+      <FullPath>Jefes_dVenta.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Logistica.role</Name>
+      <FullPath>Logistica.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Role 4.role</Name>
+      <FullPath>Role 4.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Supervisores.role</Name>
+      <FullPath>Supervisores.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DS_ROMA_BI</Id>
+            <Name>DS_ROMA_BI</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=RBI;Integrated Security=SSPI;Initial Catalog=ROMA_DATAMART</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DS_ROMA_BI</Id>
+            <Name>DS_ROMA_BI</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <MeasureGroupStorageLocations>
+          <ConfigurationSetting>
+            <Id>dsCuboPlanillasRoma</Id>
+            <Name>dsCuboPlanillasRoma</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Fact Cartera Inicial x Vendedor</Id>
+                <Name>Fact Cartera Inicial x Vendedor</Name>
+                <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>CuboComercial3UltMeses</Id>
+            <Name>CuboComercial3UltMeses</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Id>
+                <Name>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Name>
+                <Value xsi:type="xsd:string">\\?\D:\OLAP\Data2\Cobertura2</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </MeasureGroupStorageLocations>
+        <PartitionStorageLocations>
+          <ConfigurationSetting>
+            <Id>dsCuboPlanillasRoma</Id>
+            <Name>dsCuboPlanillasRoma</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Fact Cartera Inicial x Vendedor</Id>
+                <Name>Fact Cartera Inicial x Vendedor</Name>
+                <Value xsi:type="ConfigurationSettingsCollection">
+                  <ConfigurationSetting>
+                    <Id>Fact Cartera Inicial x Vendedor</Id>
+                    <Name>Fact Cartera Inicial x Vendedor</Name>
+                    <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data</Value>
+                  </ConfigurationSetting>
+                  <ConfigurationSetting>
+                    <Id>Fact Cartera Inicial x Vendedor Id78</Id>
+                    <Name>Fact Cartera Inicial x Vendedor Id78</Name>
+                    <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data</Value>
+                  </ConfigurationSetting>
+                  <ConfigurationSetting>
+                    <Id>Fact Cartera Inicial x Vendedor IdOtros</Id>
+                    <Name>Fact Cartera Inicial x Vendedor IdOtros</Name>
+                    <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data</Value>
+                  </ConfigurationSetting>
+                </Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>CuboComercial3UltMeses</Id>
+            <Name>CuboComercial3UltMeses</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Id>
+                <Name>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Name>
+                <Value xsi:type="ConfigurationSettingsCollection">
+                  <ConfigurationSetting>
+                    <Id>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Id>
+                    <Name>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Name>
+                    <Value xsi:type="xsd:string">\\?\D:\OLAP\Data2\Cobertura2</Value>
+                  </ConfigurationSetting>
+                </Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </PartitionStorageLocations>
+        <DeploymentServerEdition>Standard</DeploymentServerEdition>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

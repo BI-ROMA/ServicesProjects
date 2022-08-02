@@ -1,0 +1,152 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Cubo_Gloria</Database>
+    <Server>RBI\OLAP</Server>
+    <ConnectionString>Data Source=RBI\OLAP;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>RsIeWni4LGqy2Scie8pJFH/aPY0=2/08/2021 07:36:352/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>ROMA Repositorio</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>onm7yKSbs85v6fnZ3aftZ/6BH+A=5/08/2021 15:57:592/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>ROMA Repositorio</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rNVS83Tz7WAgyatzWMqWasT34xU=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0OcS3z4Ck+rC5mnA+dWI029I+YM=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Dim Fechas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dc2gqb9KmNIldavBs5XI9xNZSiU=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Documento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mmm6bhfREIdOezD+dKlObHnRdYU=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Extracto Gloria</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hBaDHPQrWLSh9AspXHEdYZJKqJk=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>FlgBonif</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VllCK1e5j3yvryLY0SwSONhOxFg=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Flg Sin Factor UMES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LVyq+fhWp0uFjQV6vv1xBqeAL7w=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Items xLinea</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mTJz7kxZ/E3VmN/GKWtXBLnT6Zg=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Periodo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>syieSxTgPuHbZVRz1ofvdPhDR34=5/08/2021 15:58:472/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Sede</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VMZ+Pej1UYiZNHoPJod/6109Fmg=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Sucursal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8wCz4U4PsZGSjnW2bbydXjq9Lc0=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>TipDoc</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MNlqEZo0Exi3U5qjbLE2AO14Rfs=2/08/2021 07:36:362/08/2021 07:36:38</TimeStamp>
+        <ID>
+          <String>Vendedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5tOesS/+98h2Kgr6jwJHqmfWV5E=5/11/2021 10:43:112/08/2021 07:36:37xQcheCsyAnM7bVU6gmSRSMdoX7g=5/08/2021 10:28:532/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>ROMA Repositorio</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>/P8Bwq7k74VlNdFJP7JXpwzsMt4=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Role 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>x+LRhmPQgqJTb11ok8TKMoNyDQU=2/08/2021 07:36:362/08/2021 07:36:37</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>pN+0V7sUdFJMFFOxRcQTcR18arc=2/08/2021 07:36:372/08/2021 07:36:36</TimeStamp>
+      <ID>
+        <String>Cubo_Gloria</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-11-05T15:43:12.746667Z</LastDeployed>
+</DeploymentSnapshot>
