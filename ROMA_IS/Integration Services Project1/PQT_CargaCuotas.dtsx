@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="PQT_CargaCuotas"
   DTS:PackageType="5"
-  DTS:VersionBuild="114"
-  DTS:VersionGUID="{D8A85C13-BE0B-4122-9CE3-A8FEE1550E26}">
+  DTS:VersionBuild="117"
+  DTS:VersionGUID="{2B521F28-1B62-4CAB-9850-2E798A6726B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -280,7 +280,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Factor Venta]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Venta]"
@@ -289,7 +289,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota d Vta Tot]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota d Vta Tot]"
@@ -298,7 +298,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota Vta]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota Vta]"
@@ -307,7 +307,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Factor Cobertura]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Cobertura]"
@@ -316,7 +316,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota Cob]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota Cob]"
@@ -412,23 +412,23 @@
                       name="Cod Canal" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Venta]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Factor Venta" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota d Vta Tot]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Cuota d Vta Tot" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota Vta]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Cuota Vta" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Cobertura]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Factor Cobertura" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota Cob]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Cuota Cob" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[NVO CALCULO]"
@@ -509,27 +509,27 @@
                       name="Nom Cat Corto" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Factor Venta]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Factor Venta]"
                       name="Factor Venta" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota d Vta Tot]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota d Vta Tot]"
                       name="Cuota d Vta Tot" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota Vta]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota Vta]"
                       name="Cuota Vta" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Factor Cobertura]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Factor Cobertura]"
                       name="Factor Cobertura" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota Cob]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota Cob]"
                       name="Cuota Cob" />
                     <outputColumn
@@ -2584,31 +2584,31 @@
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cod Canal]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].Columns[Factor Venta]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="Factor Venta"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Factor Venta]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Factor Venta]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].Columns[Cuota d Vta Tot]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="Cuota d Vta Tot"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuota d Vta Tot]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota d Vta Tot]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].Columns[Cuota Vta]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="Cuota Vta"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuota Vta]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota Vta]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].Columns[Factor Cobertura]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="Factor Cobertura"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Factor Cobertura]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Factor Cobertura]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].Columns[Cuota Cob]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="Cuota Cob"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB 1 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuota Cob]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota Cob]" />
@@ -3087,6 +3087,10 @@
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
+          Id="Package\Tarea Flujo de datos\Factor de Cobertura"
+          TopLeft="464.624989410863,52.6499992910028" />
+        <NodeLayout
+          Size="173,42"
           Id="Package\Tarea Flujo de datos\Columna derivada 1"
           TopLeft="35.875001238659,249.350000011623" />
         <NodeLayout
@@ -3114,99 +3118,29 @@
           Id="Package\Tarea Flujo de datos\Conversión de datos 1"
           TopLeft="237.750002253801,150.899999930263" />
         <NodeLayout
-          Size="173,42"
-          Id="Package\Tarea Flujo de datos\Factor de Cobertura"
-          TopLeft="464.624989410863,52.6499992910028" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
-          TopLeft="38.875001238659,338.350000011623" />
+          Size="164,42"
+          Id="Package\Tarea Flujo de datos\Columna derivada"
+          TopLeft="249.500001974404,251.54999991864" />
         <NodeLayout
           Size="203,43"
           Id="Package\Tarea Flujo de datos\Conversión de datos 1 1 1"
           TopLeft="447.499989755452,152.49999755919" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\Tarea Flujo de datos\Columna derivada"
-          TopLeft="249.500001974404,251.54999991864" />
-        <NodeLayout
           Size="175,42"
           Id="Package\Tarea Flujo de datos\Conversión de datos"
           TopLeft="35.875001238659,152.350000011623" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\Tarea Flujo de datos\Cambio de Factores"
-          TopLeft="805.00000335276,51.4999998837709" />
+          Size="168,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="38.875001238659,338.350000011623" />
         <NodeLayout
           Size="175,42"
           Id="Package\Tarea Flujo de datos\Conversión de datos 1 1"
           TopLeft="802.50000391156,152.999999767542" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos2]"
-          TopLeft="122.875001238659,194.350000011623">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos1]"
-          TopLeft="330.625002114102,192.899999930263">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.649999988377"
-              Start="0,0"
-              End="0,51.149999988377">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.149999988377" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
-          TopLeft="893.56250359025,194.999999767542">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55.850000127852"
-              Start="0,0"
-              End="0,48.350000127852">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.350000127852" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Tarea Flujo de datos\Cambio de Factores"
+          TopLeft="805.00000335276,51.4999998837709" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
           TopLeft="122.625001238659,291.350000011623">
@@ -3361,9 +3295,88 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos2]"
+          TopLeft="122.875001238659,194.350000011623">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos1]"
+          TopLeft="330.625002114102,192.899999930263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.649999988377"
+              Start="0,0"
+              End="0,51.149999988377">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.149999988377" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
+          TopLeft="893.56250359025,194.999999767542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.850000127852"
+              Start="0,0"
+              End="0,48.350000127852">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.350000127852" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Factor de Cobertura">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB 1">
     <Properties>
@@ -3418,19 +3431,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tarea Flujo de datos\Categorias_xMesas">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Factor de Cobertura">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

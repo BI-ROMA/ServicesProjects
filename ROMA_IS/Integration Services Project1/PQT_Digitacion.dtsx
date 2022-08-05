@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="91"
-  DTS:VersionGUID="{C17CA520-091B-4DF9-9C6F-BC084C758A39}">
+  DTS:VersionBuild="92"
+  DTS:VersionGUID="{4879193F-3DC7-4B29-B44F-09A914FC6093}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -129,7 +129,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Actualiza Item_UnidadVolumenPeso en la Nube FeFactura y FeEntrada"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -163,7 +163,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Inserta Nuevos Items en la Nube"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -196,7 +196,7 @@
       DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Proceso del Cubo de Digitacipon"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <ASDdlData
@@ -213,7 +213,7 @@
       DTS:ExecutableType="Microsoft.ASExecuteDDLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Proceso del Cubo de Digitación Historia"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <ASDdlData
@@ -1376,7 +1376,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 10]"
-          TopLeft="1140.50000007451,264.333333333333">
+          TopLeft="1140.5000000745,264.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1474,7 +1474,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,7.96666652719199,16,16"
+              BoundingBox="-8,7.96666652719202,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
