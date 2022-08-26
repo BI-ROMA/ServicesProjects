@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>vUCE7xV/lIiqYSuoGNK4TTDRSRk=2/06/2022 13:00:122/08/2022 09:03:36</TimeStamp>
+        <TimeStamp>XW23vKTzt45ilty5y2R/o48WFm0=5/08/2022 12:01:082/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>DS_ROMA_BI</String>
         </ID>
@@ -36,13 +36,6 @@
         <TimeStamp>ZscWAV93w6nXoowF/hFlXN91AHQ=3/02/2022 06:13:402/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>dsCuboInventarios</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>nteBWDl8y7xxsvXzIHfqE/XK4o0=3/02/2022 06:13:402/08/2022 09:03:36</TimeStamp>
-        <ID>
-          <String>dsCuboPlanillasRoma</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
@@ -74,8 +67,15 @@
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>UPEVBQXja682e2pSd3lBQPi7zJs=16/08/2022 19:03:492/08/2022 09:03:36</TimeStamp>
+        <ID>
+          <String>dsCuboPlanillasRoma</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>BYPoU4mAgDKphm5nRBloWwqvxhw=3/02/2022 06:13:402/08/2022 09:03:36</TimeStamp>
+        <TimeStamp>U4ZEnRyxPNXvl25gYuCNyLwSXco=5/08/2022 11:54:332/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>Almacenes</String>
         </ID>
@@ -236,13 +236,6 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>sYbAc9W+Qc974x/p8/i05fUg/xE=2/08/2022 10:51:132/08/2022 09:03:36nr+zlujZF5iUFribGd2S2Uijgc0=3/02/2022 06:23:372/08/2022 09:03:36</TimeStamp>
-        <ID>
-          <String>dsCuboPlanillasRoma</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Cube</Type>
         <TimeStamp>lqVFWB11GSeo4z04BLhuTH4V/l0=3/02/2022 06:23:382/08/2022 09:03:36SZQTvFfKcEQHOvwEQ3asOhzh3zQ=3/02/2022 06:23:382/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>CuboComercial3UltMeses</String>
@@ -264,7 +257,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>98ErxCXPGbo7PSzwUfvlzLRUd0g=4/04/2022 18:24:242/08/2022 09:03:36vj92DY4+K+jHnJU4fzAc1kKfMGc=3/02/2022 06:23:382/08/2022 09:03:36</TimeStamp>
+        <TimeStamp>vsL6MDm445CuvvKp/LbrkkRHtFg=5/08/2022 11:54:332/08/2022 09:03:36vj92DY4+K+jHnJU4fzAc1kKfMGc=3/02/2022 06:23:382/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>CuboStock</String>
         </ID>
@@ -274,6 +267,13 @@
         <TimeStamp>ZOweRCF+69U9xpaDOC5AcC8Deqs=3/02/2022 06:23:382/08/2022 09:03:36OBm/i+3RRjERuIzhPV91AI7vkC8=3/02/2022 06:23:382/08/2022 09:03:36</TimeStamp>
         <ID>
           <String>CuboObjetivos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ZfRAv2z70/ctc1FGd9UXgX2BhZY=16/08/2022 19:03:492/08/2022 09:03:36DQKp0ApXwp1Opjo3YLsf1wlzilU=16/08/2022 18:55:152/08/2022 09:03:36</TimeStamp>
+        <ID>
+          <String>dsCuboPlanillasRoma</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
@@ -330,5 +330,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-08-02T15:57:15.506667Z</LastDeployed>
+  <LastDeployed>2022-08-17T00:32:01.033333Z</LastDeployed>
 </DeploymentSnapshot>

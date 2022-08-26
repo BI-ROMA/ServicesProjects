@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="PQT_CargaCuotas"
   DTS:PackageType="5"
-  DTS:VersionBuild="116"
-  DTS:VersionGUID="{89AC3D7A-B3AD-466C-967D-C7B51DE07874}">
+  DTS:VersionBuild="136"
+  DTS:VersionGUID="{D8FF66DD-1B91-489D-9441-7A95DAECC73D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202207\Factores_Cambios.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Factores_Cambios.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202207\Mesas_Categoria.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Mesas_Categoria.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202207\Cuotas_General.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Cuotas_General.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,7 +61,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Cuotas\2022\202207\Factor_Cobertura.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Cuotas\2022\202208\Factor_Cobertura.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -81,7 +81,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{D7F8252E-4B15-4E64-9890-03F0EC381A92}"
-          SQLTask:SqlStatementSource="Truncate Table Temp.CuotaGeneral_Full&#xA;GO&#xA;Truncate Table Temp.Categorias_xMesas&#xA;GO&#xA;Truncate Table Temp.Cambio_dFactores" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Truncate Table Temp.CuotaGeneral_Full&#xA;GO&#xA;Truncate Table Temp.Categorias_xMesas&#xA;GO&#xA;Truncate Table Temp.Cambio_dFactores&#xA;GO&#xA;Truncate Table Temp.Pesos_dCobertura" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -324,16 +324,6 @@
                       name="Cuota Cob"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[NVO CALCULO]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[NVO CALCULO]"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[NVO CALCULO]"
-                      name="NVO CALCULO"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cartera]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
@@ -430,11 +420,6 @@
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota Cob]"
                       dataType="cy"
                       name="Cuota Cob" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[NVO CALCULO]"
-                      dataType="wstr"
-                      length="255"
-                      name="NVO CALCULO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -532,12 +517,6 @@
                       dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cuota Cob]"
                       name="Cuota Cob" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[NVO CALCULO]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[NVO CALCULO]"
-                      name="NVO CALCULO" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
                       dataType="i4"
@@ -3096,7 +3075,7 @@
         <NodeLayout
           Size="179,43"
           Id="Package\Tarea Flujo de datos\Destino de OLE DB 1"
-          TopLeft="459.999988898635,252.349994897544" />
+          TopLeft="460.999988898635,252.349994897544" />
         <NodeLayout
           Size="166,42"
           Id="Package\Tarea Flujo de datos\Categorias xMesas"
@@ -3118,6 +3097,10 @@
           Id="Package\Tarea Flujo de datos\Conversión de datos 1"
           TopLeft="237.750002253801,150.899999930263" />
         <NodeLayout
+          Size="168,42"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="38.875001238659,338.350000011623" />
+        <NodeLayout
           Size="164,42"
           Id="Package\Tarea Flujo de datos\Columna derivada"
           TopLeft="249.500001974404,251.54999991864" />
@@ -3130,17 +3113,79 @@
           Id="Package\Tarea Flujo de datos\Conversión de datos"
           TopLeft="35.875001238659,152.350000011623" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
-          TopLeft="38.875001238659,338.350000011623" />
+          Size="172,42"
+          Id="Package\Tarea Flujo de datos\Cambio de Factores"
+          TopLeft="805.00000335276,51.4999998837709" />
         <NodeLayout
           Size="175,42"
           Id="Package\Tarea Flujo de datos\Conversión de datos 1 1"
           TopLeft="802.50000391156,152.999999767542" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Tarea Flujo de datos\Cambio de Factores"
-          TopLeft="805.00000335276,51.4999998837709" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos2]"
+          TopLeft="122.875001238659,194.350000011623">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos1]"
+          TopLeft="330.625002114102,192.899999930263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.649999988377"
+              Start="0,0"
+              End="0,51.149999988377">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.149999988377" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
+          TopLeft="893.56250359025,194.999999767542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.850000127852"
+              Start="0,0"
+              End="0,48.350000127852">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.350000127852" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
           TopLeft="122.625001238659,291.350000011623">
@@ -3165,18 +3210,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
-          TopLeft="328.958335521941,293.54999991864">
+          TopLeft="328.875002188608,293.54999991864">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.1000005346533"
+              EndConnector="0,46.100000534653"
               Start="0,0"
-              End="0,38.6000005346533">
+              End="0,38.600000534653">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.6000005346533" />
+                    End="0,38.600000534653" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3275,7 +3320,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos3]"
-          TopLeft="549.249989327044,195.49999755919">
+          TopLeft="549.749989327044,195.49999755919">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3287,72 +3332,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,49.349997338354" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos2]"
-          TopLeft="122.875001238659,194.350000011623">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos1]"
-          TopLeft="330.625002114102,192.899999930263">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.649999988377"
-              Start="0,0"
-              End="0,51.149999988377">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.149999988377" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
-          TopLeft="893.56250359025,194.999999767542">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55.850000127852"
-              Start="0,0"
-              End="0,48.350000127852">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.350000127852" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
