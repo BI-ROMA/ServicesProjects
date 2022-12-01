@@ -84,11 +84,138 @@
     </Dimensions>
     <Cubes>
       <Cube>
+        <ID>dsCuboPlanillasRoma</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Ventas</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Ventas</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas 202104</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas 202103</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Cuotas</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Cuotas</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Cuotas Antes del Año Anterior</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Cuotas Año Anterior</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Cartera Inicial x Vendedor</ID>
+            <StorageLocation>\\?\D:\OLAP2\Data\</StorageLocation>
+            <Partitions>
+              <Partition>
+                <ID>Fact Cartera Inicial x Vendedor</ID>
+                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
+              </Partition>
+              <Partition>
+                <ID>Fact Cartera Inicial x Vendedor Id78</ID>
+                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
+              </Partition>
+              <Partition>
+                <ID>Fact Cartera Inicial x Vendedor IdOtros</ID>
+                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Ventas 1</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Ventas</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas Cob 202104</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas Cob 202103</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Vw Factor Proyectado</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Vw Factor Proyectado</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Objetivos x Clientes</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Objetivos x Clientes</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Inventarios</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Inventarios</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Inventarios Proc</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Inventarios Proc</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Fechas</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Fechas</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Productos Full</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Productos Full</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Ventas 2</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Ventas</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas 202104</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Ventas 202103</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
         <ID>CuboComercial3UltMeses</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</ID>
-            <StorageLocation>\\?\D:\OLAP\Data2\Cobertura2</StorageLocation>
+            <StorageLocation>D:\OLAP\Data2\</StorageLocation>
             <Partitions>
               <Partition>
                 <ID>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</ID>
@@ -315,133 +442,6 @@
             <Partitions>
               <Partition>
                 <ID>Fact Objetivos x Clientes</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-        </MeasureGroups>
-      </Cube>
-      <Cube>
-        <ID>dsCuboPlanillasRoma</ID>
-        <MeasureGroups>
-          <MeasureGroup>
-            <ID>Fact Ventas</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Ventas</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas 202104</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas 202103</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Cuotas</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Cuotas</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Cuotas Antes del Año Anterior</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Cuotas Año Anterior</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Cartera Inicial x Vendedor</ID>
-            <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
-            <Partitions>
-              <Partition>
-                <ID>Fact Cartera Inicial x Vendedor</ID>
-                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
-              </Partition>
-              <Partition>
-                <ID>Fact Cartera Inicial x Vendedor Id78</ID>
-                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
-              </Partition>
-              <Partition>
-                <ID>Fact Cartera Inicial x Vendedor IdOtros</ID>
-                <StorageLocation>\\?\D:\OLAP2\Data</StorageLocation>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Ventas 1</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Ventas</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas Cob 202104</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas Cob 202103</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Vw Factor Proyectado</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Vw Factor Proyectado</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Objetivos x Clientes</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Objetivos x Clientes</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Inventarios</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Inventarios</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Inventarios Proc</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Inventarios Proc</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Fechas</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Fechas</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Productos Full</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Productos Full</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Fact Ventas 2</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact Ventas</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas 202104</ID>
-              </Partition>
-              <Partition>
-                <ID>Fact Ventas 202103</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

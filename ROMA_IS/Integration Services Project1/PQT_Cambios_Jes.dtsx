@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DEVELOPER"
   DTS:CreatorName="DSROMASAC\g_lopez"
-  DTS:DTSID="{A6B82B39-191A-4AF9-8781-54134AEC426C}"
+  DTS:DTSID="{C6991243-2F0A-4147-87E4-5543409F7E0B}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="10250"
   DTS:ObjectName="PQT_Cambios_Jes"
   DTS:PackageType="5"
   DTS:VersionBuild="3"
-  DTS:VersionGUID="{D8B7F89E-9209-4545-84A4-9110FA79C561}">
+  DTS:VersionGUID="{3C9F90D5-8132-4166-BAFA-880ED0505CBA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{8B2B337D-0FC7-40D4-B9AC-38326A8C238E}"
+      DTS:DTSID="{DF70C72B-4A9C-4803-BD03-80FBE728C5C9}"
       DTS:ObjectName="Administrador de conexiones con Excel">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -35,7 +35,7 @@
       DTS:refId="Package\Tarea Flujo de datos"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
-      DTS:DTSID="{74FDD006-1BA6-4731-BE61-9585FE011492}"
+      DTS:DTSID="{0B79F668-B33D-40DC-8F93-996A573FF280}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Tarea Flujo de datos"
@@ -104,8 +104,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="{D7F8252E-4B15-4E64-9890-03F0EC381A92}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[RBI]"
+                  connectionManagerID="{D7F8252E-4B15-4E64-9890-03F0EC381A92}:invalid"
+                  connectionManagerRefId="{D7F8252E-4B15-4E64-9890-03F0EC381A92}:invalid"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -327,8 +327,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Connections[OleDbConnection]"
-                  connectionManagerID="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[SR3]"
+                  connectionManagerID="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}:invalid"
+                  connectionManagerRefId="{EE8785FD-6D43-4F47-BAF3-145D7203E39B}:invalid"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>

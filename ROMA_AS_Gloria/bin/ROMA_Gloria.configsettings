@@ -7,7 +7,7 @@
         <ManagedProvider>System.Data.SqlClient</ManagedProvider>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">dsromasac\g_lopez</Account>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">dsromasac\r_mejia</Account>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>

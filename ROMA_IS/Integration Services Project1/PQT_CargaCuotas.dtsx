@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="PQT_CargaCuotas"
   DTS:PackageType="5"
-  DTS:VersionBuild="137"
-  DTS:VersionGUID="{F982A933-7E89-457B-B10A-CDFFECA06008}">
+  DTS:VersionBuild="158"
+  DTS:VersionGUID="{0151B675-31DD-4BDD-BAFE-D1ADFE051C13}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Factores_Cambios.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202211\Factores_Cambios.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Mesas_Categoria.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202211\Mesas_Categoria.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202208\Cuotas_General.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Cuotas\2022\202211\Cuotas_General.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,7 +61,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Cuotas\2022\202208\Factor_Cobertura.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Cuotas\2022\202211\Factor_Cobertura.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -132,7 +132,7 @@
                 <property
                   dataType="System.String"
                   description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                  name="OpenRowset">Cambios$</property>
+                  name="OpenRowset">cambios$</property>
                 <property
                   dataType="System.String"
                   description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -239,16 +239,6 @@
                       name="Nom Ven"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Zona]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Zona]"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Zona]"
-                      name="Zona"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_SAP]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
@@ -257,16 +247,6 @@
                       length="255"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_SAP]"
                       name="Sede_SAP"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_Cub]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Sede_Cub]"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_Cub]"
-                      name="Sede_Cub"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cod Canal]"
@@ -286,6 +266,36 @@
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Venta]"
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Factor Venta]"
                       name="Factor Venta"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cartera]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cartera]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cartera]"
+                      name="Cartera"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Zona]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Zona]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Zona]"
+                      name="Zona"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_Cub]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Sede_Cub]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Sede_Cub]"
+                      name="Sede_Cub"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota d Vta Tot]"
@@ -323,16 +333,6 @@
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cuota Cob]"
                       name="Cuota Cob"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cartera]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cartera]"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].Columns[Cartera]"
-                      name="Cartera"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -362,16 +362,6 @@
                       length="255"
                       name="Nom Cat Corto" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Tipo]"
-                      dataType="wstr"
-                      length="255"
-                      name="Tipo" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cartera]"
-                      dataType="wstr"
-                      length="255"
-                      name="Cartera" />
-                    <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cod Ven]"
                       dataType="r8"
                       name="Cod Ven" />
@@ -381,20 +371,10 @@
                       length="255"
                       name="Nom Ven" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Zona]"
-                      dataType="wstr"
-                      length="255"
-                      name="Zona" />
-                    <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Sede_SAP]"
                       dataType="wstr"
                       length="255"
                       name="Sede_SAP" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Sede_Cub]"
-                      dataType="wstr"
-                      length="255"
-                      name="Sede_Cub" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cod Canal]"
                       dataType="wstr"
@@ -404,6 +384,21 @@
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Factor Venta]"
                       dataType="cy"
                       name="Factor Venta" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cartera]"
+                      dataType="wstr"
+                      length="255"
+                      name="Cartera" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Zona]"
+                      dataType="wstr"
+                      length="255"
+                      name="Zona" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Sede_Cub]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sede_Cub" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de origen de Excel].ExternalColumns[Cuota d Vta Tot]"
                       dataType="cy"
@@ -427,6 +422,12 @@
                   isErrorOut="true"
                   name="Salida de error de origen de Excel">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cartera]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cartera]"
+                      name="Cartera" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cod Ven]"
                       dataType="r8"
@@ -529,12 +530,6 @@
                       lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cartera]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Tarea Flujo de datos\Cambio de Factores.Outputs[Salida de error de origen de Excel].Columns[Cartera]"
-                      name="Cartera" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1691,7 +1686,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AY]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AY]"
@@ -1700,7 +1695,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AP]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AP]"
@@ -1709,7 +1704,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AV]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AV]"
@@ -1718,7 +1713,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AN]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AN]"
@@ -1727,7 +1722,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[IC]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[IC]"
@@ -1736,7 +1731,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[NZ]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[NZ]"
@@ -1745,7 +1740,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[CH]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[CH]"
@@ -1754,7 +1749,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[PS]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[PS]"
@@ -1763,7 +1758,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[CN]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[CN]"
@@ -1772,7 +1767,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[Total]"
-                      dataType="r8"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[Total]"
@@ -1818,43 +1813,43 @@
                       name="Canal" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AY]"
-                      dataType="r8"
+                      dataType="cy"
                       name="AY" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AP]"
-                      dataType="r8"
+                      dataType="cy"
                       name="AP" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AV]"
-                      dataType="r8"
+                      dataType="cy"
                       name="AV" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[AN]"
-                      dataType="r8"
+                      dataType="cy"
                       name="AN" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[IC]"
-                      dataType="r8"
+                      dataType="cy"
                       name="IC" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[NZ]"
-                      dataType="r8"
+                      dataType="cy"
                       name="NZ" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[CH]"
-                      dataType="r8"
+                      dataType="cy"
                       name="CH" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[PS]"
-                      dataType="r8"
+                      dataType="cy"
                       name="PS" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[CN]"
-                      dataType="r8"
+                      dataType="cy"
                       name="CN" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].ExternalColumns[Total]"
-                      dataType="r8"
+                      dataType="cy"
                       name="Total" />
                   </externalMetadataColumns>
                 </output>
@@ -1906,52 +1901,52 @@
                       name="Canal" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AY]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AY]"
                       name="AY" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AP]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AP]"
                       name="AP" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AV]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AV]"
                       name="AV" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AN]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[AN]"
                       name="AN" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[IC]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[IC]"
                       name="IC" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[NZ]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[NZ]"
                       name="NZ" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[CH]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[CH]"
                       name="CH" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[PS]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[PS]"
                       name="PS" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[CN]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[CN]"
                       name="CN" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[Total]"
-                      dataType="r8"
+                      dataType="cy"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de error de origen de Excel].Columns[Total]"
                       name="Total" />
                     <outputColumn
@@ -2073,55 +2068,55 @@
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[Canal]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[AY]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="AY"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[AY]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AY]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[AP]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="AP"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[AP]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AP]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[AV]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="AV"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[AV]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AV]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CH]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="CH"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CH]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[CH]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[PS]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="PS"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[PS]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[PS]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[IC]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="IC"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[IC]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[IC]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[NZ]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="NZ"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[NZ]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[NZ]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[AN]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="AN"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[AN]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[AN]" />
                     <inputColumn
                       refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CN]"
-                      cachedDataType="r8"
+                      cachedDataType="cy"
                       cachedName="CN"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CN]"
                       lineageId="Package\Tarea Flujo de datos\Cuotas Generales.Outputs[Salida de origen de Excel].Columns[CN]" />
@@ -3007,7 +3002,7 @@
         <NodeLayout
           Size="179,42"
           Id="Package\Tarea Ejecutar SQL 1"
-          TopLeft="280,244" />
+          TopLeft="279,244" />
         <NodeLayout
           Size="176,42"
           Id="Package\Tarea Flujo de datos"
@@ -3036,7 +3031,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="369.25,203">
+          TopLeft="368.75,203">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3065,9 +3060,13 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="173,42"
-          Id="Package\Tarea Flujo de datos\Factor de Cobertura"
-          TopLeft="464.624989410863,52.6499992910028" />
+          Size="175,42"
+          Id="Package\Tarea Flujo de datos\Conversión de datos 1 1"
+          TopLeft="935.227276638833,168.454545222087" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Tarea Flujo de datos\Columna derivada"
+          TopLeft="249.500001974404,251.54999991864" />
         <NodeLayout
           Size="173,42"
           Id="Package\Tarea Flujo de datos\Columna derivada 1"
@@ -3085,6 +3084,10 @@
           Id="Package\Tarea Flujo de datos\Cuotas Generales"
           TopLeft="39.875001238659,53.3500000116229" />
         <NodeLayout
+          Size="173,42"
+          Id="Package\Tarea Flujo de datos\Factor de Cobertura"
+          TopLeft="464.624989410863,52.6499992910028" />
+        <NodeLayout
           Size="187,42"
           Id="Package\Tarea Flujo de datos\Destino de OLE DB 1 1"
           TopLeft="936.352275996213,266.304545349939" />
@@ -3101,10 +3104,6 @@
           Id="Package\Tarea Flujo de datos\Destino de OLE DB"
           TopLeft="38.875001238659,338.350000011623" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\Tarea Flujo de datos\Columna derivada"
-          TopLeft="249.500001974404,251.54999991864" />
-        <NodeLayout
           Size="203,43"
           Id="Package\Tarea Flujo de datos\Conversión de datos 1 1 1"
           TopLeft="447.499989755452,152.49999755919" />
@@ -3116,10 +3115,28 @@
           Size="172,42"
           Id="Package\Tarea Flujo de datos\Cambio de Factores"
           TopLeft="937.727276080033,66.9545453383164" />
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Tarea Flujo de datos\Conversión de datos 1 1"
-          TopLeft="935.227276638833,168.454545222087" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos3]"
+          TopLeft="549.749989327044,195.49999755919">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.849997338354"
+              Start="0,0"
+              End="0,49.349997338354">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.349997338354" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos2]"
           TopLeft="122.875001238659,194.350000011623">
@@ -3318,44 +3335,9 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos3]"
-          TopLeft="549.749989327044,195.49999755919">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.849997338354"
-              Start="0,0"
-              End="0,49.349997338354">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.349997338354" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Factor de Cobertura">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB 1">
     <Properties>
@@ -3384,6 +3366,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tarea Flujo de datos\Cuotas Generales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Factor de Cobertura">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

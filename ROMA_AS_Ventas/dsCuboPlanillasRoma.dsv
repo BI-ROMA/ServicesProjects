@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="89bf7d61-a78e-47ec-bdd9-0c0e52301968" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1ad7de90-eec7-4e8b-926a-2fd0349ca052" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>dsCuboPlanillasRoma</ID>
   <Name>dsCuboPlanillasRoma</Name>
   <CreatedTimestamp>2021-04-22T21:56:25.416667Z</CreatedTimestamp>
@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="202" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6960" scrolltop="5613" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="27040" y="15161" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="202" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6960" scrolltop="-326" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24977" y="17912" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -1810,7 +1810,7 @@
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>6960</DiagramViewPortLeft>
-            <DiagramViewPortTop>5613</DiagramViewPortTop>
+            <DiagramViewPortTop>-326</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>75</DiagramZoom>
@@ -1825,7 +1825,7 @@
       <xs:element name="dsCuboPlanillasRoma" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="457c02e6-c166-41f1-948a-a25d169404d9">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="Planillas_Fact_Ventas" msprop:design-time-name="13e3e91b-638a-4ef9-be94-ffce99da2d54" msprop:IsLogical="True" msprop:FriendlyName="Fact_Ventas" msprop:DbTableName="Fact_Ventas" msprop:TableType="View" msprop:QueryDefinition="SELECT        FechaKey, IdSede, IdMesa, IdCliente, IdProveedor, IdProducto, IdDocumento, Item, IdJefe_dVenta, IdSupervisor, IdVendedor, IdCanal, IdCartera, IdCat_xPrv, Cantidad, Total, TotalIGV, PartitionMonth, FactorUME, IdLLaveCartera, &#xD;&#xA;                         IdRelGeneral, IdRelGeneral2, IdTipoVenta, UME, IdAlmacen, Prod_xDoc&#xD;&#xA;FROM            Planillas.vw_Fact_Ventas_Full" msprop:QueryBuilder="SpecificQueryBuilder">
+            <xs:element name="Planillas_Fact_Ventas" msprop:design-time-name="13e3e91b-638a-4ef9-be94-ffce99da2d54" msprop:IsLogical="True" msprop:FriendlyName="Fact_Ventas" msprop:DbTableName="Fact_Ventas" msprop:TableType="View" msprop:QueryDefinition="SELECT        FechaKey, IdSede, IdMesa, IdCliente, IdProveedor, IdProducto, IdDocumento, Item, IdJefe_dVenta, IdSupervisor, IdVendedor, IdCanal, IdCartera, IdCat_xPrv, Cantidad, price, Total, TotalIGV, PartitionMonth, FactorUME, &#xD;&#xA;                         IdLLaveCartera, IdRelGeneral, IdRelGeneral2, IdTipoVenta, UME, IdAlmacen, Prod_xDoc&#xD;&#xA;FROM            Planillas.vw_Fact_Ventas_Full" msprop:QueryBuilder="SpecificQueryBuilder">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="FechaKey" msprop:design-time-name="b3758180-cf3f-47cb-b20e-884a8b927dc2" msprop:DbColumnName="FechaKey" msprop:FriendlyName="FechaKey" type="xs:int" minOccurs="0" />
@@ -1878,6 +1878,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="price" msprop:DbColumnName="price" msprop:design-time-name="131f8cd1-10de-4b2e-bdf7-11e232a03cfe" type="xs:decimal" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -3139,197 +3140,197 @@
           <xs:selector xpath=".//Ventas_DimMetricas" />
           <xs:field xpath="IdMetrica" />
         </xs:unique>
-        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMetricas" refer="Ventas_DimMetricas_Constraint1">
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMesas" refer="Ventas_DimMesas_Constraint1">
           <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
-          <xs:field xpath="IdMetrica" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimSedes" refer="Ventas_DimSedes_Constraint1">
-          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
-          <xs:field xpath="IdSede" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
-          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
-          <xs:field xpath="IdVendedor" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
-          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
-          <xs:field xpath="IdCat_xPrv" />
+          <xs:field xpath="IdMesa" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
           <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
           <xs:field xpath="IdProveedor" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMesas" refer="Ventas_DimMesas_Constraint1">
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
           <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
-          <xs:field xpath="IdMesa" />
-        </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral" />
-          <xs:field xpath="IdVendedor" />
-        </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral_DimSedes" refer="Ventas_DimSedes_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral" />
-          <xs:field xpath="IdSede" />
-        </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral" />
           <xs:field xpath="IdCat_xPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral" />
-          <xs:field xpath="IdPrv" />
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdVendedor" />
         </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral" />
-          <xs:field xpath="IdCar" />
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdSede" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Ventas_Resumen_xVertical_DimMetricas" refer="Ventas_DimMetricas_Constraint1">
+          <xs:selector xpath=".//Planillas_Fact_Ventas_Resumen_xVertical" />
+          <xs:field xpath="IdMetrica" />
         </xs:keyref>
         <xs:keyref name="FK_DimRelGeneral_DimMesas" refer="Ventas_DimMesas_Constraint1">
           <xs:selector xpath=".//Ventas_DimRelGeneral" />
           <xs:field xpath="IdMesa" />
         </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral2_DimSedes" refer="Ventas_DimSedes_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
-          <xs:field xpath="IdSede" />
+        <xs:keyref name="FK_DimRelGeneral_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral" />
+          <xs:field xpath="IdCar" />
         </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral2_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
+        <xs:keyref name="FK_DimRelGeneral_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral" />
           <xs:field xpath="IdPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_DimRelGeneral2_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
-          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
-          <xs:field xpath="IdCar" />
+        <xs:keyref name="FK_DimRelGeneral_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral" />
+          <xs:field xpath="IdCat_xPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimRelGeneral_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral" />
+          <xs:field xpath="IdSede" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimRelGeneral_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral" />
+          <xs:field xpath="IdVendedor" />
         </xs:keyref>
         <xs:keyref name="FK_DimRelGeneral2_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
           <xs:selector xpath=".//Ventas_DimRelGeneral2" />
           <xs:field xpath="IdCat_xPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_Proc_DimProductosFull" refer="Ventas_DimProductosFull_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
-          <xs:field xpath="IdProducto" />
+        <xs:keyref name="FK_DimRelGeneral2_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
+          <xs:field xpath="IdCar" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_Proc_DimSedes" refer="Ventas_DimSedes_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
+        <xs:keyref name="FK_DimRelGeneral2_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
+          <xs:field xpath="IdPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimRelGeneral2_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Ventas_DimRelGeneral2" />
           <xs:field xpath="IdSede" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_Proc_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
-          <xs:field xpath="IdProveedor" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_Proc_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
-          <xs:field xpath="IdCat_xPrv" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_Proc_DimFechas" refer="Ventas_DimFechas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
-          <xs:field xpath="FechaKey" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Inventarios_Proc_DimAlmacenes" refer="Ventas_DimAlmacenes_Constraint1">
           <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
           <xs:field xpath="IdAlmacen" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_DimAlmacenes" refer="Ventas_DimAlmacenes_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
-          <xs:field xpath="IdAlmacen" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_DimFechas" refer="Ventas_DimFechas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+        <xs:keyref name="FK_Fact_Inventarios_Proc_DimFechas" refer="Ventas_DimFechas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
           <xs:field xpath="FechaKey" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+        <xs:keyref name="FK_Fact_Inventarios_Proc_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
+          <xs:field xpath="IdCat_xPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Inventarios_Proc_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
           <xs:field xpath="IdProveedor" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Inventarios_DimProductosFull" refer="Ventas_DimProductosFull_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+        <xs:keyref name="FK_Fact_Inventarios_Proc_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
+          <xs:field xpath="IdSede" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Inventarios_Proc_DimProductosFull" refer="Ventas_DimProductosFull_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios_Proc" />
           <xs:field xpath="IdProducto" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Inventarios_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
           <xs:selector xpath=".//Ventas_Fact_Inventarios" />
           <xs:field xpath="IdCat_xPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Objetivos_xClientes_DimClientes" refer="Ventas_DimClientes_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Objetivos_xClientes" />
-          <xs:field xpath="IdCliente" />
+        <xs:keyref name="FK_Fact_Inventarios_DimProductosFull" refer="Ventas_DimProductosFull_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+          <xs:field xpath="IdProducto" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Objetivos_xClientes_DimFechas" refer="Ventas_DimFechas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Objetivos_xClientes" />
+        <xs:keyref name="FK_Fact_Inventarios_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+          <xs:field xpath="IdProveedor" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Inventarios_DimFechas" refer="Ventas_DimFechas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
           <xs:field xpath="FechaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Inventarios_DimAlmacenes" refer="Ventas_DimAlmacenes_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Inventarios" />
+          <xs:field xpath="IdAlmacen" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Objetivos_xClientes_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
           <xs:selector xpath=".//Ventas_Fact_Objetivos_xClientes" />
           <xs:field xpath="IdProveedor" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimRelGeneral" refer="Ventas_DimRelGeneral_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
-          <xs:field xpath="IdRelGeneral" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimRelGeneral2" refer="Ventas_DimRelGeneral2_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
-          <xs:field xpath="IdRelGeneral2" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimFechas" refer="Ventas_DimFechas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
+        <xs:keyref name="FK_Fact_Objetivos_xClientes_DimFechas" refer="Ventas_DimFechas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Objetivos_xClientes" />
           <xs:field xpath="FechaKey" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimMesas" refer="Ventas_DimMesas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
-          <xs:field xpath="IdMesa" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
-          <xs:field xpath="IdVen" />
+        <xs:keyref name="FK_Fact_Objetivos_xClientes_DimClientes" refer="Ventas_DimClientes_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Objetivos_xClientes" />
+          <xs:field xpath="IdCliente" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
           <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
           <xs:field xpath="IdCat_xPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimRelGeneral" refer="Ventas_DimRelGeneral_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="IdRelGeneral" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="IdPrv" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="IdCat_xPrv" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimSedes" refer="Ventas_DimSedes_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="IdSede" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
           <xs:field xpath="IdVen" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimFechas" refer="Ventas_DimFechas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="FechaKey" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimMesas" refer="Ventas_DimMesas_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimMesas" refer="Ventas_DimMesas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
           <xs:field xpath="IdMesa" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Cuotas_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
-          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
-          <xs:field xpath="IdCar" />
+        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimFechas" refer="Ventas_DimFechas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
+          <xs:field xpath="FechaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimRelGeneral2" refer="Ventas_DimRelGeneral2_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
+          <xs:field xpath="IdRelGeneral2" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_CarteraInicial_xVendedor_DimRelGeneral" refer="Ventas_DimRelGeneral_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_CarteraInicial_xVendedor" />
+          <xs:field xpath="IdRelGeneral" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Cuotas_DimRelGeneral2" refer="Ventas_DimRelGeneral2_Constraint1">
           <xs:selector xpath=".//Ventas_Fact_Cuotas" />
           <xs:field xpath="IdRelGeneral2" />
         </xs:keyref>
-        <xs:keyref name="FK_Dim_Categorias_xProveedor_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_Dim_Categorias_xProveedor" />
+        <xs:keyref name="FK_Fact_Cuotas_DimCarterasNew" refer="Ventas_DimCarterasNew_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdCar" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_DimMesas" refer="Ventas_DimMesas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdMesa" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_DimFechas" refer="Ventas_DimFechas_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="FechaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_DimVendedores" refer="Ventas_DimVendedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdVen" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_DimSedes" refer="Ventas_DimSedes_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdSede" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdCat_xPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Cuotas_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
           <xs:field xpath="IdPrv" />
         </xs:keyref>
-        <xs:keyref name="FK_DimProductosFull_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
-          <xs:selector xpath=".//Ventas_DimProductosFull" />
+        <xs:keyref name="FK_Fact_Cuotas_DimRelGeneral" refer="Ventas_DimRelGeneral_Constraint1">
+          <xs:selector xpath=".//Ventas_Fact_Cuotas" />
+          <xs:field xpath="IdRelGeneral" />
+        </xs:keyref>
+        <xs:keyref name="FK_Dim_Categorias_xProveedor_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_Dim_Categorias_xProveedor" />
           <xs:field xpath="IdPrv" />
         </xs:keyref>
         <xs:keyref name="FK_DimProductosFull_Dim_Categorias_xProveedor" refer="Ventas_Dim_Categorias_xProveedor_Constraint1">
           <xs:selector xpath=".//Ventas_DimProductosFull" />
           <xs:field xpath="IdCat_xPrv" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimProductosFull_DimProveedores" refer="Ventas_DimProveedores_Constraint1">
+          <xs:selector xpath=".//Ventas_DimProductosFull" />
+          <xs:field xpath="IdPrv" />
         </xs:keyref>
         <xs:keyref name="FK_DimSedes_DimAlmacenes" refer="Ventas_DimAlmacenes_Constraint1">
           <xs:selector xpath=".//Ventas_DimSedes" />

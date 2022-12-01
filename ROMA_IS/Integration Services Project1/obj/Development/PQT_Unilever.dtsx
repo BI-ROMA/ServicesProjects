@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DEVELOPER"
   DTS:CreatorName="DSROMASAC\g_lopez"
-  DTS:DTSID="{D0B2FD43-4F97-4C21-8459-BD757594E79E}"
+  DTS:DTSID="{A187D666-48E6-4C74-A101-3E9258E59EAA}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="10250"
   DTS:ObjectName="PQT_Unilever"
   DTS:PackageType="5"
-  DTS:VersionBuild="129"
-  DTS:VersionGUID="{AC99C2CB-9255-47F4-A85B-D5CED5EABB32}">
+  DTS:VersionBuild="130"
+  DTS:VersionGUID="{6D18EDA0-CB2A-4136-A1FE-FCFBB6FC3788}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Administrador de conexiones SMTP]"
       DTS:CreationName="SMTP"
-      DTS:DTSID="{DB0421FD-B12A-4EF6-BE54-5C6CD7C0E87F}"
+      DTS:DTSID="{499B0024-42BD-4387-B0D2-A19756EE9318}"
       DTS:ObjectName="Administrador de conexiones SMTP">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">"SmtpServer=smtp.office365.com;port=587; UseWindowsAuthentication=True;EnableSsl=True; user=alertati@roma.com.pe; password=Notificaciones.123"</DTS:PropertyExpression>
@@ -32,7 +32,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoCab]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{43B19C96-C3CE-4EF9-BDE3-50084F8C8B5F}"
+      DTS:DTSID="{76E78E47-0F2F-491C-9931-E61C8A27CDAB}"
       DTS:ObjectName="ArchivoCab">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Ventas.Cabecera.csv"</DTS:PropertyExpression>
@@ -53,7 +53,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{44F78993-447D-4508-9658-6E69C981AAE4}"
+              DTS:DTSID="{307BB4D8-3211-430F-B926-F2E90CA4B645}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -62,7 +62,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="cardcode"
-              DTS:DTSID="{B362E3AA-9B0A-4AFD-B3A8-305BE94B58E8}"
+              DTS:DTSID="{212BD90F-D04C-4B51-AE51-1509B88A4B65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SlpCode"
-              DTS:DTSID="{695C5449-18DB-4BF9-ADD0-5FD85DC5C77D}"
+              DTS:DTSID="{9ACACF46-965B-469C-A548-B3E85AA6BCFF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +80,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedido"
-              DTS:DTSID="{650B87C5-6251-4A02-95EB-8C978504C1FC}"
+              DTS:DTSID="{40375995-50B4-4ABF-AEC9-B38F0E66E6B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedFecha"
-              DTS:DTSID="{A39AFF5D-AE63-44C5-81F9-070876128017}"
+              DTS:DTSID="{F6B1E55F-60AA-4496-8B04-CF5E14DB4954}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -98,7 +98,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedStatus"
-              DTS:DTSID="{ED8205EE-E0D9-4614-84A1-DF2AB18D44B3}"
+              DTS:DTSID="{108513B3-A90F-474F-884B-2DC5D15B9533}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -107,7 +107,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactura"
-              DTS:DTSID="{7058264A-26C7-447C-9263-E24533444871}"
+              DTS:DTSID="{810EEBD7-EEB0-4A84-BE15-40F68A5DFA1B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -116,7 +116,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactFecha"
-              DTS:DTSID="{1643D855-AEFD-42D9-90F7-0F45393509B4}"
+              DTS:DTSID="{B1D8E71C-8E45-4E18-8C11-5F3FB8DA3A19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -125,7 +125,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactStatus"
-              DTS:DTSID="{01C39CA6-1FED-4A1C-8BCD-871C029CBB1C}"
+              DTS:DTSID="{BA0A1CDE-A929-46F9-A849-D3E30F02502A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -134,7 +134,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MotivoCancelado"
-              DTS:DTSID="{97F4E60B-3451-4756-A275-1C8A4F58607E}"
+              DTS:DTSID="{C982FD46-2CD6-4EC6-BAC9-DA4353865C6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -142,7 +142,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="periodo"
-              DTS:DTSID="{7EF6AAEE-EC70-49AA-A061-7F8D8E6FAD3C}"
+              DTS:DTSID="{6D2E9F54-59EE-482E-A0BF-84B21FAC78F8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -151,7 +151,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoClientes]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{22019D7E-514C-4EA3-BDC8-42DBBD817989}"
+      DTS:DTSID="{854134D3-3D83-490E-8288-AF8C55BB9E93}"
       DTS:ObjectName="ArchivoClientes">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Clientes.csv"</DTS:PropertyExpression>
@@ -172,7 +172,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{57A98278-52AA-4A63-AB2B-D6B6C50873CB}"
+              DTS:DTSID="{6D0F4867-A189-4744-AEBC-B83D98470D85}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -181,7 +181,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoCliente"
-              DTS:DTSID="{C19EE689-1476-4F4B-9DA8-723C961A9D77}"
+              DTS:DTSID="{9422CF0A-783A-4E93-B18E-600E2688E187}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -190,7 +190,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="name"
-              DTS:DTSID="{7D73565A-62A4-4B0F-B7FD-44C9EECB1413}"
+              DTS:DTSID="{47FC608A-3886-4939-9CB0-EF223CF79FD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -199,7 +199,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RUC"
-              DTS:DTSID="{66F13AF2-D7AE-4546-9057-CBCC5E6184E3}"
+              DTS:DTSID="{856BD3A3-4E15-4369-9CD3-326151386241}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -208,7 +208,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{BFCB1FB8-D49C-4A1D-B071-55BF4A312C67}"
+              DTS:DTSID="{AFD5A8E9-7065-41D0-86FF-0983041C407F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -217,7 +217,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Street"
-              DTS:DTSID="{B0E1527B-CF2E-493F-AB62-5036DD9A812D}"
+              DTS:DTSID="{B80A4654-013F-4EF4-8368-5C8817462466}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -226,7 +226,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="telefono"
-              DTS:DTSID="{4951F403-B707-4426-96F7-43EDAAAB35CD}"
+              DTS:DTSID="{0A9BDBBA-4FDC-4523-86CD-D6825F22F2AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +235,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Email"
-              DTS:DTSID="{9D6F7E62-0EC6-4F32-9372-E28FBB06F805}"
+              DTS:DTSID="{438F7F2B-EC77-48AF-96A8-9CC8A5EF3F43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +244,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="canal"
-              DTS:DTSID="{C85D6D75-8BD0-4EBA-9E96-5E9CF81AD679}"
+              DTS:DTSID="{25D43604-5EB6-4598-A169-938AA37B60F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -253,7 +253,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoNegocio"
-              DTS:DTSID="{7825EF0C-540F-4DCD-BF58-126C1C82AB07}"
+              DTS:DTSID="{A044598F-1B4D-45D7-90B6-9BD81072B6B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -262,7 +262,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Zona"
-              DTS:DTSID="{B194C905-2FF1-472F-90EC-58D542E0C826}"
+              DTS:DTSID="{0544D055-FF8A-4EFF-8C1C-34429A8656D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -271,7 +271,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Modulo"
-              DTS:DTSID="{02724D65-893A-4B99-9290-56BB00F97A2A}"
+              DTS:DTSID="{ADDEA50F-4B8E-40D6-9F57-ED4B87F53B02}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +279,7 @@
               DTS:DataType="303"
               DTS:TextQualified="True"
               DTS:ObjectName="Distrito"
-              DTS:DTSID="{311FA233-5CD1-4C5A-AC40-8D3A2B344C4D}"
+              DTS:DTSID="{5A88C888-25DE-42AE-83DA-C3857FE1010F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -288,7 +288,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Georeferencia"
-              DTS:DTSID="{F3805EA7-9CC1-45EB-A33E-CF13C51C2733}"
+              DTS:DTSID="{F3F95353-893A-45DA-830E-9165A01418DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -296,7 +296,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="slpcode"
-              DTS:DTSID="{D13EFA3D-5445-4403-9C13-80592DEE6433}"
+              DTS:DTSID="{A85D0BC9-6759-459E-8124-1472CDDB32C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -305,7 +305,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DiaVisita"
-              DTS:DTSID="{BCBC2F09-5DD0-4105-AD2E-37DA29F8A7D6}"
+              DTS:DTSID="{7E114B14-87B1-4DA1-92F6-40E64128450C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -314,7 +314,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Status"
-              DTS:DTSID="{B5F7ADA1-107D-4DAF-84C5-A692F66C5054}"
+              DTS:DTSID="{9A38982C-0205-4297-963F-1E0A64DE97A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -323,7 +323,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodCorporativo"
-              DTS:DTSID="{7622FBEF-63FA-4D7E-B85C-8D5A46893968}"
+              DTS:DTSID="{326C188F-B76A-47D1-91D0-1D61A94414FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -332,7 +332,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Mercado"
-              DTS:DTSID="{6D4284A8-E555-4602-9DC9-DA854FCBB997}"
+              DTS:DTSID="{DFCBB014-A2AF-4971-8E3E-FB61055235C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -341,7 +341,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Clasificacion"
-              DTS:DTSID="{64E221C9-69B4-4F11-85EF-10D1FE565D55}"
+              DTS:DTSID="{1DE220BD-513E-4645-BFF7-9299855A6B90}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -350,7 +350,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoDet]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B6D150F2-988E-4A50-9986-B34D57C63E54}"
+      DTS:DTSID="{C753507B-178F-4372-A268-AE4E3C522027}"
       DTS:ObjectName="ArchivoDet">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Ventas.Detalle.csv"</DTS:PropertyExpression>
@@ -372,7 +372,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{2467C010-4F20-4162-B426-645E187DE3EF}"
+              DTS:DTSID="{5B62E903-5BEF-409D-82FA-EDD368997582}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -381,7 +381,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedido"
-              DTS:DTSID="{5D070D5F-BBA9-4478-BAF0-91E7C8606A9D}"
+              DTS:DTSID="{01854586-DA2D-4CAB-B85A-5670228C17EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -390,7 +390,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoProducto"
-              DTS:DTSID="{96DB9EEF-EC38-4940-A908-321BD98CA840}"
+              DTS:DTSID="{F34362A6-02F6-4605-A9BC-0412E86A67CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -399,7 +399,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PedNrSecuencia"
-              DTS:DTSID="{AE2C8EC1-C57B-41F0-B9DC-C17F1CA9E8F2}"
+              DTS:DTSID="{93D1F35C-7D9C-40C7-9550-4F4BE77D9E51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -409,7 +409,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedDescuento"
-              DTS:DTSID="{364233CC-0C07-4633-A298-B5CB1D630183}"
+              DTS:DTSID="{A7BE1E18-A2B4-4CD5-9AB9-D90D3ACB23EF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +419,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedValorSinIGV"
-              DTS:DTSID="{A0307AA7-E1E7-4EF4-ADAE-9CAC8D5319D1}"
+              DTS:DTSID="{8EC283B9-71D4-43DD-9206-F196523231A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -429,7 +429,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedValorConIGV"
-              DTS:DTSID="{06C7E038-8065-4784-917C-C372C1A99F25}"
+              DTS:DTSID="{9509D8D8-64D3-4F44-8C8D-049ECA54F6AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -439,7 +439,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedCantidadUC"
-              DTS:DTSID="{E8CF743C-175B-4D63-84DC-86CAFAABAFBE}"
+              DTS:DTSID="{6CCC2AC0-176B-4BBC-A5DD-B4C804003D68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -449,7 +449,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDPedCantidadUV"
-              DTS:DTSID="{E225FFC8-EB29-4D01-A93C-BC448B849A1F}"
+              DTS:DTSID="{029C0C4E-7AEE-4EBA-926A-338613BC68F2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -458,7 +458,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactura"
-              DTS:DTSID="{3DD1BF23-5186-4888-A11F-CA6AD1541C49}"
+              DTS:DTSID="{909DAE0B-6694-4645-A1AD-7C5E0FC9AF07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -467,7 +467,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FactNrSecuencia"
-              DTS:DTSID="{A765284C-31D3-476B-930C-6ECD4CA4D846}"
+              DTS:DTSID="{6CFD4A15-D6A5-4A00-9323-C71B14C6D7CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +477,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactDescuento"
-              DTS:DTSID="{AA6E0A50-89E3-499E-A1D8-9C20F5485527}"
+              DTS:DTSID="{FF04A760-49BA-44F0-8283-694830B773D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -487,7 +487,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactVentaSinIGV"
-              DTS:DTSID="{8773118F-85CD-42DA-B019-601868827019}"
+              DTS:DTSID="{27284DD6-472B-4635-AAC0-17DC3F0CDDC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -497,7 +497,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactVentaConIGV"
-              DTS:DTSID="{DD69A19A-A9B0-4516-B0EE-8C9069EF17D6}"
+              DTS:DTSID="{5A2E4003-AA63-4AB3-B60D-FA594D7DD7F8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -507,7 +507,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactCantidadUC"
-              DTS:DTSID="{47EF3E8D-3D9C-41E2-899A-9799987AFADA}"
+              DTS:DTSID="{1006724B-31CB-42EF-83A3-3A622AF8F614}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -517,7 +517,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="CDFactCantidadUV"
-              DTS:DTSID="{60630F75-D88A-4CAC-90D7-75E2B2121483}"
+              DTS:DTSID="{7C88E1DD-64A2-42BE-810D-04C4298CFC76}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -526,7 +526,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IndicCombo"
-              DTS:DTSID="{656EBB74-DB93-44B1-929D-F03B7BED66C2}"
+              DTS:DTSID="{4BDE16A1-1F2A-4823-B6EF-166AD2571D2E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -535,7 +535,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodCombo"
-              DTS:DTSID="{3B6A3E71-7C50-4290-86C8-80566FB5E132}"
+              DTS:DTSID="{DED8DB4F-CA73-456C-91D7-9C8748034F3B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -544,7 +544,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoPromocion"
-              DTS:DTSID="{5B26AFD7-2CAD-4D48-B033-8CC0A51FC26E}"
+              DTS:DTSID="{744ABE05-92B2-4745-BDE2-1A8CF30F0864}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -552,7 +552,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CantidadDevuelta"
-              DTS:DTSID="{1335C945-1DCD-4658-8B05-55A14EA04007}"
+              DTS:DTSID="{3D9BBC5C-E121-4CEB-8CBE-928999345BCA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -562,7 +562,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="BonificacionSoles"
-              DTS:DTSID="{50E803AC-5C42-46C1-BE67-8D6F6975B2E6}"
+              DTS:DTSID="{3A01CCF9-8160-48B4-9B8B-B4FB88260914}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -572,7 +572,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="BonificacionUnidades"
-              DTS:DTSID="{3165A70F-C04E-4EFC-BF18-FB5FB8E4404E}"
+              DTS:DTSID="{937F581A-6D8C-4ADB-865A-DA60EB1EBDA6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -581,7 +581,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoProductos]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{CD8D24B8-9770-4F0D-A6AF-BAFCCA80AB2D}"
+      DTS:DTSID="{81CE8BA7-E5C7-4265-8974-1E1F6D854083}"
       DTS:ObjectName="ArchivoProductos">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Productos.csv"</DTS:PropertyExpression>
@@ -602,7 +602,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{1252AAF7-63E1-457C-A2BA-25308887E612}"
+              DTS:DTSID="{2175D729-0C35-46CF-A996-63489D35E5B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -611,7 +611,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoProducto"
-              DTS:DTSID="{86AA0215-FAB1-4E82-A93F-5316DC4AA2F3}"
+              DTS:DTSID="{E64D5FEE-03C5-4110-A22F-2E651D0E81FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -620,7 +620,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NombreProducto"
-              DTS:DTSID="{686F918F-66C2-42B5-BB75-9B1A553919EF}"
+              DTS:DTSID="{AD17B78D-E73C-49A2-ACB5-44DDC037E20C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -629,7 +629,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="codigobarra"
-              DTS:DTSID="{61A80AB3-3DBF-4123-A654-60AAE9927C58}"
+              DTS:DTSID="{77A87A30-EF46-4F0E-8802-37A5055485F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -638,7 +638,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="familia"
-              DTS:DTSID="{AF192DBF-CA91-4A40-A6AC-7DB03B3AB8C9}"
+              DTS:DTSID="{DF1A3DDA-6B94-43D1-BCC8-34446AA5F379}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -647,7 +647,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="linea"
-              DTS:DTSID="{08134EF1-D1AF-44F3-8C50-D26B8D225E8D}"
+              DTS:DTSID="{24A4801E-F9FB-4BC6-BEF3-3645E93CBE69}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -656,7 +656,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="marca"
-              DTS:DTSID="{1D3532C8-E5E2-4C9F-9A63-941BBDAF2C47}"
+              DTS:DTSID="{F437AE2C-C5C3-4644-9932-F7DF8681962A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -665,7 +665,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="categoria"
-              DTS:DTSID="{83BFEF21-2EAC-48F1-AF96-BF9DF00D6B3B}"
+              DTS:DTSID="{9759887B-BDB2-4DD3-B4C3-8805184E1F92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -674,7 +674,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subgrupo5"
-              DTS:DTSID="{FB1A7433-E0CB-4192-853C-D599DA5BDBE1}"
+              DTS:DTSID="{BF45629E-17C1-4EE3-99B9-98AC76A7AD36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -683,7 +683,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subgrupo6"
-              DTS:DTSID="{09D74487-B7F4-4057-87CC-ED1D29CC486D}"
+              DTS:DTSID="{13107CD4-9F2D-430F-8E14-F1AD6385B1BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -692,7 +692,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subgrupo7"
-              DTS:DTSID="{24881A13-6612-4BF2-B38E-AEDE73AE7328}"
+              DTS:DTSID="{CAA1A978-F46C-41F2-974F-5A2D5A02DCAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -701,7 +701,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subgrupo8"
-              DTS:DTSID="{F4DCE808-4C86-4A33-9F13-AC9314CFDCE0}"
+              DTS:DTSID="{1F9FA8D5-9671-4E1D-BD3E-1A8DFF4CA2B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -710,7 +710,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OrigenProd"
-              DTS:DTSID="{F0625D87-BACC-4BA2-A36C-846676030C12}"
+              DTS:DTSID="{5706FEC8-D491-4E58-BFB3-92B1D5BE9812}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -718,7 +718,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FactorUnid"
-              DTS:DTSID="{7398B933-45A2-4B31-BB0F-36D80DDF7F9A}"
+              DTS:DTSID="{A5354861-F538-4E81-88E9-0A0A4B77831D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -726,7 +726,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FactorVta"
-              DTS:DTSID="{B9BBAF23-78B1-4494-852D-A880266C3767}"
+              DTS:DTSID="{01CECD32-C66B-4F3F-9C8D-CF3424FEE998}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -735,7 +735,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Bonificacion"
-              DTS:DTSID="{EB7042E4-401E-4E7C-B356-51C6AC8AC887}"
+              DTS:DTSID="{6EA1C938-79F0-4960-8339-143350FEEB70}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -745,7 +745,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Peso"
-              DTS:DTSID="{CF86FAE2-A075-49CC-A166-DE1749788200}"
+              DTS:DTSID="{B38A028E-904C-4593-AC75-B3D4664BE572}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -755,7 +755,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="PrecioCompra"
-              DTS:DTSID="{5DAD6155-F8EF-4E0D-BB43-DA204DAFE9C9}"
+              DTS:DTSID="{3698D632-1255-40B1-A50B-22F876A5A0BC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -765,7 +765,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="PrecioSugerido"
-              DTS:DTSID="{67AE705D-999F-4BC2-8846-42E804EC935C}"
+              DTS:DTSID="{7034BEEB-DE9F-49AC-B3A2-B58AAA19980B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -775,7 +775,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="PrecioPromedio"
-              DTS:DTSID="{73669564-0941-46CC-8B29-BAA45D87035B}"
+              DTS:DTSID="{1B998255-8899-47AB-9848-3BEC6328839D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -784,7 +784,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ReferProd1"
-              DTS:DTSID="{96A6BA13-5C03-4F8C-A8DC-7B0777C1C8B9}"
+              DTS:DTSID="{FB11B15D-22C8-4EAD-B20F-895CAE531A66}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -793,7 +793,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoStock]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{EE3544CD-6510-42DD-B453-BF229691BA92}"
+      DTS:DTSID="{706D3922-6FEC-4049-B3E7-4A64DF471615}"
       DTS:ObjectName="ArchivoStock">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Stock.csv"</DTS:PropertyExpression>
@@ -814,7 +814,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{3CE0F51D-9FDA-4AC9-A5B0-96B9104CE5C6}"
+              DTS:DTSID="{7496B3CC-BC36-4745-8463-DB7C667E1879}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -823,7 +823,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoAlmacen"
-              DTS:DTSID="{D2213B88-92B8-4B16-B7DA-C188F3281ABF}"
+              DTS:DTSID="{397A9D03-C7D4-460C-98D0-9A9FB9C37B9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -832,7 +832,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NombreAlmacen"
-              DTS:DTSID="{873BA417-5D13-4BAE-A835-771F6F2384DB}"
+              DTS:DTSID="{6E949A58-9D6E-4DDD-95E7-5B624143009A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -841,7 +841,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoProveedor"
-              DTS:DTSID="{C08FCBF6-EC7C-4153-BD1D-3D77665A73C6}"
+              DTS:DTSID="{F0087E4A-6503-43D3-8FE2-12A1CE25CD6F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -850,7 +850,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Proveedor"
-              DTS:DTSID="{3BED493E-F1DC-4915-8772-63163632FE18}"
+              DTS:DTSID="{CB8DED62-DDCC-44C1-9083-CBF62B9CA664}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -859,7 +859,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoProducto"
-              DTS:DTSID="{F0C1F26B-416A-411E-BE36-A2066BDD8C5B}"
+              DTS:DTSID="{95FF0B55-D6A3-4E38-85E3-39F28537F941}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -867,7 +867,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="StockEnUnidadDeConsumo"
-              DTS:DTSID="{6CB81CE0-8C19-4973-B144-DCAFAE6681C4}"
+              DTS:DTSID="{D2E4F0D4-406F-41D3-BEFD-59E1B0047668}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -876,7 +876,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UnidadDeMedidaDeConsumo"
-              DTS:DTSID="{AD29C046-4C81-4295-B217-6D8BC0568339}"
+              DTS:DTSID="{C42A5F70-6483-4C22-9B55-634C7CE4341C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -886,7 +886,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="StockEnUnidadDeCompra"
-              DTS:DTSID="{3A3C6667-1006-4107-88A4-452A18B94277}"
+              DTS:DTSID="{C00F6B39-37FF-4AC5-A1F2-C1611687E214}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -895,7 +895,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UnidadDeMedidaDeCompra"
-              DTS:DTSID="{2061E942-24B7-4CF6-815C-64BEFBA3BC46}"
+              DTS:DTSID="{ACBC23B8-91E7-44A2-B560-5E43B9C498AF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -904,7 +904,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ArchivoVendedores]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{1DFA235D-5DE5-4795-9592-27F167399797}"
+      DTS:DTSID="{D9250A12-178C-460C-A81B-FFCC0F07192C}"
       DTS:ObjectName="ArchivoVendedores">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\Vendedores.csv"</DTS:PropertyExpression>
@@ -925,7 +925,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoDistribuidor"
-              DTS:DTSID="{50DFF598-796E-43B6-A217-05AA59A67807}"
+              DTS:DTSID="{5B44671B-41B3-4A9D-8305-B32389126910}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -933,7 +933,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoVendedor"
-              DTS:DTSID="{68F06676-6A29-439F-A7AF-E5BD4B12A947}"
+              DTS:DTSID="{41E7D298-F390-444A-8BE0-C3B44C8F93BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -942,7 +942,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NombreVendedor"
-              DTS:DTSID="{4AC189E0-1010-4151-8B95-857D9B28EF6C}"
+              DTS:DTSID="{3C8A8C83-15ED-4F13-9BA8-8AB50CDBF4F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -951,7 +951,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Exclusivo"
-              DTS:DTSID="{BC1ACB35-8D02-45B1-851C-24B330822885}"
+              DTS:DTSID="{F509B502-1424-46FE-8515-A719102A8B3B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -961,7 +961,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="comision"
-              DTS:DTSID="{B759E9B7-E2F7-4134-8C3A-6F9B1F2E753E}"
+              DTS:DTSID="{C28B2BCF-C9AF-4C18-98D2-081073A2C61F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -970,7 +970,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="supervisor"
-              DTS:DTSID="{48E974C8-8F25-4384-86C1-E5DE43175BAD}"
+              DTS:DTSID="{DA99414E-BE9E-43F0-AEA0-A7B1E41258B0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -979,7 +979,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodigoMesa"
-              DTS:DTSID="{FD1011D1-49A5-4E8B-948D-4F42D7566C1A}"
+              DTS:DTSID="{63A42C04-2B54-421F-8EB2-E56A006EBBA5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -988,7 +988,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DestinoArchivosPlanos]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{930027c7-5ec4-4f4c-93b6-f8cd1dfcc599}"
+      DTS:DTSID="{0DFE5682-48B6-4D14-B95A-6BB38B205549}"
       DTS:ObjectName="DestinoArchivosPlanos">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::vDestino] + "\\" +  @[User::vArchivoPlano]</DTS:PropertyExpression>
@@ -1000,7 +1000,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DestinoArchivoZip]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{A0E7EF9E-A534-4D07-A6CD-3DD6C09E3191}"
+      DTS:DTSID="{ABEF05D9-FA0A-4F47-89D2-E417651F6DCC}"
       DTS:ObjectName="DestinoArchivoZip">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::vDestino] + "\\" +  @[User::var_NewFileName]</DTS:PropertyExpression>
@@ -1012,7 +1012,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[OrigenArchivosPlanos]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{b9c7f7e5-d11e-4ae5-8151-cc0b8344cdce}"
+      DTS:DTSID="{AA1C60E4-06D0-4D46-A383-4D73E2D1E7AF}"
       DTS:ObjectName="OrigenArchivosPlanos">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\"+ @[User::vArchivoPlano]</DTS:PropertyExpression>
@@ -1024,7 +1024,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[OrigenArchivoZip]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{1F43D6CF-5A89-46C7-8EC4-243A354B91E5}"
+      DTS:DTSID="{757E8613-9BCB-48A6-8DB7-A228C6052C95}"
       DTS:ObjectName="OrigenArchivoZip">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::var_WorkingDir] + "\\" +  @[User::var_NewFileName]</DTS:PropertyExpression>
@@ -1037,7 +1037,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{10E499CE-E54A-4075-8641-46021456B2F0}"
+      DTS:DTSID="{10043563-0457-42CA-8F33-5AF9216911B4}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vArchivoPlano">
@@ -1047,7 +1047,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FCF2337D-DB96-4397-A079-B5EE9577A486}"
+      DTS:DTSID="{7B301069-36F5-4B59-B601-4BC7DAEA366F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="vArchivosPlanos">
@@ -1065,7 +1065,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{40AFF4BE-2044-4276-9DAD-39AD6B256F56}"
+      DTS:DTSID="{1255CF12-E966-4987-96FD-5DF9D1188906}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::p_Ejecutatable]"
       DTS:IncludeInDebugDump="2345"
@@ -1076,7 +1076,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1EFA571D-21B9-4BF1-B8D8-302ED7053988}"
+      DTS:DTSID="{97EBF0D9-7B1A-4DC3-86F1-B8ECE97C538C}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_FileName">
@@ -1085,7 +1085,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0E215ECE-C75E-4A84-BACC-04E6C59C4A11}"
+      DTS:DTSID="{9F98E208-D5D9-47D0-BF0F-670A2559934B}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;output.zip&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -1096,7 +1096,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D5997919-FA7B-4685-B026-B07496814526}"
+      DTS:DTSID="{F2D6A680-6004-489A-9290-0B6C28A8F090}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::p_WorkingDir] +  @[User::vDirProveedor]"
       DTS:IncludeInDebugDump="2345"
@@ -1107,7 +1107,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{28F2329C-82A5-4451-BDB5-DFC4340E712F}"
+      DTS:DTSID="{1A12155A-16B0-433B-A2D3-43AC0E60730D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="Replace(Replace(@[User::vPlantilla_Clientes], &quot;@@FechaIni@@&quot;, @[User::vFechaIni] ), &quot;@@FechaFin@@&quot;, @[User::vFechaFin] )"
       DTS:IncludeInDebugDump="2345"
@@ -1118,7 +1118,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{89633513-60D7-45D3-80B0-C2E06F8B5951}"
+      DTS:DTSID="{6B777A35-F7B9-4588-A27F-E8C8AC20A709}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::p_Destino]+&quot;\\Uni&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -1129,7 +1129,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{32F52010-6FD2-473C-B103-7ADF3C75CCB6}"
+      DTS:DTSID="{7A06DBA7-837B-4414-AD21-D140C1765F64}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vDirProveedor">
@@ -1138,7 +1138,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B03BF396-0AC3-4CF6-9A10-4D23E3F9F98E}"
+      DTS:DTSID="{A77E706C-8817-42C4-B24E-1CEC09CEA511}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::p_Ejecutatable_CMD]"
       DTS:IncludeInDebugDump="2345"
@@ -1149,7 +1149,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A8DE795D-09E5-44D3-95EA-DD1CCCAABCB1}"
+      DTS:DTSID="{F8B89FBC-B04A-4297-AB12-6DC77CEB419B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vFechaFin">
@@ -1158,7 +1158,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8F2D2F1D-7D2B-4FF9-ACBC-CF1747CCF80A}"
+      DTS:DTSID="{A1B94FB2-D5FC-466B-9D79-EB50A2FD854F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vFechaIni">
@@ -1167,7 +1167,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BCF9705D-8594-4770-8D2F-6EDD550ED9DA}"
+      DTS:DTSID="{79FA802A-9F19-4048-91A3-10563D8A052B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vFechaRegistro">
@@ -1176,7 +1176,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{88AB7B0D-4081-4186-B486-C9A886F8A955}"
+      DTS:DTSID="{85F327AC-8D72-4999-B4E0-07879C663DB2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vPlantilla_Clientes">
@@ -1185,7 +1185,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C183F418-DE8A-443B-A971-A933FFCB3F78}"
+      DTS:DTSID="{D6D61988-1614-4D0C-B9D6-CE9F8D4AEF69}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vPlantilla_Stock">
@@ -1194,7 +1194,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{5CB0B3AA-2059-4C98-94E1-BD00F316F029}"
+      DTS:DTSID="{46A7637C-36B3-4D9E-A0C7-2B95AFF0D76F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vPlantilla_VentasCab">
@@ -1203,7 +1203,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2FA80DFD-E63D-4AB6-8FBB-2F7BFE11DC30}"
+      DTS:DTSID="{1BAB0ACA-C6E9-4BA0-82A1-847C0B550C56}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vPlantilla_VentasDet">
@@ -1212,7 +1212,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D6426CD9-4119-4CA1-B1BE-E497EA46F518}"
+      DTS:DTSID="{D6BEF30F-DAB7-49FF-ABC1-28E0A96DC8F8}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vProductos">
@@ -1221,7 +1221,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{46D117B8-F7D0-4CDF-B6A2-4233DDA819AC}"
+      DTS:DTSID="{EFCCA40B-DF31-4FD5-A9F5-FB257E03D0E3}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="Replace(Replace(@[User::vPlantilla_Stock], &quot;@@FechaIni@@&quot;, @[User::vFechaIni] ), &quot;@@FechaFin@@&quot;, @[User::vFechaFin] )"
       DTS:IncludeInDebugDump="2345"
@@ -1232,7 +1232,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6FE074F2-24E4-41F3-A27A-DCB5FB0CDD7D}"
+      DTS:DTSID="{A37E7F0E-E66F-4AE9-9F02-AEA47D305E3D}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vVendedores">
@@ -1241,7 +1241,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{524DAB30-8023-48A0-AFE1-1078F67A5F7E}"
+      DTS:DTSID="{BBFB987E-1291-4B57-B9DA-5870EE312E2A}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="Replace(Replace(@[User::vPlantilla_VentasCab], &quot;@@FechaIni@@&quot;, @[User::vFechaIni] ), &quot;@@FechaFin@@&quot;, @[User::vFechaFin] )"
       DTS:IncludeInDebugDump="2345"
@@ -1252,7 +1252,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{51D197CB-1A33-446E-8636-705B9E0A5DC0}"
+      DTS:DTSID="{25CFC8E2-FF79-4A4A-8599-2D895529A0C5}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="Replace(Replace(@[User::vPlantilla_VentasDet], &quot;@@FechaIni@@&quot;, @[User::vFechaIni] ), &quot;@@FechaFin@@&quot;, @[User::vFechaFin] )"
       DTS:IncludeInDebugDump="2345"
@@ -1267,7 +1267,7 @@
       DTS:refId="Package\Comprimir"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Tarea Ejecutar proceso"
-      DTS:DTSID="{275C7634-0B96-498E-B15C-45F7073A434D}"
+      DTS:DTSID="{D0AF3F09-CB7C-4416-855E-A7F976E408B0}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Comprimir"
@@ -1291,14 +1291,14 @@
       DTS:refId="Package\Contenedor de bucles Foreach"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Contenedor de bucles Foreach"
-      DTS:DTSID="{EBD4DE8E-199C-4B4C-A09A-1E6237D2681D}"
+      DTS:DTSID="{F64914E7-718A-4A5C-BAAF-66DFAAE1507A}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Contenedor de bucles Foreach">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{F7FD7048-004C-4D7B-B719-47CCD1FFA354}"
-        DTS:ObjectName="{F7FD7048-004C-4D7B-B719-47CCD1FFA354}">
+        DTS:DTSID="{6FE0D647-1C1E-4FFD-AF5F-DC506CE628F0}"
+        DTS:ObjectName="{6FE0D647-1C1E-4FFD-AF5F-DC506CE628F0}">
         <DTS:PropertyExpression
           DTS:Name="Directory">@[User::var_WorkingDir]</DTS:PropertyExpression>
         <DTS:ObjectData>
@@ -1320,29 +1320,29 @@
           DTS:refId="Package\Contenedor de bucles Foreach\Copia Archivos Planos"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="Tarea Sistema de archivos"
-          DTS:DTSID="{6a768600-72ba-452f-a385-b0db9e51eddf}"
+          DTS:DTSID="{74EF9CD5-AB65-4091-A77A-9BDFCCD50275}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Copia Archivos Planos"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOverwriteDestFile="True"
-              TaskSourcePath="{b9c7f7e5-d11e-4ae5-8151-cc0b8344cdce}"
-              TaskDestinationPath="{930027c7-5ec4-4f4c-93b6-f8cd1dfcc599}" />
+              TaskSourcePath="{AA1C60E4-06D0-4D46-A383-4D73E2D1E7AF}"
+              TaskDestinationPath="{0DFE5682-48B6-4D14-B95A-6BB38B205549}" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Contenedor de bucles Foreach\Tarea Script"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Tarea Script"
-          DTS:DTSID="{66F43ECB-6E6F-4D24-A60D-6BD804FAB6C4}"
+          DTS:DTSID="{77A280A3-DDAC-460B-AD26-AF7E963A9698}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Tarea Script"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -1352,15 +1352,6 @@
               Language="CSharp"
               ReadOnlyVariables="User::vArchivosPlanos"
               ReadWriteVariables="User::vArchivoPlano">
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1480,6 +1471,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5d341953b7064014b5b69e9b08cc6420.Properties.Settings.get_Default():ST_5d341953b7064014b5b69e9b08cc6420.Properties.Sett" +
+    "ings")]
+
+namespace ST_5d341953b7064014b5b69e9b08cc6420.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1709,35 +1729,6 @@ namespace ST_5d341953b7064014b5b69e9b08cc6420
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5d341953b7064014b5b69e9b08cc6420.Properties.Settings.get_Default():ST_5d341953b7064014b5b69e9b08cc6420.Properties.Sett" +
-    "ings")]
-
-namespace ST_5d341953b7064014b5b69e9b08cc6420.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
                 Name="Properties\AssemblyInfo.cs"
                 Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -1767,6 +1758,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1952,7 +1952,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{D0FD1353-FBE9-466F-AC12-16196D43B847}"
+          DTS:DTSID="{95510265-0220-4A7B-ABF8-2FBD97A2876A}"
           DTS:From="Package\Contenedor de bucles Foreach\Tarea Script"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -1961,8 +1961,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{408EE2BD-B11F-4411-AB24-6B9FAFF4D6FF}"
-          DTS:ObjectName="{408EE2BD-B11F-4411-AB24-6B9FAFF4D6FF}"
+          DTS:DTSID="{19C44CB2-D3B4-47EC-B540-C525756CFD29}"
+          DTS:ObjectName="{19C44CB2-D3B4-47EC-B540-C525756CFD29}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::vArchivosPlanos" />
       </DTS:ForEachVariableMappings>
@@ -1971,7 +1971,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:refId="Package\Contenedor de secuencias"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{AE7DCA29-D069-4EBA-A16D-DC9A950E4716}"
+      DTS:DTSID="{36DAE107-A5D5-4FD9-BF18-6473991A25A0}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Contenedor de secuencias">
@@ -1981,7 +1981,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias\Cab"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{337BC29E-9A91-4314-8908-6ACF2E0907F5}"
+          DTS:DTSID="{158A6762-4654-4621-8F20-312EA710A03E}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Cab"
@@ -2979,7 +2979,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias\Cab a tmp"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{ffae41ef-3e62-4c39-8bc9-5b312cc7fc2a}"
+          DTS:DTSID="{77D24410-86DA-4869-A815-859ABBA47309}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Cab a tmp"
@@ -3332,7 +3332,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     <property
                       dataType="System.String"
                       description="Asignaciones entre los parámetros del comando SQL y las variables."
-                      name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                      name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
                   </properties>
                   <connections>
                     <connection
@@ -3740,7 +3740,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias\Det"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{4701f6ca-b8ed-49f0-a37e-c87a31c0dc12}"
+          DTS:DTSID="{AC213E5C-824B-4382-94F1-1CEE89439C3D}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Det"
@@ -5041,7 +5041,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias\Det a tmp"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{6028c24f-0e78-441f-a570-49778cb672e7}"
+          DTS:DTSID="{758C4E41-7C6B-47E9-9BAA-E9FE5B8DCD4C}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Det a tmp"
@@ -5214,7 +5214,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     <property
                       dataType="System.String"
                       description="Asignaciones entre los parámetros del comando SQL y las variables."
-                      name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                      name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
                   </properties>
                   <connections>
                     <connection
@@ -5295,7 +5295,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias\Stock"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{80d296b5-d6f5-42a0-899c-45bf1c7ff0bb}"
+          DTS:DTSID="{717ADA9B-5453-43EB-9A39-DE8D3C1ADB10}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Stock"
@@ -6294,7 +6294,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{61CB711A-3A06-448D-8DC7-B2889E4D1FA8}"
+          DTS:DTSID="{122D33B6-24E8-44D3-A5E4-EEDF8870CF7A}"
           DTS:From="Package\Contenedor de secuencias\Cab a tmp"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -6302,7 +6302,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{6368C727-62B4-4C0C-8F2A-187092B5E04A}"
+          DTS:DTSID="{9013A26A-E74C-441F-808C-0B7766CBB3B7}"
           DTS:From="Package\Contenedor de secuencias\Cab"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -6310,7 +6310,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{9015F0DF-9F15-4687-A8B8-E5463037E160}"
+          DTS:DTSID="{FF1AF4C5-BC4A-4C3C-B93C-4BE3B0DF1CC4}"
           DTS:From="Package\Contenedor de secuencias\Det"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -6318,7 +6318,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{31E49646-B4D9-4DE3-B8F5-BA67121BC09A}"
+          DTS:DTSID="{8D19D639-D870-4121-936B-C4127CB32759}"
           DTS:From="Package\Contenedor de secuencias\Det a tmp"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -6329,7 +6329,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:refId="Package\Contenedor de secuencias 1"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{60C5FF7F-3690-45FB-B148-E51D81FB10A2}"
+      DTS:DTSID="{AAE093F7-3446-4E69-B9DD-F91D66E2DD9E}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Contenedor de secuencias 1">
@@ -6339,7 +6339,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias 1\Clientes"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{0d2ba3af-711d-40d9-9b27-2667dc218c7c}"
+          DTS:DTSID="{BA44C638-620E-4A04-99B0-D0A2B4F0D212}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Clientes"
@@ -7993,7 +7993,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias 1\Productos"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{78a147dd-8b18-48d3-9d45-39cd626f4e5a}"
+          DTS:DTSID="{8A8921F2-FF37-4973-8979-39F27C377B67}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Productos"
@@ -9071,7 +9071,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Contenedor de secuencias 1\Vendedores"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{36c6abdc-edf2-47a9-922f-e81ae35e88db}"
+          DTS:DTSID="{A38B642C-8134-4030-8E09-48F659E62833}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Vendedores"
@@ -9635,25 +9635,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:CreationName="Microsoft.FileSystemTask"
       DTS:Description="Tarea Sistema de archivos"
       DTS:Disabled="True"
-      DTS:DTSID="{2CBF6DDC-7632-4E7A-833D-5B0EACF50BEF}"
+      DTS:DTSID="{08451816-340D-4525-BFD1-008CADFDF543}"
       DTS:ExecutableType="Microsoft.FileSystemTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Copia Archivo ZIP"
       DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
           TaskOverwriteDestFile="True"
-          TaskSourcePath="{1F43D6CF-5A89-46C7-8EC4-243A354B91E5}"
-          TaskDestinationPath="{A0E7EF9E-A534-4D07-A6CD-3DD6C09E3191}" />
+          TaskSourcePath="{757E8613-9BCB-48A6-8DB7-A228C6052C95}"
+          TaskDestinationPath="{ABEF05D9-FA0A-4F47-89D2-E417651F6DCC}" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Generar Archivos CSV"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
-      DTS:DTSID="{D95FD228-D452-44C3-A06E-AE7CEDC45E01}"
+      DTS:DTSID="{66B61905-E07C-48F8-A086-08FF471EEDBC}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Generar Archivos CSV"
@@ -9710,7 +9710,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -11753,7 +11753,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -12334,7 +12334,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -12692,7 +12692,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -12945,7 +12945,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -13312,7 +13312,7 @@ Where FeRegistro = ?</property>
                 <property
                   dataType="System.String"
                   description="Asignaciones entre los parámetros del comando SQL y las variables."
-                  name="ParameterMapping">"Parámetro0:Input",{BCF9705D-8594-4770-8D2F-6EDD550ED9DA};</property>
+                  name="ParameterMapping">"Parámetro0:Input",{79FA802A-9F19-4048-91A3-10563D8A052B};</property>
               </properties>
               <connections>
                 <connection
@@ -13927,12 +13927,12 @@ Where FeRegistro = ?</property>
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Tarea Ejecutar proceso"
       DTS:Disabled="True"
-      DTS:DTSID="{482DC1A5-8E7F-4FA1-92B7-350C6B110FCA}"
+      DTS:DTSID="{CFA6B486-C8CD-4CD7-812D-D29DA2B47B3B}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Tarea Ejecutar proceso"
       DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:PropertyExpression
         DTS:Name="Arguments">"/C COPY /Y " + @[User::var_NewFileName]  + " " +   @[User::vDestino]</DTS:PropertyExpression>
@@ -13951,7 +13951,7 @@ Where FeRegistro = ?</property>
       DTS:refId="Package\Tarea Ejecutar SQL"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{12B6C716-FEB0-43F1-AFDA-D56946654691}"
+      DTS:DTSID="{6D5DC7EA-2BED-428B-89AF-05ED9AFC1FE4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Tarea Ejecutar SQL"
@@ -13980,16 +13980,16 @@ Where FeRegistro = ?</property>
       DTS:CreationName="Microsoft.SendMailTask"
       DTS:Description="Tarea Enviar correo"
       DTS:Disabled="True"
-      DTS:DTSID="{04232566-5964-4134-85D1-87E88B820937}"
+      DTS:DTSID="{2EEB0699-5FB7-4E54-B65D-BF85ED3FE7F8}"
       DTS:ExecutableType="Microsoft.SendMailTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Tarea Enviar correo"
       DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SendMailTask:SendMailTaskData
-          SendMailTask:SMTPServer="{DB0421FD-B12A-4EF6-BE54-5C6CD7C0E87F}"
+          SendMailTask:SMTPServer="{499B0024-42BD-4387-B0D2-A19756EE9318}"
           SendMailTask:From="alertati@roma.com.pe"
           SendMailTask:To="gustavo.lopez@roma.com.pe"
           SendMailTask:Subject="Unilever" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask">
@@ -14003,11 +14003,11 @@ Where FeRegistro = ?</property>
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Tarea Script"
       DTS:Disabled="True"
-      DTS:DTSID="{69534BC6-698C-4105-80BB-0E36D6C22008}"
+      DTS:DTSID="{13C9FC70-FC8A-423C-B229-903B9BC2F0BD}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Tarea Script"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -14015,15 +14015,6 @@ Where FeRegistro = ?</property>
           VSTAMajorVersion="15"
           VSTAMinorVersion="0"
           Language="CSharp">
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="ST_a4b10c5ddd6641eeb1bc14d26524aa40.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14230,6 +14221,35 @@ Where FeRegistro = ?</property>
   </resheader>
 </root>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties.Settings.get_Default():ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties.Sett" +
+    "ings")]
+
+namespace ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -14382,35 +14402,6 @@ namespace ST_a4b10c5ddd6641eeb1bc14d26524aa40
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties.Settings.get_Default():ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties.Sett" +
-    "ings")]
-
-namespace ST_a4b10c5ddd6641eeb1bc14d26524aa40.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -14440,6 +14431,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14633,7 +14633,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\Trunca Temporales en SR3"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{01B8D885-F24B-4460-8446-C33E3E05ABC4}"
+      DTS:DTSID="{44D16EFD-8D54-42E7-91A5-B100F497BF67}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Trunca Temporales en SR3"
@@ -14651,7 +14651,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
-      DTS:DTSID="{AE305671-76C8-4DD0-A58A-797DD4DF8FD7}"
+      DTS:DTSID="{E798CD91-3A21-49D5-B3D3-E144F5327B43}"
       DTS:From="Package\Contenedor de secuencias 1"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
@@ -14659,7 +14659,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{94D8217E-15E4-4D86-B377-50835799566A}"
+      DTS:DTSID="{37259F52-F053-47F3-95DA-D8CCF1D5A9F0}"
       DTS:From="Package\Contenedor de secuencias"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
@@ -14667,7 +14667,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
-      DTS:DTSID="{A2357829-C292-4078-9467-6DFF63151280}"
+      DTS:DTSID="{64B824FB-F960-4AA8-B434-5D729AF3DA0D}"
       DTS:From="Package\Trunca Temporales en SR3"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
@@ -14675,7 +14675,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
       DTS:CreationName=""
-      DTS:DTSID="{0DDB6BC5-983B-40FE-9494-94B08733E9A8}"
+      DTS:DTSID="{A5A3A019-7534-4A58-8445-623D79B889F6}"
       DTS:From="Package\Generar Archivos CSV"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 3"
@@ -14683,7 +14683,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
       DTS:CreationName=""
-      DTS:DTSID="{6E81E11F-50BC-4936-9250-79CA315D775A}"
+      DTS:DTSID="{7EF020A9-24FE-47E3-B7D7-F6F6816BE690}"
       DTS:From="Package\Comprimir"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 4"
@@ -14691,7 +14691,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
       DTS:CreationName=""
-      DTS:DTSID="{7531FD36-2616-428F-90D5-75B8FE516E89}"
+      DTS:DTSID="{27105951-BF42-4A26-992F-EE1A4109E7B5}"
       DTS:From="Package\Comprimir"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 5"
@@ -14699,7 +14699,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
       DTS:CreationName=""
-      DTS:DTSID="{D1FA977C-C2DA-4CBF-AF98-B3413D3760F9}"
+      DTS:DTSID="{37E12DD9-F96F-4CAF-AE00-7B02763FAC9E}"
       DTS:From="Package\Tarea Ejecutar SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 6"
@@ -14707,7 +14707,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
       DTS:CreationName=""
-      DTS:DTSID="{6E30E6E5-01E6-45CF-844D-2D5F72FDA14C}"
+      DTS:DTSID="{D55F0BC9-F714-42BE-8058-63F7560722D2}"
       DTS:From="Package\Comprimir"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 7"
@@ -14715,7 +14715,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 8]"
       DTS:CreationName=""
-      DTS:DTSID="{B9A17524-D15B-432A-AEA0-BC7DE2313C0B}"
+      DTS:DTSID="{F962D1C5-208A-41A5-ACCB-9EB92BF1F0E8}"
       DTS:From="Package\Comprimir"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 8"
@@ -14723,7 +14723,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 9]"
       DTS:CreationName=""
-      DTS:DTSID="{61EB0313-66ED-4A9F-B6F7-52E2288DE640}"
+      DTS:DTSID="{DE44709B-BEE9-4F00-9A52-90070A3DC1E0}"
       DTS:From="Package\Generar Archivos CSV"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 9"

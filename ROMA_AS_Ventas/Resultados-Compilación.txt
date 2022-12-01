@@ -1,0 +1,45 @@
+﻿Operación Compilar iniciada..
+------ Operación Compilar iniciada: proyecto: ROMA_AS, configuración: Development ------
+Inicio de la generación del proyecto de Analysis Services: Incremental...
+Dimension [Almacenes] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Canales] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Carteras] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Clientes] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Documentos] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [EsBonificacion] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Fechas] : Evite las jerarquías de atributos visibles para los atributos empleados como niveles en las jerarquías definidas por el usuario.
+Dimension [Fechas] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [Hora] : Evite las jerarquías de atributos visibles para los atributos empleados como niveles en las jerarquías definidas por el usuario.
+Dimension [Hora] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+AttributeRelationship [Jefes dVenta].[Id JV].[Nom JV] : El nombre especificado para la relación de atributo es distinto que el nombre del atributo relacionado.
+Dimension [Jefes dVenta] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Mesas] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Motivos Pedido] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Métricas] : Evite las jerarquías de atributos visibles para los atributos empleados como niveles en las jerarquías definidas por el usuario.
+Dimension [Métricas] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Level [Productos Full].[Prv - CatJes - Pro].[CatJes] : Diseñe las jerarquías de modo que los niveles inferiores tengan más miembros que los superiores.
+Level [Productos Full].[Prv - Jes - Cat].[CatJes] : Diseñe las jerarquías de modo que los niveles inferiores tengan más miembros que los superiores.
+Dimension [Productos Full] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [Promociones] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Proveedores] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Proveedores_CatJes] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [Sedes] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+AttributeRelationship [Supervisores].[Id Sup].[Nom Sup] : El nombre especificado para la relación de atributo es distinto que el nombre del atributo relacionado.
+Dimension [Supervisores] : Evite las jerarquías de atributos visibles para los atributos empleados como niveles en las jerarquías definidas por el usuario.
+Dimension [Supervisores] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [TipoVenta] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Dimension [Vendedores Rel] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [Vendedores Rel2] : Defina las relaciones de atributo como 'Rígidas' cuando proceda.
+Dimension [Vendedores] : Cree jerarquías en dimensiones que no sean de elementos primarios y secundarios.
+Generación completa -- 0 errores, 30 advertencias
+------ Operación Implementar iniciada: proyecto: ROMA_AS, configuración: Development ------
+Realizando una implementación incremental de la base de datos 'Cubo_ROMA' en el servidor 'RBI\OLAP'.
+Generando script de implementación...
+   Agregar Database Cubo_ROMA
+   Proceso Database Cubo_ROMA
+Listo
+Envío del script de implementación al servidor...
+Listo
+Implementación completa -- 0 errores, 0 advertencias
+========== Compilar: 1 correctos o actualizados, 0 incorrectos, 0 omitidos ==========
+========== Implementar: 1 correctos, 0 incorrectos, 0 omitidos ==========

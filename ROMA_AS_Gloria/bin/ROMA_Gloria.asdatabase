@@ -267,9 +267,9 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5790" scrolltop="-8440" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="110" x="10292" y="17410" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5790" scrolltop="-8440" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="110" x="16880" y="26035" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
-                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
                 </font>
                 <mouseicon>
                   <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -2663,7 +2663,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16710" scrolltop="-6483" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29422" y="17410" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16710" scrolltop="-6483" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32782" y="19394" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -2710,7 +2710,7 @@
               <ddscontrol controlprogid="MSDDS.Polyline" left="-4135" top="-2395" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3424" height="2174" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2730,7 +2730,7 @@
               <ddscontrol controlprogid="MSDDS.Polyline" left="4130" top="-3837" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="2735" height="2516" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2761,7 +2761,7 @@
               <ddscontrol controlprogid="MSDDS.Polyline" left="-11280" top="-2395" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="3539" height="2987" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -2792,7 +2792,7 @@
               <ddscontrol controlprogid="MSDDS.Polyline" left="-4205" top="1379" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3494" height="7553" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                   </ddsxmlobj>
                 </control>
                 <layoutobject>
@@ -3151,18 +3151,6 @@
                 <Source xsi:type="ColumnBinding">
                   <TableID>Gloria_Extractor_Ventas</TableID>
                   <ColumnID>CantidadTotal</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Vat Prcnt</ID>
-              <Name>Vat Prcnt</Name>
-              <DataType>Double</DataType>
-              <Source>
-                <DataType>Double</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>Gloria_Extractor_Ventas</TableID>
-                  <ColumnID>VatPrcnt</ColumnID>
                 </Source>
               </Source>
             </Measure>
@@ -4113,31 +4101,35 @@ El comando CALCULATE controla la agregación de celdas hoja en el cubo.
 Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
 Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
 */
-CALCULATE;       
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[TotalConIGV]
+ AS [Measures].[TotalSinIGV] * 1.18, 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Extractor Ventas'  ;        
 CREATE MEMBER CURRENTCUBE.[Measures].Total_cDscto_sIGV
  AS [Measures].[TotalSinIGV]-[Measures].[DsctoSinIGV], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;   
+VISIBLE = 1;    
 CREATE MEMBER CURRENTCUBE.[Measures].[PromVta]
  AS Sum([Measures].[Total_cDscto_sIGV])/[Measures].[QtdDocumentos], 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].QtdClientes
  AS IIF(IsEmpty([Measures].[TotalSinIGV]) , Null, 
 DistinctCount(
    filter(EXISTING [Cliente].[Card Code].children, [Measures].[TotalSinIGV]&gt;0)
 )
 ), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].QtdDocumentos
  AS IIF(IsEmpty([Measures].[TotalSinIGV]) , Null, 
 DistinctCount(
    filter(EXISTING [Documento].[Doc Entry].children, [Measures].[TotalSinIGV]&gt;0)
 )
 ), 
-VISIBLE = 1;    
+VISIBLE = 1;     
 CREATE MEMBER CURRENTCUBE.[Measures].[UMES Anterior]
  AS Sum([Dim Fechas].[Año - Mes - Diez Días - Día].PrevMember, [Measures].[UMES]), 
-VISIBLE = 0; 
+VISIBLE = 0;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_Pry]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, 
 Null, 
@@ -4146,30 +4138,30 @@ IIf([Dim Fechas].[Año - Mes - Día].CurrentMember Is [Dim Fechas].[Año - Mes -
     [Measures].[UMES])
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_MesAnterior]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, Null, 
 ([Measures].[UMES], 
 PARALLELPERIOD([Dim Fechas].[Año - Mes - Día].[Mes], 1, [Dim Fechas].[Año - Mes - Día].CURRENTMEMBER))
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_MesAñoAnterior]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, Null, 
 ([Measures].[UMES], 
 PARALLELPERIOD([Dim Fechas].[Año - Mes - Día].[Mes], 12, [Dim Fechas].[Año - Mes - Día].CURRENTMEMBER))
 ), 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[CrecUME_MesAnterior%]
  AS IIF(IsEmpty([Measures].[UMES]) Or Isempty([Measures].[UME_MesAnterior]) Or [Measures].[UME_MesAnterior] = 0, Null, 
 ([Measures].[UME_Pry]/[Measures].[UME_MesAnterior])-1), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[CrecUME_MesAñoAnterior%]
  AS IIF(IsEmpty([Measures].[UMES]) Or Isempty([Measures].[UME_MesAñoAnterior]) Or [Measures].[UME_MesAñoAnterior] = 0, Null, 
 ([Measures].[UME_Pry]/[Measures].[UME_MesAñoAnterior])-1), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1  ;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[%Var]
  AS IIF(IsEmpty([UMES Anterior]) Or [UMES Anterior] = 0, Null, 
     Sum([Dim Fechas].[Año - Mes - Diez Días - Día].CurrentMember, [Measures].[UMES])
@@ -4177,24 +4169,24 @@ CREATE MEMBER CURRENTCUBE.[Measures].[%Var]
     Sum([Dim Fechas].[Año - Mes - Diez Días - Día].PrevMember, [Measures].[UMES])
 ), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].Prom_Ventas_xEvento
  AS [Measures].[TotalSinIGV] / [Measures].[QtdDocumentos], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].FlDrop
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, IIf([Measures].[Prom_Ventas_xEvento]&gt;=0 And [Measures].[Prom_Ventas_xEvento]&lt;=50,-1,1)), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[Drop &gt;50]
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, 
     DistinctCount(Filter(EXISTING [Cliente].[Card Code].children, [Measures].[FlDrop]=1))
 ), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[Drop &lt;=50]
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, 
     DistinctCount(Filter([Cliente].[Card Code].children, [Measures].[FlDrop]=-1))
 ), 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[Vta Acum]
  AS Sum(
     PeriodsToDate
@@ -4205,11 +4197,11 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Vta Acum]
     ,[Measures].[TotalSinIGV]
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Pry]
  AS IIF(IsEmpty([Measures].[UMES]), Null, [Measures].[UMES]*[Measures].[FactorPryMes]), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum]
  AS Sum(
     PeriodsToDate
@@ -4220,7 +4212,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum]
     ,[Measures].[UMES]
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum Pry]
  AS [Measures].[UME Acum] + [Measures].[UME Pry], 
 FORMAT_STRING = "#,##0;-#,##0", 
@@ -4264,7 +4256,7 @@ End
       <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
       <ImpersonationInfo>
         <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-        <Account>dsromasac\g_lopez</Account>
+        <Account>dsromasac\r_mejia</Account>
         <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
       </ImpersonationInfo>
       <ManagedProvider>System.Data.SqlClient</ManagedProvider>
@@ -4311,7 +4303,7 @@ End
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4929" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="90" x="31459" y="16801" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4929" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="90" x="34475" y="20717" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -4358,7 +4350,7 @@ End
                     <ddscontrol controlprogid="MSDDS.Polyline" left="3986" top="7611" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3328" height="885" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                         </ddsxmlobj>
                       </control>
                       <layoutobject>
@@ -4389,7 +4381,7 @@ End
                     <ddscontrol controlprogid="MSDDS.Polyline" left="23338" top="1718" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="4146" height="1653" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                         </ddsxmlobj>
                       </control>
                       <layoutobject>
@@ -4420,7 +4412,7 @@ End
                     <ddscontrol controlprogid="MSDDS.Polyline" left="11141" top="5696" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="9322" height="4521" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                         </ddsxmlobj>
                       </control>
                       <layoutobject>
@@ -4440,7 +4432,7 @@ End
                     <ddscontrol controlprogid="MSDDS.Polyline" left="11141" top="196" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3440" height="2172" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                         </ddsxmlobj>
                       </control>
                       <layoutobject>
@@ -4458,7 +4450,7 @@ End
                       </connector>
                     </ddscontrol>
                   </dds>
-                </DiagramLayout>
+</DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>-4929</DiagramViewPortLeft>

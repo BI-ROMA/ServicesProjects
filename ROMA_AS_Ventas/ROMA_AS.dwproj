@@ -212,16 +212,16 @@
       <FullPath>Jefes_dVenta.role</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Logistica.role</Name>
-      <FullPath>Logistica.role</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Role 4.role</Name>
       <FullPath>Role 4.role</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Supervisores.role</Name>
       <FullPath>Supervisores.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Finanzas.role</Name>
+      <FullPath>Finanzas.role</FullPath>
     </ProjectItem>
   </Roles>
   <Configurations>
@@ -250,7 +250,7 @@
               <ConfigurationSetting>
                 <Id>Fact Cartera Inicial x Vendedor</Id>
                 <Name>Fact Cartera Inicial x Vendedor</Name>
-                <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data</Value>
+                <Value xsi:type="xsd:string">\\?\D:\OLAP2\Data\</Value>
               </ConfigurationSetting>
             </Value>
           </ConfigurationSetting>
@@ -261,7 +261,7 @@
               <ConfigurationSetting>
                 <Id>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Id>
                 <Name>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Name>
-                <Value xsi:type="xsd:string">\\?\D:\OLAP\Data2\Cobertura2</Value>
+                <Value xsi:type="xsd:string">D:\OLAP\Data2\</Value>
               </ConfigurationSetting>
             </Value>
           </ConfigurationSetting>

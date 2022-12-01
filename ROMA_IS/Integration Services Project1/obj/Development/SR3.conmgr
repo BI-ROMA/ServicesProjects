@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=SR3\SBO;User ID=sasqllinux;Initial Catalog=roma_productiva;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4wriraLTfE+xRM6YiOfTTQAAAAACAAAAAAADZgAAwAAAABAAAACWyBY1609L7gTCAQwHpb5cAAAAAASAAACgAAAAEAAAABVbja8oNIzAkrJiNZfASG94AAAA3+rG1ZDc/CiRAa+uMhMSDiCUN7wpo38xXzCnMYsRmzAGktFEMISL1zNPQrOnYgdUWSStyWB8X3KYzr27eRp3evaqf/6ve4fj9TL5GkeVxh/50Is+Cqa4iE+yyy8IcTo4izf/g6d7+mcJ0Fx6hMMOwwV1GlZ/6IU0FAAAAIfsRDrHrU6bYQ5wUSMTc2IUvvqg</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGua/3WoFa0uMCxNEvZPl/AAAAAACAAAAAAADZgAAwAAAABAAAADVUtrgd5yLwvysEJlvGO5/AAAAAASAAACgAAAAEAAAACFkx77D2BjkK9ufiNAGqkx4AAAAYPytJlVk1TkwQ3I0C6WG9bDKX0nIl1X6/51fLlS6whZ7U9a1ausZnAGVgt+kcT/S7HrniTuuhLDRbJ7tlJuUYEkMNhXDpnx6ertUA+qJLi/ItmJbOMJAEe4sDd+87D6AHty48O+diBacSS/fa+dkp/8i/P0NThYPFAAAAK6Wu/ozJvqoRSIzWD/i8CPwplqy</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

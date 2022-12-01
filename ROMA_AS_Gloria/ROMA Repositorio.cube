@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="238db5ae-025e-4f6e-bc8b-cff400973723" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e9e4bf7c-94e9-4a9d-9e95-a1b00da23e9b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>ROMA Repositorio</ID>
   <Name>ROMA Repositorio</Name>
   <CreatedTimestamp>2021-04-19T15:43:07.166667Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16710" scrolltop="-6483" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29422" y="17410" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-16710" scrolltop="-6483" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32782" y="19394" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -55,7 +55,7 @@
           <ddscontrol controlprogid="MSDDS.Polyline" left="-4135" top="-2395" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3424" height="2174" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
               </ddsxmlobj>
             </control>
             <layoutobject>
@@ -75,7 +75,7 @@
           <ddscontrol controlprogid="MSDDS.Polyline" left="4130" top="-3837" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="2735" height="2516" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
               </ddsxmlobj>
             </control>
             <layoutobject>
@@ -106,7 +106,7 @@
           <ddscontrol controlprogid="MSDDS.Polyline" left="-11280" top="-2395" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="3539" height="2987" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
               </ddsxmlobj>
             </control>
             <layoutobject>
@@ -137,7 +137,7 @@
           <ddscontrol controlprogid="MSDDS.Polyline" left="-4205" top="1379" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3494" height="7553" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
               </ddsxmlobj>
             </control>
             <layoutobject>
@@ -195,243 +195,243 @@
   <Language>1033</Language>
   <Collation>Latin1_General_CI_AS</Collation>
   <Dimensions>
-    <Dimension dwd:design-time-name="f3293329-8836-4fda-a393-66e79c56139b">
+    <Dimension dwd:design-time-name="b334f421-950f-43e3-87ac-54b5dbb764d3">
       <ID>Periodo</ID>
       <Name>Periodo</Name>
       <DimensionID>Periodo</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="d01adc6d-0ab4-4a7d-b690-785cbca1780c">
+        <Attribute dwd:design-time-name="7ba846da-4705-4270-94cb-b65e569ba020">
           <AttributeID>Periodo</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="185a58d7-cebb-47f1-af65-ac269e2f826f">
+    <Dimension dwd:design-time-name="a52655bb-5115-4bc8-af50-6e17505893f0">
       <ID>TipDoc</ID>
       <Name>TipDoc</Name>
       <DimensionID>TipDoc</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="5375d131-636e-4008-878b-31cddbbe6df5">
+        <Attribute dwd:design-time-name="6a4740da-8bfb-4128-a4c0-7156183fe2b3">
           <AttributeID>Ctipdoc</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="496f96a5-1ec5-4ce4-b636-01a29b854bb2">
+        <Attribute dwd:design-time-name="cf0ef882-55a7-416b-9f8f-8070b3a47d18">
           <AttributeID>Sucursal</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="1f057978-6659-4d9c-bfdc-8ead3f946346">
+    <Dimension dwd:design-time-name="c9b965dc-130b-4890-a836-de811780b9b1">
       <ID>Flag Docs Anulados</ID>
       <Name>Flag Docs Anulados</Name>
       <DimensionID>Extracto Gloria</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="7a848806-9722-4a33-a6b3-cde1d006ddef">
+        <Attribute dwd:design-time-name="5bdf170f-e300-4735-9134-f9ba4d04763c">
           <AttributeID>Flag Anula</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="ad7cf350-7a6f-4789-8144-2aca37a237cc">
+    <Dimension dwd:design-time-name="cff02bf9-69b3-485d-9506-5cd989a84f0e">
       <ID>Flag Item Bonificados</ID>
       <Name>Flag Item Bonificados</Name>
       <DimensionID>FlgBonif</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="97e12be9-a8cf-4980-90f7-2630b1a55598">
+        <Attribute dwd:design-time-name="cee06963-97bf-415f-983f-d942cda6a094">
           <AttributeID>Sbonif</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="63abdab5-9a5e-46d1-8514-eb1c1efb460d">
+    <Dimension dwd:design-time-name="923b3436-5d59-4f6f-b2f7-4ea66794a346">
       <ID>Cliente</ID>
       <Name>Cliente</Name>
       <DimensionID>Cliente</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="dd738396-167c-4125-89da-3ded5b909622">
+        <Attribute dwd:design-time-name="5c02954c-0100-4ed3-8483-1b2680698dc5">
           <AttributeID>Ccliente D</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="03089686-24e0-4598-b630-2c875360e0db">
+        <Attribute dwd:design-time-name="1a610146-8cbc-48de-995c-91b80429c03c">
           <AttributeID>Sucursal</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="48742367-c1fa-4588-a8cc-4da28269008f">
+        <Attribute dwd:design-time-name="d227d97e-b0c1-4237-a514-e16e5a8e22b3">
           <AttributeID>Ti Cliente</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c4ceee8e-8d17-42c6-9f52-95c5608648ca">
+        <Attribute dwd:design-time-name="49296681-43bb-4679-a906-12861f9ee6c9">
           <AttributeID>Card Code</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="c86c2dc1-b5c1-4c34-be57-f727d4d742dd">
+    <Dimension dwd:design-time-name="1d9a820b-6b9e-4d17-a0de-19f2928a5791">
       <ID>Sucursal</ID>
       <Name>Sucursal</Name>
       <DimensionID>Sucursal</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="e4335ee5-e816-4361-a519-8e33e9ed579c">
+        <Attribute dwd:design-time-name="9056056f-39f4-44ec-a869-985b6dfe9450">
           <AttributeID>Sucursal</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="379e8a1f-f1d9-4247-93ce-501244b70614">
+    <Dimension dwd:design-time-name="aeef27d0-33b8-4452-86f8-9a25daaefbb2">
       <ID>Documento</ID>
       <Name>Documento</Name>
       <DimensionID>Documento</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="09b7a50d-8a96-412c-91c2-f663e53c0adc">
+        <Attribute dwd:design-time-name="4f282e7c-3571-4c22-90ac-d881709789ed">
           <AttributeID>Clave</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="aaf23f90-abcb-47cb-a6f3-6ca0cd04a71a">
+        <Attribute dwd:design-time-name="1d5557f9-6401-4b4e-80b6-7cbdbb04402c">
           <AttributeID>Cserie</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="55e46c2f-3fc9-491b-a9f6-a29dbccd8452">
+        <Attribute dwd:design-time-name="aed6a91e-7758-4643-b327-eab694b86278">
           <AttributeID>Ccorrelativo</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d8c69fe5-1ecb-45b5-b08f-94e9c96c6006">
+        <Attribute dwd:design-time-name="824847f2-9c15-495a-abab-ce3940066dd2">
           <AttributeID>Ctipdoc</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1941eac0-9044-4ed0-a520-be27ebb08427">
+        <Attribute dwd:design-time-name="45599d1e-c1e8-4eee-b057-77970f6d96d3">
           <AttributeID>Sucursal</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1bafbfa2-ff96-415d-83fd-6951b04517c2">
+        <Attribute dwd:design-time-name="84f6cd31-7f77-4aea-8dbf-4e481bdb3889">
           <AttributeID>Doc Entry</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="12ef1d16-0b13-42cc-90a0-b4ffd8c7185e">
+        <Hierarchy dwd:design-time-name="955511e6-f2c8-48b8-a4cf-7e6f82f5a1f4">
           <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="c6c6ac03-11ae-4127-8b3a-447d3424636d">
+    <Dimension dwd:design-time-name="29e548c7-4bf5-474c-a673-8bf19d1234c0">
       <ID>Flg Sin Factor UMES</ID>
       <Name>Flg Sin Factor UMES</Name>
       <DimensionID>Flg Sin Factor UMES</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3aa570d3-e5ff-4109-a28f-ea7f761add5f">
+        <Attribute dwd:design-time-name="1aaf1ff1-d427-422e-8150-4e8daa03be66">
           <AttributeID>Clave</AttributeID>
           <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
         </Attribute>
-        <Attribute dwd:design-time-name="9eb80907-8bae-4591-8f1d-da27331028bb">
+        <Attribute dwd:design-time-name="680416a3-514b-42e2-ba5b-3bae23f2cf76">
           <AttributeID>Flg Sin Factor UMES</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="01f91dc9-87c1-414f-bbfd-47b0f78a2089">
+    <Dimension dwd:design-time-name="ff9f797d-6bce-427e-a191-490b6a241794">
       <ID>Sede</ID>
       <Name>Sede</Name>
       <DimensionID>Sede</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="982ad602-d629-45ca-a612-5e90456217ee">
+        <Attribute dwd:design-time-name="98da5c69-4d4e-4945-8d0d-4919be64af59">
           <AttributeID>U U BKS CODSEDE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4068f8ce-52fe-42ee-86db-9c4087f3cebd">
+        <Attribute dwd:design-time-name="b26e6d23-7338-4d9b-8080-1e2790bb82c8">
           <AttributeID>Sucursal</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="aed1b8c7-7a17-4704-acca-8ebd1ecc9855">
+        <Attribute dwd:design-time-name="56a7cd1b-f6a3-4440-bb86-c473eb45ecbc">
           <AttributeID>Zona</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="6b3be575-c39d-4a32-b156-829b63f5d22b">
+    <Dimension dwd:design-time-name="c52c181c-eb89-400c-b768-43a7001f3e87">
       <ID>Items xLinea</ID>
       <Name>Items xLinea</Name>
       <DimensionID>Items xLinea</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="d6a11a89-5ad7-4d6f-a5b9-58f5ea56792d">
+        <Attribute dwd:design-time-name="bce0824b-8fbb-4251-a5dd-166631650e75">
           <AttributeID>Item Code</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1a26294f-82bf-4dfb-9b82-4d3a51b61dce">
+        <Attribute dwd:design-time-name="53c95096-5f79-4df7-b3e9-1d209538e098">
           <AttributeID>Card Code</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e68f74a4-814b-4c5e-a326-9587df214c86">
+        <Attribute dwd:design-time-name="4ba8dd3e-2ea8-4687-bc88-6e5576843c86">
           <AttributeID>Item Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="52115a56-6124-4e51-ab7d-f234bdc869b1">
+        <Attribute dwd:design-time-name="66e1f3c7-0995-4dca-85ed-278051005de8">
           <AttributeID>Linea RW</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4e49ea22-a696-4560-b241-4d08b5eaf574">
+        <Attribute dwd:design-time-name="50378d83-7277-41be-9d72-0089780f26d2">
           <AttributeID>Orden</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="53ef51e2-b829-459c-ae17-b45140ce7d4d">
+        <Attribute dwd:design-time-name="025c8425-d17d-45ea-aa81-08490aa52697">
           <AttributeID>Categoria</AttributeID>
           <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
         </Attribute>
-        <Attribute dwd:design-time-name="2668bc75-1000-479a-86c9-599f98aec236">
+        <Attribute dwd:design-time-name="2bebadf5-36ec-4f61-81a5-6a8d2c810359">
           <AttributeID>Familia</AttributeID>
           <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
         </Attribute>
-        <Attribute dwd:design-time-name="05fa78ee-3656-48e8-81ca-1e6142f6d5f6">
+        <Attribute dwd:design-time-name="5e759885-14da-49f1-8c98-6475ec27527b">
           <AttributeID>Marca</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bf1bc671-1e62-4658-b073-8b259bb51622">
+        <Attribute dwd:design-time-name="5f692723-b7da-488b-82da-075d766e9f1d">
           <AttributeID>Contenido</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="16f8f715-0a25-4c1c-ab57-a727f47d3923">
+        <Attribute dwd:design-time-name="070b5c4b-95f1-4638-91f3-7fbfd6d4de32">
           <AttributeID>Familia 1</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="82081170-e55a-4349-b7f4-0edc390b7be1">
+        <Attribute dwd:design-time-name="94e83a76-9191-4cf3-b72e-cf3f3e0253ef">
           <AttributeID>Categoria 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="a33dc51b-ecf1-44af-bbbf-db1b22f9f2bd">
+        <Hierarchy dwd:design-time-name="771e8bbb-5b15-4e96-b672-d5c92ec91d03">
           <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="8bba594d-4680-4629-9f0d-6e18d077a031">
+        <Hierarchy dwd:design-time-name="74d8d89f-4498-40b3-a881-322ffe027719">
           <HierarchyID>Jerarquía 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="8e7a952b-ae87-4c21-a924-3a73dfb0fded">
+    <Dimension dwd:design-time-name="c8f5a58d-d5f2-446a-8fac-a4563c6e70ef">
       <ID>Dim Fechas</ID>
       <Name>Dim Fechas</Name>
       <DimensionID>Dim Fechas</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="5d0e252c-546e-4352-8295-eb29c6334628">
+        <Attribute dwd:design-time-name="c8c597d2-4f81-45ad-b923-5bf6867f3316">
           <AttributeID>Fecha Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7d46a12b-e159-4f79-a442-9644cd5b4953">
+        <Attribute dwd:design-time-name="011c030c-9ef4-40e9-ad0a-aeeb15011bfc">
           <AttributeID>Año</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="dab739a1-4332-4fdd-92c6-e5069e1b9921">
+        <Attribute dwd:design-time-name="f99a0acb-ba57-4d23-b5ce-2eaf70af53d9">
           <AttributeID>Mes</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ca880617-c769-438c-8eb8-87e0ea511a1a">
+        <Attribute dwd:design-time-name="ad3784e1-01e2-419c-a814-9bcde5eae5c7">
           <AttributeID>Dia</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="dafc01ca-9065-489b-be0c-41e8827083b3">
+        <Attribute dwd:design-time-name="5179d199-2efb-44ae-a5a9-45bad918dbf3">
           <AttributeID>Dia Año</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="948a38b1-1093-4441-8d56-dcaeddaaf8d6">
+        <Attribute dwd:design-time-name="04f6ccd2-4d4b-4e29-8c9f-c69f27c0ef6e">
           <AttributeID>Dia Mes</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="55a8153b-4c23-4ca9-a6f9-a105e8179f48">
+        <Attribute dwd:design-time-name="3cc7bc18-7cdc-4b55-8c10-8bae9e8f25c8">
           <AttributeID>Nombre Mes Abr</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="af8fef07-ea50-480c-95f1-9383ab5f341f">
+        <Attribute dwd:design-time-name="0273022a-8b79-4707-946b-c298935a04e3">
           <AttributeID>Id Diez Dias</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="e87f5d6b-d55c-4592-a49c-b469ab27822f">
+        <Hierarchy dwd:design-time-name="c729b403-4d67-420d-bcca-7b1c2a6854e1">
           <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="1acd850d-2103-4611-8e7a-4a848f2859d1">
+        <Hierarchy dwd:design-time-name="4688f119-f539-4625-bf8b-ba615a4b1ff9">
           <HierarchyID>Jerarquía 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="23822964-f41e-47b4-b466-df1323e1c4c0">
+    <Dimension dwd:design-time-name="42095dd8-99f8-4b94-8d7a-a946c8e6a59c">
       <ID>Vendedor</ID>
       <Name>Vendedor</Name>
       <DimensionID>Vendedor</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="0a73b0b3-a636-4d5f-94bf-53ab6b4ac6cb">
+        <Attribute dwd:design-time-name="d1640046-a9d1-49b2-b987-382aca44fef6">
           <AttributeID>Cod Ven</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="509dcbc7-ece3-4245-8186-d986cba52382">
+        <Attribute dwd:design-time-name="c05f469d-361b-49ff-bdad-e86ee71b20d2">
           <AttributeID>Nom Ven</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <CubePermissions>
-    <CubePermission dwd:design-time-name="4599f678-9125-44af-a351-274adaa81ed6">
+    <CubePermission dwd:design-time-name="c1b2d1c7-8e53-4fa1-ab70-8a5d136fb195">
       <ID>CubePermission</ID>
       <Name>CubePermission</Name>
       <CreatedTimestamp>2021-07-13T13:22:35.423333Z</CreatedTimestamp>
@@ -442,7 +442,7 @@
     </CubePermission>
   </CubePermissions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="02be1030-408d-4817-9fbc-32fe50fb18a0">
+    <MeasureGroup dwd:design-time-name="b63bb492-d8bc-4ab5-b1e0-431e72c93b09">
       <ID>Extractor Ventas</ID>
       <Name>Extractor Ventas</Name>
       <CreatedTimestamp>2021-04-19T15:43:07.183333Z</CreatedTimestamp>
@@ -450,74 +450,62 @@
       <LastProcessed>2021-08-02T10:25:11.75Z</LastProcessed>
       <State>Processed</State>
       <Measures>
-        <Measure dwd:design-time-name="d949f0a7-f5d5-4cc9-a8a8-ab87bc0eb582">
+        <Measure dwd:design-time-name="ca7d5b4e-1387-465c-898d-a164fdf69017">
           <ID>UME Sx</ID>
           <Name>UMES</Name>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="f26fd0dc-35df-46b6-9d79-846e85162a73">
+          <Source dwd:design-time-name="5cd19e2a-996d-452f-9504-c7a3fffd0177">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="9cdc49f7-879a-451e-9788-0b0528e12a03">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a03d157a-b550-42db-9670-db6c43447504">
               <TableID>Gloria_Extractor_Ventas</TableID>
               <ColumnID>UMESx</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
         </Measure>
-        <Measure dwd:design-time-name="88fd406d-5117-4928-afb1-8d22feee09e8">
+        <Measure dwd:design-time-name="f1f06501-d535-48fc-ae3d-6e62a6ed67ee">
           <ID>Total Sin IGV</ID>
           <Name>TotalSinIGV</Name>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="78483cf7-40bb-4a9c-8bf0-2dc559b451a5">
+          <Source dwd:design-time-name="0f826edf-9b34-4665-8a79-d7a574121e58">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="208a9b52-2253-451a-bd46-eec7a94ce385">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="95073238-c644-4494-bd40-8c86fe0f4266">
               <TableID>Gloria_Extractor_Ventas</TableID>
               <ColumnID>TotalSinIGV</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="af384b74-6320-49cf-a32d-ca6abeb94698">
+        <Measure dwd:design-time-name="544a9913-beb5-4a89-b314-459a7c986da3">
           <ID>Dscto Sin IGV</ID>
           <Name>DsctoSinIGV</Name>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="7e14fc24-fe93-48f6-86d4-ff182bbddc37">
+          <Source dwd:design-time-name="5e6cfb02-e96d-4241-8835-8d53c9a715bc">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="0883cd9c-5d42-45e4-ba88-57c0230a3b25">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="62626b57-fef5-4a9d-b6ec-8ed1bdb388d3">
               <TableID>Gloria_Extractor_Ventas</TableID>
               <ColumnID>DsctoSinIGV</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="98455aa5-f6fe-4571-b5ba-3faff6396c45">
+        <Measure dwd:design-time-name="2ccc5b00-dc87-4a28-8d93-e31c6756f936">
           <ID>Cantidad Total</ID>
           <Name>CantidadTotal</Name>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="34f6586c-f905-4115-9b18-d76170ade7cd">
+          <Source dwd:design-time-name="36168588-17d7-4d47-a203-6fc7d13b036d">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="3f7d7297-1ff7-4598-9ab3-b60ee99164bd">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dae8a845-7c7a-423a-b595-3e175e622972">
               <TableID>Gloria_Extractor_Ventas</TableID>
               <ColumnID>CantidadTotal</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="88e167f7-c2dc-4423-a74e-a11ce7440bb4">
-          <ID>Vat Prcnt</ID>
-          <Name>Vat Prcnt</Name>
-          <DataType>Double</DataType>
-          <Source dwd:design-time-name="acc37e60-a4af-4217-8ce0-f99e9b8baeeb">
-            <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="df835cbb-52da-4ea2-826b-17492208357a">
-              <TableID>Gloria_Extractor_Ventas</TableID>
-              <ColumnID>VatPrcnt</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="0cd9078b-8b94-4ebc-ac03-53add68d9b79">
+        <Measure dwd:design-time-name="6bd52f73-b32b-425b-a834-40d17cebd074">
           <ID>Disc Prcnt</ID>
           <Name>Disc Prcnt</Name>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="6d45b4cd-36cf-4268-9314-1f69a36d3410">
+          <Source dwd:design-time-name="e3a528c8-b261-42ae-86a1-24654735a031">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a086c898-9504-4ce3-9081-3680ba2d78b6">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eb2bb285-d54c-4f1e-9316-f47e899a6514">
               <TableID>Gloria_Extractor_Ventas</TableID>
               <ColumnID>DiscPrcnt</ColumnID>
             </Source>
@@ -528,24 +516,24 @@
       <EstimatedSize>166653165</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ecb5b1c7-b3c7-418f-8cd5-0c64c5566a20">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="73abfd9f-4ae1-4e8e-81da-c5fa0e7a2c58">
           <CubeDimensionID>Periodo</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="fdf1e4d7-529e-448b-a920-93c48e1013d5">
+            <Attribute dwd:design-time-name="f41f22f8-3ff3-46c1-a481-da50f54845e7">
               <AttributeID>Periodo</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0b09610b-64ef-4a6c-aadb-33855322020a">
+                <KeyColumn dwd:design-time-name="c42c9934-214f-42d7-829d-c92567fe3bbf">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="089d9bf2-0867-4153-a624-1a2ac082231d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05189693-1c47-4bd5-9218-427a5b56e769">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Periodo</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="75af0d81-527e-4384-8201-14403f316f98">
+                <KeyColumn dwd:design-time-name="45c9b6b9-4115-4b31-8804-42f33a433ad7">
                   <DataType>WChar</DataType>
                   <DataSize>65</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80dd5a09-332a-4776-b939-d6af52412e1d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dd31fc8a-77ac-4d0c-9695-cdf27f32fa62">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Clave</ColumnID>
                   </Source>
@@ -555,25 +543,25 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8bc8359a-78eb-4fd0-85b5-1a6402dabbe7">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="71e20f20-657b-4160-80f2-20f0b705424d">
           <CubeDimensionID>TipDoc</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="d8cbc437-df8a-4b57-b260-708e2c6b5304">
+            <Attribute dwd:design-time-name="2fc850b5-7c2e-4a6d-8e97-0f7f84aef3a5">
               <AttributeID>Ctipdoc</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="f4e1a765-c2b1-456b-afe6-9a8426b2a9e4">
+                <KeyColumn dwd:design-time-name="10b5018d-68a7-4846-a04c-c6ae283786d1">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c39a26d-2215-4cc6-9b62-936b80b4314e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d26dcb00-431c-4c62-8270-65c2170f710e">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="be2a9408-1c49-4530-99a5-009aa65c2b4b">
+                <KeyColumn dwd:design-time-name="a1313206-8272-4801-bcba-909194cebbae">
                   <DataType>WChar</DataType>
                   <DataSize>2</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="89550d70-ea90-4af6-8392-0bec884ee6e1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a42d4ff7-1ccc-4302-9b14-46f5d7c07226">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>ctipdoc</ColumnID>
                   </Source>
@@ -581,13 +569,13 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="41165e13-3c52-42df-b8a8-c3b47631a8a8">
+            <Attribute dwd:design-time-name="11614beb-6318-4946-8191-96e1df60b5ae">
               <AttributeID>Sucursal</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="527e612b-a75c-4e86-beda-d04af106a313">
+                <KeyColumn dwd:design-time-name="20a04bbc-8ce0-47f9-9b9b-e448dacebadd">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2772a4d8-8628-4acc-82da-f196155f4d3c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c1833ebd-57a4-4f8b-a687-10d95e0b905f">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
@@ -596,17 +584,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c67e76b-d92f-4251-a82f-b9192fdadcd0">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1fad4efe-d7a3-4537-89a5-9cf1ca9fe824">
           <CubeDimensionID>Flag Docs Anulados</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="45e38fe9-2a5e-4e67-ad0f-5d5b2ce399ba">
+            <Attribute dwd:design-time-name="d7eb05a1-3ecc-4c62-becb-057bd19dc971">
               <AttributeID>Flag Anula</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0f3fa9ed-dfde-4d39-ac44-99e8d2eb3901">
+                <KeyColumn dwd:design-time-name="6d324aa4-bb3b-4b76-b228-4d43844c74f3">
                   <DataType>WChar</DataType>
                   <DataSize>1</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="47ec022a-e044-4372-844e-5a48b4f37bd0">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0ce1a46-ee26-43d3-a54b-63d6f41dadbc">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>flagAnula</ColumnID>
                   </Source>
@@ -616,17 +604,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9f28cde4-0eff-4a35-a417-d71e4877c575">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dcff8c20-0c49-48c2-966b-695a9a71ac89">
           <CubeDimensionID>Flag Item Bonificados</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="15471f92-c165-4c50-a7df-a4fdc6c11bd0">
+            <Attribute dwd:design-time-name="07786222-f997-4a5d-b010-effcff69e5eb">
               <AttributeID>Sbonif</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="90f0901a-62b3-4313-9483-ad4cbb67d9e0">
+                <KeyColumn dwd:design-time-name="be81a988-f31c-4310-a86e-d5a5c29df009">
                   <DataType>WChar</DataType>
                   <DataSize>1</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2947ff0-ab4a-407f-8517-53cfcb8cd3a5">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8e924867-85dc-4215-aa9f-f4039dde15aa">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sbonif</ColumnID>
                   </Source>
@@ -636,17 +624,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a481b849-52b9-4b3a-842e-339ed2445549">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="11c357f3-5e63-4ae9-b62d-a0694e08492c">
           <CubeDimensionID>Sucursal</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="1a8c7e54-eb67-4b12-9ee0-5e539b4a77da">
+            <Attribute dwd:design-time-name="ebac8258-c83b-4ab2-8eec-8b1a44626e5f">
               <AttributeID>Sucursal</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="88faa550-b1e6-49d9-a399-636092cb407d">
+                <KeyColumn dwd:design-time-name="8f3dacff-0d27-441e-8b2b-6d6f33375c54">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b96d404-534d-4edd-86f7-4b367d562b70">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af38b46d-87ad-45a6-8753-56602ca409ac">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
@@ -656,24 +644,24 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6c1ab449-01a4-49c4-92f9-eef6587c8b87">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="68f4fb97-23b1-4d3b-9cb8-8e757c2db8a6">
           <CubeDimensionID>Documento</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="c8469e7d-858a-4058-9a7f-25430bddba82">
+            <Attribute dwd:design-time-name="d0f25558-7d70-4a4c-9207-20a15de89bef">
               <AttributeID>Clave</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="c1b913a5-ea24-4bb4-a61a-0351f987901a">
+                <KeyColumn dwd:design-time-name="58cb8269-343d-4629-a0a9-f368bdc2d1a5">
                   <DataType>WChar</DataType>
                   <DataSize>65</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c9032d6-bc28-4530-9000-915c249ccf9d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9c1c452-82bf-4e30-9f9d-f35a96a0cbc3">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Clave</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="b4db7056-ffcd-452f-adf4-d64bd7ef7dcb">
+                <KeyColumn dwd:design-time-name="97b5e724-8fb0-4708-aa16-0ffd682e20d4">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a0a2db88-8dcb-403c-9717-506f78a57f23">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8dc9422-ec24-40a6-9eaa-893549347e4e">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>NumDoc</ColumnID>
                   </Source>
@@ -681,64 +669,64 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="e18b169d-a24e-4d69-b81f-fce20f94c329">
+            <Attribute dwd:design-time-name="872aaf24-075b-49ce-8c65-1b56998db84c">
               <AttributeID>Cserie</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a6d3e7d3-ceca-42b2-8111-c5b27710c482">
+                <KeyColumn dwd:design-time-name="6eb8541d-50a1-4db5-82a9-48402c63887a">
                   <DataType>WChar</DataType>
                   <DataSize>4</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6bd34eb-5852-47c3-86e8-5b6d07be9e70">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec5eb45e-d7da-4db2-9eea-6ef02a4a1578">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>cserie</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="5b29d4fb-ad79-4f45-98ff-50de224c353a">
+            <Attribute dwd:design-time-name="62a62cb9-090c-4215-872a-ce6322f06e1d">
               <AttributeID>Ccorrelativo</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3a77a959-148f-45c7-95fb-ba7c3bc066ac">
+                <KeyColumn dwd:design-time-name="cddf1df0-0492-42f6-b22f-24ee5113f697">
                   <DataType>WChar</DataType>
                   <DataSize>20</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a8ca79d-1dd0-4599-ae38-5059360f1238">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="984216f8-8c27-44d9-87a4-dd3775e820a6">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>ccorrelativo</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="1c70827e-bd10-4b0c-9781-8d492136eec5">
+            <Attribute dwd:design-time-name="be561cfe-430f-4b13-b481-0bcdd1c6a133">
               <AttributeID>Ctipdoc</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="bf7e10fa-13a7-4f28-8cef-10dfc0986216">
+                <KeyColumn dwd:design-time-name="6dd93dba-b0c8-4b0a-ae73-19c69d56a926">
                   <DataType>WChar</DataType>
                   <DataSize>2</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d0c32451-ef7c-4fcd-8eaa-00ddeaac07c0">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba2d9de7-dc22-4846-a619-85d1dc1f397c">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>ctipdoc</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="81e43ac4-0ec7-425d-a466-c5d61fe066ec">
+            <Attribute dwd:design-time-name="5b1e438a-f334-4239-851f-e0cc133352b6">
               <AttributeID>Sucursal</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a1346dbd-3ac0-4227-8839-7b65308d6e77">
+                <KeyColumn dwd:design-time-name="931552ef-d9c0-4486-a73a-c8772748c476">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a05266db-2eef-4d57-8a78-5a09b17475cf">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7e08f8-84dc-4a2f-8ad7-7f0ac8dee36d">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="d2c1953a-2a16-4eb2-9f5c-4302963dead8">
+            <Attribute dwd:design-time-name="64619378-bcac-4276-ac23-5a6307d7a6b4">
               <AttributeID>Doc Entry</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4251f194-e200-4a84-8e09-f03dde1d9254">
+                <KeyColumn dwd:design-time-name="3aa55f0e-01ad-4f1b-b491-e6612e517afe">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd2ecbf5-6ad7-4e73-bea8-d3e9ed9b2a3a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dabd44b5-a908-442d-bc1d-30036a3594df">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>DocEntry</ColumnID>
                   </Source>
@@ -747,24 +735,24 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f71378e-e0d4-4134-a372-d2f3dba7ca52">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a220e78b-811d-44c5-ae3b-4687f5f6897a">
           <CubeDimensionID>Flg Sin Factor UMES</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="72caf66d-ceb7-4c55-979b-0f9382fc0085">
+            <Attribute dwd:design-time-name="7211aa29-7915-4bcf-9b24-fd0d9f74fb09">
               <AttributeID>Clave</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="d312df3d-208c-40a2-9f2e-5b909f401c8b">
+                <KeyColumn dwd:design-time-name="84c61007-b11e-4a1b-bca3-174954fb6fca">
                   <DataType>WChar</DataType>
                   <DataSize>65</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb7a5281-30fe-4993-ad33-1b34cc9e7a18">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c0f7289-6dcc-44db-94e9-69f4fe06985d">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Clave</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="ba809b77-1922-41f5-a76c-e9eb626afc97">
+                <KeyColumn dwd:design-time-name="baebf1ca-41e7-4812-b2cb-079d1583bb80">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a52d240d-9fef-4e6f-9bdf-3833dbe326b8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2cb97973-5f5b-4e42-a9ec-0caea1341492">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Flg_x0020_Sin_x0020_Factor_x0020_UMES</ColumnID>
                   </Source>
@@ -772,12 +760,12 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="0b1e309a-050a-44ea-88fd-bda4b461a8aa">
+            <Attribute dwd:design-time-name="31c81362-28d4-4f08-bfdb-0d0a5ddd89ed">
               <AttributeID>Flg Sin Factor UMES</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="006b7c8f-18fc-47da-8ace-1771fc9cce0d">
+                <KeyColumn dwd:design-time-name="53a33e84-3dfd-4846-b6f1-8be9716b2ab5">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dae16435-37b4-4966-af4d-cec067fc065a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5be53798-487e-42b7-9cbf-5a991afe80fd">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Flg_x0020_Sin_x0020_Factor_x0020_UMES</ColumnID>
                   </Source>
@@ -786,17 +774,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e281aafb-5913-4bb6-af69-54158a02dce6">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="39630ef1-39da-4f49-bda7-bd92ba795def">
           <CubeDimensionID>Sede</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="2eeaae9a-cc67-4cdd-8d91-b95e6976cc3d">
+            <Attribute dwd:design-time-name="17239a9f-7995-4afc-8487-62b46d74c289">
               <AttributeID>U U BKS CODSEDE</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0ba956b0-228f-4fda-8a69-7b3b3e7ed622">
+                <KeyColumn dwd:design-time-name="fdabfb04-f473-421d-bd14-f21e134b2271">
                   <DataType>WChar</DataType>
                   <DataSize>5</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="caec68ac-4401-44a2-89bf-3ba5bb25d5c9">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ec9b6e9-4c4b-4c3c-9d56-6de4fe935f2c">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>U_U_BKS_CODSEDE</ColumnID>
                   </Source>
@@ -804,13 +792,13 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="5450f6b5-671c-4d01-8d9d-5a3489b72f14">
+            <Attribute dwd:design-time-name="73032738-903a-46fb-87b2-0f01ba61760e">
               <AttributeID>Sucursal</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="05076b06-d170-4696-91b5-41dc17e01fe6">
+                <KeyColumn dwd:design-time-name="22fc6338-1809-4af9-a5ef-d72252fdbe1b">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="21ab736d-7595-41b1-9cea-41aa8e8dc92c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2885358c-80e9-4209-8a90-30d76cb203a9">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
@@ -819,17 +807,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cc93235f-eab5-48eb-9c67-842691eb55cc">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f1425f9a-1899-43a2-9779-75396df514fa">
           <CubeDimensionID>Dim Fechas</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="a4970c48-7e85-40a3-84b8-09854142621b">
+            <Attribute dwd:design-time-name="5c7879e3-5c25-41e8-887e-bbad00d54cf5">
               <AttributeID>Fecha Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="2250f874-cc4a-4efc-b34b-fdbc87dcf4dc">
+                <KeyColumn dwd:design-time-name="8905adba-b467-485a-ae7e-a24a54c02859">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b912bd37-1c56-4a6c-a925-0a26c892366f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="272b1e42-8023-4931-8e6d-58610541ab49">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>femision</ColumnID>
                   </Source>
@@ -837,87 +825,87 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="e50bff37-855e-4611-a612-3271f94fe0a7">
+            <Attribute dwd:design-time-name="085dbfac-3fad-4b92-a85b-325adce209eb">
               <AttributeID>Año</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="fad3aaed-f965-4d75-847f-7633063013f9">
+                <KeyColumn dwd:design-time-name="2233da42-da11-464a-9d6f-50c4bfbd1440">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8050fe5-8bc6-4cfb-afbd-05e44bfe56d7">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b3dab0e3-48fa-4c09-ba7a-a11c715b1c0f">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Año</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="8d8ccd2d-99ef-4a70-a20f-59bd137938bc">
+            <Attribute dwd:design-time-name="33aa866d-1cbc-4d66-8734-bc8c3b2c25aa">
               <AttributeID>Mes</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="6c48440b-8394-4670-82bf-42fa6c57109b">
+                <KeyColumn dwd:design-time-name="0bcd0f58-1ee4-4db9-9d68-3c993b80769a">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="22586f3d-35c0-466f-87ea-07b304f50b80">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d28285dd-e78d-4caa-9cf7-32fbd9e2673e">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Mes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="b017d7a7-6652-4b07-8f5d-7190f9cd835e">
+            <Attribute dwd:design-time-name="2849056d-34d6-4836-a2de-7623dc7152f5">
               <AttributeID>Dia</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="f95e0bee-98d0-4574-8f8b-afc66f591f97">
+                <KeyColumn dwd:design-time-name="5c4ac5f6-3203-4c9e-92bc-7f15abdee106">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15cc3700-a334-4843-af45-25ce9d534ce8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1885ae1f-5daf-4811-97d8-d9e0814af28a">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Dia</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="66db209c-b3ab-403e-9d53-174e82eb8e38">
+            <Attribute dwd:design-time-name="bab6a638-c269-4d69-88bd-54a2cd1636b9">
               <AttributeID>Dia Año</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3505534c-5baf-4289-950d-9cc2ed997ed1">
+                <KeyColumn dwd:design-time-name="47ee4d07-432b-4412-9d30-721a00564bda">
                   <DataType>WChar</DataType>
                   <DataSize>10</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3cf89ee2-05c3-4178-ac01-6a48d6e68568">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66670d20-8413-429d-a44a-b95842cd68ec">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>DiaAño</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="f4415400-0ab6-45f5-9889-359bd4537357">
+            <Attribute dwd:design-time-name="8b0e5ec9-8ded-4b11-8bf7-6a4d867646c2">
               <AttributeID>Dia Mes</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="80df95ea-1c49-4e39-9eaa-76019a625db4">
+                <KeyColumn dwd:design-time-name="81a62901-59ae-462a-aa11-3f6118f9b3eb">
                   <DataType>WChar</DataType>
                   <DataSize>6</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="26664be8-33b6-4079-8570-d69550c09904">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0be1482c-69b3-4ea7-9c73-fbad16929c1c">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>DiaMes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="41861842-95f7-4247-8661-6fbe63aae20a">
+            <Attribute dwd:design-time-name="3342ba4e-f957-43fa-8458-abeaee899d01">
               <AttributeID>Nombre Mes Abr</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="28353db0-36ae-420b-a902-2863d07b4fc2">
+                <KeyColumn dwd:design-time-name="52f94d8e-e93d-441b-88c7-46675b67d03d">
                   <DataType>WChar</DataType>
                   <DataSize>6</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a481299-e9fa-4342-b770-d3386f2087ce">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5d8a4c5-97d6-4408-a18d-47fc5ca91be4">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>NuNombreMes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="61082073-ae30-4869-94e4-7735e3ed2a53">
+            <Attribute dwd:design-time-name="b6ed9d93-707b-4813-bb9c-e05fb9a7fe9f">
               <AttributeID>Id Diez Dias</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="40acce26-1be2-4212-821b-7cb5dcd4d763">
+                <KeyColumn dwd:design-time-name="f260f58f-263c-41c4-9bff-0ced4b8e2a2e">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e3425ba-6424-4749-8d4f-0d9fb8791192">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20033ee9-0123-4538-a210-f9bfdb64c5b5">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>IdDiezDias</ColumnID>
                   </Source>
@@ -926,17 +914,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e48a29f4-f4be-4af2-9854-c95259b927b5">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29308a09-5c92-44cc-95c6-2232de16eb63">
           <CubeDimensionID>Items xLinea</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="8568f87d-adca-40a8-bf80-7ce08e4ad26b">
+            <Attribute dwd:design-time-name="a087b8dc-0e83-4567-a48a-bf5fa84bb234">
               <AttributeID>Item Code</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a1b323f5-74d0-4410-8e1d-8356bf586b71">
+                <KeyColumn dwd:design-time-name="ac6cb336-fb93-4108-bace-b50f570334f1">
                   <DataType>WChar</DataType>
                   <DataSize>20</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c27d056-48aa-4750-a0e6-11f88396137e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea4ee481-6c2a-40cc-be38-0bdf5c9090f6">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>ItemCode</ColumnID>
                   </Source>
@@ -944,185 +932,185 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="bd035ac9-aab6-4a01-818d-cf95d7c10c44">
+            <Attribute dwd:design-time-name="1774ab19-4373-48a8-ac68-5d404ff956df">
               <AttributeID>Card Code</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8eefd64b-7e52-4e83-917e-416d0236667e">
+                <KeyColumn dwd:design-time-name="0d1fae4c-1fa4-408c-a26e-21f36a2ac764">
                   <DataType>WChar</DataType>
                   <DataSize>15</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a48afd5-0b97-4676-9ec7-c496ccdd00c6">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1af5bd97-e54e-4675-8328-6104c12aca95">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>CardCode</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="a72890de-6a2e-41ef-9aab-a99666722ddf">
+            <Attribute dwd:design-time-name="c3d840ea-8948-4324-833b-63e43c334914">
               <AttributeID>Item Name</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8c65cda9-9dcd-4e63-9068-653914cda09b">
+                <KeyColumn dwd:design-time-name="1bf16097-7ebc-49b5-a7f7-f5e6c75e98b3">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2bc639ea-c9c1-4978-b303-cb585280158c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ecb1f18e-0b36-4b7c-9f4c-643c4a888bdc">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>LineaRW</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="45892d3a-7416-4e12-9962-6538a5930297">
+                <KeyColumn dwd:design-time-name="51dc43f0-ca3c-46f8-bfec-455d454b8d04">
                   <DataType>WChar</DataType>
                   <DataSize>20</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="96860fea-d0e4-49bc-9805-a8f95173af7e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="483be335-9806-4e73-8861-59840b4249c6">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>ItemCode</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="0c3ebdcf-a64c-4f86-aa14-3e41d1f68577">
+            <Attribute dwd:design-time-name="46177ae9-19b5-4e2d-aace-933dd78a0249">
               <AttributeID>Linea RW</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ce655827-f52d-4c2b-98f6-4ae82d21defe">
+                <KeyColumn dwd:design-time-name="ea1c2b80-2953-4cdd-96b0-dbd52f915ba0">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f1d42610-cd27-40d2-b2c3-365e9ee6ed70">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b3c46430-9184-401c-b373-1756bea9eed8">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>LineaRW</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="3ba0bd52-6faa-4ce8-b0f0-a0899d0df71a">
+            <Attribute dwd:design-time-name="47cf54a0-cebb-4431-9ce1-deaa2c2758d8">
               <AttributeID>Orden</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="bf613116-413f-4973-8be6-baf8dd858266">
+                <KeyColumn dwd:design-time-name="f45ace27-4e54-4f11-8a19-ad4682ca04e4">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ada23f10-7ae0-4285-94c6-e948b6ba019e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5a87bc07-5e93-4c9f-bc84-fb7f2c6e3b34">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Orden</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="88ca0e7b-bcf0-4cac-9fc2-8ef3c9364220">
+            <Attribute dwd:design-time-name="00fae4c7-b1db-42f8-bfdd-f9d5e5610c55">
               <AttributeID>Categoria</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="c5c25a0b-f58f-4f10-8ab3-0ae0a82403c0">
+                <KeyColumn dwd:design-time-name="95f0d748-9052-4211-bf44-6be547fc7c09">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d529b72b-82bc-4ecf-93b1-06a53291d98d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66574c7f-6e60-4c28-8d5e-05b901eb91fb">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Categoria</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="5f04e583-a708-47e5-b003-3707ce962aae">
+            <Attribute dwd:design-time-name="c2c75673-220a-49f2-9545-5bc629b2fa80">
               <AttributeID>Familia</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="d80c81c0-aa4a-4dec-9720-d5ec0cbd30e0">
+                <KeyColumn dwd:design-time-name="6a6d7e71-2d9d-4b05-8c38-6c635ab1e1d0">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="83fab721-072d-45f8-888d-8f3e8a73d669">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7935b16b-83e9-4abf-b54b-07ae67e0e8a3">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Categoria</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="18c5710b-18a1-4e9e-b5eb-a6275df38353">
+                <KeyColumn dwd:design-time-name="e4d6e21f-dd34-40f8-8b9e-3dce809d6e38">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="10df0191-dba1-43dc-9812-6f8ebcab885c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="084ba08a-2650-42db-88ee-194229fc65a6">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Marca</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="ee415cda-98eb-4eb6-b1b3-a24adbec7936">
+                <KeyColumn dwd:design-time-name="885d64ee-d8e7-4fa8-a8e0-9868578d04b3">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e820df65-8f15-4c83-a909-405d5b3cbae4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c486c11-8a6a-4894-bf98-457e64afc714">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Familia</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="3a915704-e388-468f-bc9c-aeba194990d3">
+            <Attribute dwd:design-time-name="8f34307f-aa48-457f-8a01-e3e0eda3cd87">
               <AttributeID>Marca</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="491244da-d8fb-4b3f-81ce-b0b9559bbc7b">
+                <KeyColumn dwd:design-time-name="f879c317-5f23-4f14-8113-33ccda4ee160">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="531ade51-8288-441b-a0c6-35008c12141f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2970c357-68af-4848-89d0-2ee933c37be7">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Categoria</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="9e0c406c-fa49-44bf-b48d-dd6b1a4a0bd2">
+                <KeyColumn dwd:design-time-name="ac59b216-835b-4917-b27e-3c81955357d0">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a30239d5-28c0-4a44-8fc7-bbd08172e01c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d6869fad-24bf-433c-9a99-f810067e91eb">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Marca</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="9a780642-5b52-4bb2-81f5-693376e4ddb1">
+            <Attribute dwd:design-time-name="acd3dd2b-08f9-4346-aabf-af909ee4814f">
               <AttributeID>Contenido</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b72e5e02-223c-4803-9437-8d0a61a5f6f9">
+                <KeyColumn dwd:design-time-name="5f4b1675-9c33-4e8c-919f-cbc791f45528">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c7309b7-52ee-4133-8769-c7472c0896ae">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d05714e5-e82b-4854-9b8f-02116150b622">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Categoria</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="5a37e48c-0b96-4971-adf6-950813c7029e">
+                <KeyColumn dwd:design-time-name="a9852dc5-2e8f-4caf-b4c5-51942f0b0f79">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cb699fa3-7d20-4c08-8a32-16e266411579">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f0c8264-70b4-4562-a8d5-85af22e5d1a4">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Marca</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="1d8c8369-1e17-45f6-bccc-230931893897">
+                <KeyColumn dwd:design-time-name="5e106e4d-cad4-4c8c-98e6-3af7cc263e74">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7f1e6912-4917-4a8c-818f-1216283133a4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30fb9787-95c9-4070-976b-01a09099c04a">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Familia</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="ce2a0837-2dee-4c0c-a009-2fffdb098d6d">
+                <KeyColumn dwd:design-time-name="4057ff36-6e1b-4447-bd81-f4772eb801f2">
                   <DataType>WChar</DataType>
                   <DataSize>100</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6af8ed06-0e90-4ce3-9d87-7fb83ca20d0e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="896c9518-2139-4592-9559-59ea5e2a4ff4">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Contenido</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="24566105-6d1e-4e62-b612-9f43baa65765">
+            <Attribute dwd:design-time-name="ac544902-a60c-4f91-8dec-8b1a2f11f865">
               <AttributeID>Familia 1</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e1edba99-0fe1-4f36-8461-8807042cbb6f">
+                <KeyColumn dwd:design-time-name="990130d0-ae7a-4019-8f66-998f3e4930a2">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5b43203a-5c4e-44c8-a657-36409a50a773">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2ec13414-8bf9-4327-88d2-622a78ed9ed2">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Familia</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="02b406ac-41cd-45df-9f57-7feb7ec26765">
+            <Attribute dwd:design-time-name="a6374ac9-d5a4-4ce9-951c-e2bc3fd4521b">
               <AttributeID>Categoria 1</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ed40b249-1a3f-436f-9fd5-cb9fcc482bc6">
+                <KeyColumn dwd:design-time-name="c35164e6-04b9-4259-8070-b11b39087ef3">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="95d04df1-ce51-4a31-ae4d-e19815782b06">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e06f5685-574d-4efe-a068-c131f2e0b820">
                     <TableID>Gloria_vw_ItemsxLineaxOrden</TableID>
                     <ColumnID>Categoria</ColumnID>
                   </Source>
@@ -1131,33 +1119,33 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08de4a3a-b19c-49a4-ba03-6423707eab59">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="47d7454e-bb1f-4d34-99e2-68a8b3c044d1">
           <CubeDimensionID>Cliente</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="c7ddf8e2-687f-4f71-9e5e-a48e3fa619fc">
+            <Attribute dwd:design-time-name="4c272321-d818-4ac0-a629-8d4d0a5eb8b8">
               <AttributeID>Ccliente D</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e5cd6144-0e0a-4f5d-9103-9ad6a91772ab">
+                <KeyColumn dwd:design-time-name="dca08c08-64b7-44e6-9d4a-24883fd1640c">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5b246891-dee3-43a4-8b6e-f0dbd5359554">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1555831e-5581-44bd-a21f-40c7cf375ad5">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="6f2e2a55-1120-4da5-9754-919e7f1fd304">
+                <KeyColumn dwd:design-time-name="4c881580-4046-4a96-bf33-318a0cab17da">
                   <DataType>WChar</DataType>
                   <DataSize>7</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ee92c68-d3cc-4e42-b10f-9b10fb0373dc">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8256b69e-8bc8-46dd-80ac-e18728b54dab">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>TiCliente</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="a23b3111-f10b-4afb-827e-d4e5e0f2f7db">
+                <KeyColumn dwd:design-time-name="3c170fa1-36b0-45f5-8902-51a18682f7e3">
                   <DataType>WChar</DataType>
                   <DataSize>20</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5d4f933-8ffd-49d1-b26a-e998f3d8ae4d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c1349a0-fd72-4e20-8880-2f059e582e95">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>ccliente_d</ColumnID>
                   </Source>
@@ -1165,39 +1153,39 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="f7955f28-a244-406c-b4d5-a0c93a7b08bf">
+            <Attribute dwd:design-time-name="6f620be9-5eba-45f1-ab33-e84abb936000">
               <AttributeID>Sucursal</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4385b308-902b-4c06-b980-da65329b787b">
+                <KeyColumn dwd:design-time-name="b5f004b1-ec2b-462c-9914-56a7ad4f7ae7">
                   <DataType>WChar</DataType>
                   <DataSize>50</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7e96c06-7eae-4b92-82c7-8d8a4487e750">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e2daf8b-ccb9-4a5f-a98d-95c6c8b53593">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>Sucursal</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="06c89d73-360c-46a7-b09d-0f01ec65757f">
+            <Attribute dwd:design-time-name="16e5396e-b423-4072-9ac7-310afc68ebcf">
               <AttributeID>Ti Cliente</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="80296278-43ea-451b-96f8-2f17581d43a6">
+                <KeyColumn dwd:design-time-name="a1395e54-0d73-4c59-ac01-577299a37244">
                   <DataType>WChar</DataType>
                   <DataSize>7</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4802e7d5-374e-4311-ac45-9d12555895d5">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc460cfd-2a8c-4054-a104-0714ea11c405">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>TiCliente</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="f068a48e-553b-4e2f-98ec-46f3dea47e62">
+            <Attribute dwd:design-time-name="6b10133b-dccb-4df5-89a1-aef6c9082b44">
               <AttributeID>Card Code</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ea05a717-83a6-4bb3-8779-8da996c81745">
+                <KeyColumn dwd:design-time-name="0c370648-f369-47b4-9e21-58ee20bbdafc">
                   <DataType>WChar</DataType>
                   <DataSize>15</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9ccf628-fb92-4b79-9ea4-d044fe52625a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1fa00b2-05d4-475d-9276-e15c91714361">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>CardCode</ColumnID>
                   </Source>
@@ -1206,18 +1194,18 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f7f24b5f-b84a-457e-a252-a61a508b28e7">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b6de9f75-5cde-4baa-93f9-042808a1ede4">
           <CubeDimensionID>Vendedor</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="0f03a6c1-11d0-44e5-8a31-013aff00a811">
+            <Attribute dwd:design-time-name="93e7e336-2c57-4efc-8f30-c38b17765853">
               <AttributeID>Cod Ven</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="f8cd2381-6240-49d1-b785-6ec1539ecdfb">
+                <KeyColumn dwd:design-time-name="9f481aab-b021-4866-b7bc-08c69306a468">
                   <DataType>WChar</DataType>
                   <DataSize>5</DataSize>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aabf4bc5-dd73-4459-a03f-1e01da44980e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f2d62aa-09cf-4c00-937f-119ae0c0a446">
                     <TableID>Gloria_Extractor_Ventas</TableID>
                     <ColumnID>cvendedor</ColumnID>
                   </Source>
@@ -1225,13 +1213,13 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="616b4cb8-0746-40a2-9711-f5415bd2d126">
+            <Attribute dwd:design-time-name="85972ca0-def9-45b2-a9b1-2a3eff68294c">
               <AttributeID>Nom Ven</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="83f9bad8-2368-45f9-9169-bacac1a44c88">
+                <KeyColumn dwd:design-time-name="059872b2-adca-4b92-afa6-f26df8a965b0">
                   <DataType>WChar</DataType>
                   <DataSize>100</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4cc1dc-6e35-4ddb-ab03-1cbaa931c9d7">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="abc4d3e0-63a7-4a62-abad-7896c2861bc8">
                     <TableID>Gloria_vw_DimVendedor</TableID>
                     <ColumnID>NomVen</ColumnID>
                   </Source>
@@ -1242,15 +1230,15 @@
         </Dimension>
       </Dimensions>
       <Partitions />
-      <ProactiveCaching dwd:design-time-name="f50e7419-4acc-4144-b6f7-3fbb1000c28a">
+      <ProactiveCaching dwd:design-time-name="49d3ccac-9626-43a2-b7fe-933041ea6f99">
         <SilenceInterval>-PT1S</SilenceInterval>
         <Latency>-PT1S</Latency>
         <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
         <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c83dd320-ae71-4bb5-9d5a-c1acbe27fdcb" />
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5a73fb17-f1f7-4f86-86aa-a1b96b8c8390" />
       </ProactiveCaching>
     </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="01e8b488-50a5-43da-ac52-8f865cb3396c">
+    <MeasureGroup dwd:design-time-name="a658373c-9854-4052-b95c-3051dd3d19b0">
       <ID>Dim Vw Factor Proyectado</ID>
       <Name>Dim Vw Factor Proyectado</Name>
       <CreatedTimestamp>2021-04-19T15:43:07.243333Z</CreatedTimestamp>
@@ -1258,14 +1246,14 @@
       <LastProcessed>2021-08-02T10:24:16.66Z</LastProcessed>
       <State>Processed</State>
       <Measures>
-        <Measure dwd:design-time-name="dde9643c-001e-4b80-8f50-1b9871b530d6">
+        <Measure dwd:design-time-name="8bd5c066-1031-4832-89e3-23ec6aee0961">
           <ID>Máximo Factor Pry Mes</ID>
           <Name>FactorPryMes</Name>
           <AggregateFunction>Max</AggregateFunction>
           <DataType>Double</DataType>
-          <Source dwd:design-time-name="6b0370d7-5eef-424e-aed4-23112adc6087">
+          <Source dwd:design-time-name="a66f637c-7371-46f5-b313-5727ce389d18">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="0362c8e5-ab01-4799-936d-60c7f5031a36">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="34abd7af-a700-4f12-a7d0-2a8dba6f7d7f">
               <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
               <ColumnID>FactorPryMes</ColumnID>
             </Source>
@@ -1276,17 +1264,17 @@
       <EstimatedSize>218</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="86df6b56-aabe-4bed-addb-1cfb47ead1de">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9194b0e4-16ab-4a26-bbf4-cd4554902ee5">
           <CubeDimensionID>Dim Fechas</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute dwd:design-time-name="edfb9016-49ac-4f18-91b4-8cb49c225834">
+            <Attribute dwd:design-time-name="40bc0a52-608e-4e67-b58f-d05e95a54250">
               <AttributeID>Fecha Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8d3fa49a-2b79-4f9f-b4ff-c25fec2a5094">
+                <KeyColumn dwd:design-time-name="6e117964-ed1c-44b9-be78-5ac3345faaea">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7b72c9c6-c65f-43d3-9dcd-06d050be49b4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="47512260-82f3-449e-859b-2156f7aa2c91">
                     <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
                     <ColumnID>FechaKey</ColumnID>
                   </Source>
@@ -1294,87 +1282,87 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute dwd:design-time-name="2a8052d5-cd7d-4f0c-9e9f-35be3cb8030f">
+            <Attribute dwd:design-time-name="d3606964-07f9-481d-a1fb-d4a2d5bba8d7">
               <AttributeID>Año</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="30ea5f8e-40db-4b85-9329-653b30dc2314">
+                <KeyColumn dwd:design-time-name="543e9493-8b89-4543-8fd8-a494f013e079">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a523b1a1-93ce-4ba3-bb3e-4e3bc7e9318a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2cc24fc-3668-4fc1-9425-21c54002b024">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Año</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="0fd64a8f-a810-4ffd-9859-08ad5d9c7ae2">
+            <Attribute dwd:design-time-name="f29207b5-f761-4628-899a-8c6f01af692a">
               <AttributeID>Mes</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="634071e7-d158-4e09-85aa-cf21f49b4bba">
+                <KeyColumn dwd:design-time-name="909a82a4-b334-404e-8e0a-1bc9f7f69c10">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4aee7b1-5584-4b78-9bbf-565dccf8f954">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="137b1774-c7fc-4db3-b9d6-25288d715602">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Mes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="9ee9728a-a3a9-4ebf-b488-759390515e47">
+            <Attribute dwd:design-time-name="932e110e-dc60-4a17-82b0-553d7d404da2">
               <AttributeID>Dia</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4db216c4-da6b-4ec2-9155-8eb94c083b43">
+                <KeyColumn dwd:design-time-name="7cc5a0c2-32ad-4dea-85d9-47ebdabd706c">
                   <DataType>SmallInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9034e629-21e0-426c-bb5d-2074e6b164ea">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ac776a45-cfce-4fa0-940c-c01b009ece6b">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>Dia</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="6bcd5686-a85f-49f6-baf9-86b5db889c31">
+            <Attribute dwd:design-time-name="534bf7ac-c592-478c-a96c-7f7ddf568abd">
               <AttributeID>Dia Año</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="63dbe364-1512-4f49-9e86-789b27a9bba5">
+                <KeyColumn dwd:design-time-name="2880a76a-7db3-484c-9433-240f88934e98">
                   <DataType>WChar</DataType>
                   <DataSize>10</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec404446-a095-4b60-9ab7-9db12de8711d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf4db59-f0ef-484a-bced-c595f9aae285">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>DiaAño</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="738fe3db-ee38-4b64-b3b1-3fc2e7ca64c1">
+            <Attribute dwd:design-time-name="a7f709da-5929-4fcf-b809-a831ca948882">
               <AttributeID>Dia Mes</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b50b13f8-c1a2-48eb-b601-646422ee4e14">
+                <KeyColumn dwd:design-time-name="d3f9a06e-d132-4e80-9007-70b191d7a3d2">
                   <DataType>WChar</DataType>
                   <DataSize>6</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a5964185-da39-497b-afd4-03d14149faf3">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a85232f4-61ee-4110-acf6-68b9ac925b7a">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>DiaMes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="2176ce68-6777-4ae5-8fcc-fa44662121da">
+            <Attribute dwd:design-time-name="9ea9eb83-9462-4d16-8582-3ee746950f4d">
               <AttributeID>Nombre Mes Abr</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4c58e866-b8a6-465d-9241-75abed0fc8f6">
+                <KeyColumn dwd:design-time-name="f240a7c6-c955-4ee0-ab02-6a56ffd95d60">
                   <DataType>WChar</DataType>
                   <DataSize>6</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b876176a-e139-42c7-9a67-401822eea496">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61b7f99a-aa5c-475b-98d0-fd0d3fcf1920">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>NuNombreMes</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute dwd:design-time-name="0c6375d2-0755-403d-bce8-cd2e5226148e">
+            <Attribute dwd:design-time-name="3def26a7-26a2-4d8a-a97b-570b6acadbda">
               <AttributeID>Id Diez Dias</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="354e1640-086d-4cee-8595-bc5aa0818236">
+                <KeyColumn dwd:design-time-name="4a31571f-a498-4238-a456-caa2a330a014">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2fe6c99f-dcc6-4115-a6ce-c5d37281f1f1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eabe8b43-e037-4b04-8022-84c84084a22c">
                     <TableID>Ventas_DimFechas</TableID>
                     <ColumnID>IdDiezDias</ColumnID>
                   </Source>
@@ -1385,20 +1373,20 @@
         </Dimension>
       </Dimensions>
       <Partitions />
-      <ProactiveCaching dwd:design-time-name="f9ecf16a-f380-4d9a-8d43-b04c44a98eb1">
+      <ProactiveCaching dwd:design-time-name="fe75dac3-9bd6-44f6-aa56-5f5b95857b03">
         <SilenceInterval>-PT1S</SilenceInterval>
         <Latency>-PT1S</Latency>
         <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
         <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="7d3e57a9-c779-4103-8116-f181aaf5bb29" />
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9ae397a4-79bb-4249-bac7-d5787f26493a" />
       </ProactiveCaching>
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="634f27e9-7bc1-454a-9a31-cd8cf2a15609">
+  <Source dwd:design-time-name="4284bddc-7bcc-4a6a-807b-aa68ad4f105a">
     <DataSourceViewID>ROMA Repositorio</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="46a4f268-b42b-4c56-833e-974563484777">
+    <MdxScript dwd:design-time-name="aa2c6d16-81cd-4922-a068-a30217ab7197">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>2021-04-19T15:43:07.29Z</CreatedTimestamp>
@@ -1410,31 +1398,35 @@ El comando CALCULATE controla la agregación de celdas hoja en el cubo.
 Si se elimina o modifica el comando CALCULATE, se ven afectados los datos del cubo.
 Solo debe editar este comando si especifica manualmente cómo se agrega el cubo.
 */
-CALCULATE;       
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[TotalConIGV]
+ AS [Measures].[TotalSinIGV] * 1.18, 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Extractor Ventas'  ;        
 CREATE MEMBER CURRENTCUBE.[Measures].Total_cDscto_sIGV
  AS [Measures].[TotalSinIGV]-[Measures].[DsctoSinIGV], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;   
+VISIBLE = 1;    
 CREATE MEMBER CURRENTCUBE.[Measures].[PromVta]
  AS Sum([Measures].[Total_cDscto_sIGV])/[Measures].[QtdDocumentos], 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].QtdClientes
  AS IIF(IsEmpty([Measures].[TotalSinIGV]) , Null, 
 DistinctCount(
    filter(EXISTING [Cliente].[Card Code].children, [Measures].[TotalSinIGV]&gt;0)
 )
 ), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].QtdDocumentos
  AS IIF(IsEmpty([Measures].[TotalSinIGV]) , Null, 
 DistinctCount(
    filter(EXISTING [Documento].[Doc Entry].children, [Measures].[TotalSinIGV]&gt;0)
 )
 ), 
-VISIBLE = 1;    
+VISIBLE = 1;     
 CREATE MEMBER CURRENTCUBE.[Measures].[UMES Anterior]
  AS Sum([Dim Fechas].[Año - Mes - Diez Días - Día].PrevMember, [Measures].[UMES]), 
-VISIBLE = 0; 
+VISIBLE = 0;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_Pry]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, 
 Null, 
@@ -1443,30 +1435,30 @@ IIf([Dim Fechas].[Año - Mes - Día].CurrentMember Is [Dim Fechas].[Año - Mes -
     [Measures].[UMES])
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_MesAnterior]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, Null, 
 ([Measures].[UMES], 
 PARALLELPERIOD([Dim Fechas].[Año - Mes - Día].[Mes], 1, [Dim Fechas].[Año - Mes - Día].CURRENTMEMBER))
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[UME_MesAñoAnterior]
  AS IIF(IsEmpty([Measures].[UMES]) Or [Measures].[UMES]=0, Null, 
 ([Measures].[UMES], 
 PARALLELPERIOD([Dim Fechas].[Año - Mes - Día].[Mes], 12, [Dim Fechas].[Año - Mes - Día].CURRENTMEMBER))
 ), 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[CrecUME_MesAnterior%]
  AS IIF(IsEmpty([Measures].[UMES]) Or Isempty([Measures].[UME_MesAnterior]) Or [Measures].[UME_MesAnterior] = 0, Null, 
 ([Measures].[UME_Pry]/[Measures].[UME_MesAnterior])-1), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1  ; 
+VISIBLE = 1;  
 CREATE MEMBER CURRENTCUBE.[Measures].[CrecUME_MesAñoAnterior%]
  AS IIF(IsEmpty([Measures].[UMES]) Or Isempty([Measures].[UME_MesAñoAnterior]) Or [Measures].[UME_MesAñoAnterior] = 0, Null, 
 ([Measures].[UME_Pry]/[Measures].[UME_MesAñoAnterior])-1), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1  ;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[%Var]
  AS IIF(IsEmpty([UMES Anterior]) Or [UMES Anterior] = 0, Null, 
     Sum([Dim Fechas].[Año - Mes - Diez Días - Día].CurrentMember, [Measures].[UMES])
@@ -1474,24 +1466,24 @@ CREATE MEMBER CURRENTCUBE.[Measures].[%Var]
     Sum([Dim Fechas].[Año - Mes - Diez Días - Día].PrevMember, [Measures].[UMES])
 ), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].Prom_Ventas_xEvento
  AS [Measures].[TotalSinIGV] / [Measures].[QtdDocumentos], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].FlDrop
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, IIf([Measures].[Prom_Ventas_xEvento]&gt;=0 And [Measures].[Prom_Ventas_xEvento]&lt;=50,-1,1)), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[Drop &gt;50]
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, 
     DistinctCount(Filter(EXISTING [Cliente].[Card Code].children, [Measures].[FlDrop]=1))
 ), 
-VISIBLE = 1;       
+VISIBLE = 1;        
 CREATE MEMBER CURRENTCUBE.[Measures].[Drop &lt;=50]
  AS IIF(IsEmpty([Measures].[TotalSinIGV]), Null, 
     DistinctCount(Filter([Cliente].[Card Code].children, [Measures].[FlDrop]=-1))
 ), 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[Vta Acum]
  AS Sum(
     PeriodsToDate
@@ -1502,11 +1494,11 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Vta Acum]
     ,[Measures].[TotalSinIGV]
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Pry]
  AS IIF(IsEmpty([Measures].[UMES]), Null, [Measures].[UMES]*[Measures].[FactorPryMes]), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum]
  AS Sum(
     PeriodsToDate
@@ -1517,7 +1509,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum]
     ,[Measures].[UMES]
 ), 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1;  
+VISIBLE = 1;   
 CREATE MEMBER CURRENTCUBE.[Measures].[UME Acum Pry]
  AS [Measures].[UME Acum] + [Measures].[UME Pry], 
 FORMAT_STRING = "#,##0;-#,##0", 
@@ -1527,7 +1519,7 @@ VISIBLE = 1; </Text>
     </MdxScript>
   </MdxScripts>
   <Kpis>
-    <Kpi dwd:design-time-name="9bc0af04-47ec-49da-9ad1-aef437ce2ff2">
+    <Kpi dwd:design-time-name="dc157eea-e9d1-4792-a4fe-87d63d36bc14">
       <ID>KPI</ID>
       <Name>KPI_Var</Name>
       <Value>[Measures].[%Var]</Value>
@@ -1542,11 +1534,11 @@ End
       <StatusGraphic>Traffic Light</StatusGraphic>
     </Kpi>
   </Kpis>
-  <ProactiveCaching dwd:design-time-name="fa7aea95-c885-4be7-9876-cc18e34102c1">
+  <ProactiveCaching dwd:design-time-name="5fa65368-6347-4938-b7b8-ad55e1ffabd3">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="40acad7c-928b-4eaa-ae30-20f3c9f36250" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5b711de5-0f76-43a9-889d-a3f71ec257a1" />
   </ProactiveCaching>
 </Cube>

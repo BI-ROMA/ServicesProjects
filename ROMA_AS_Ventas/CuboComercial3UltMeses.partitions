@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="356fc10f-12f7-4d2f-bf04-18c7cb43b237" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d50c24c6-99f0-45e9-9b12-12553a583bf6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>CuboComercial3UltMeses</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</ID>
       <Partitions>
-        <Partition dwd:design-time-name="7b270cbe-2d76-43ae-92e3-24620d616f75">
+        <Partition dwd:design-time-name="faed293f-e4a4-4676-afe2-4051b040e644">
           <ID>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</ID>
           <Name>Vw Fact Cartera Inicial x Vendedor Ult3 Meses</Name>
           <CreatedTimestamp>2021-12-17T14:07:08.166667Z</CreatedTimestamp>
           <LastSchemaUpdate>2022-01-14T07:04:36.636667Z</LastSchemaUpdate>
           <LastProcessed>2022-02-03T06:16:52.303333Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="58603953-357c-4cc4-a273-11f6b2e42053">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="19eb51b8-b0a3-4588-8b49-67d3eda65410">
             <DataSourceID>DS_ROMA_BI</DataSourceID>
             <QueryDefinition>SELECT [Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[FechaKey],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdMesa],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdSede],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdCartera],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdJefe_dVenta],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdSupervisor],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdVen],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[CarteraInicial],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[CodCli],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdCanal],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdProveedor],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdCat_xPrv],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdRelGeneral],[Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses].[IdRelGeneral2]
 FROM [Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses]</QueryDefinition>
@@ -20,13 +20,13 @@ FROM [Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses]</QueryDefinition>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
           <StorageLocation>\\?\D:\OLAP\Data2\Cobertura2</StorageLocation>
-          <ProactiveCaching dwd:design-time-name="80d5acbc-b32d-4d64-bd96-98ca804726f2">
+          <ProactiveCaching dwd:design-time-name="cb496b37-c7f5-4f77-94f4-1a3dcf4e1e9d">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9a595215-df22-4541-bd8d-77fb9f03c238">
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9ee4d97f-1d0f-4fb9-8811-1f20a14f05ef">
               <NotificationTechnique>Server</NotificationTechnique>
             </Source>
           </ProactiveCaching>
@@ -2926,14 +2926,14 @@ FROM [Ventas].[vw_Fact_CarteraInicial_xVendedor_Ult3Meses]</QueryDefinition>
     <MeasureGroup>
       <ID>Vw Fact Ventas Ult3 Meses</ID>
       <Partitions>
-        <Partition dwd:design-time-name="120236e1-9475-46fc-9c54-ae979ec035eb">
+        <Partition dwd:design-time-name="234dab35-ea85-44c3-ba1b-6ab77446f810">
           <ID>Vw Fact Ventas Ult3 Meses</ID>
           <Name>Vw Fact Ventas Ult3 Meses</Name>
           <CreatedTimestamp>2021-12-17T14:07:08.353333Z</CreatedTimestamp>
           <LastSchemaUpdate>2022-01-14T07:04:37.323333Z</LastSchemaUpdate>
           <LastProcessed>2022-02-03T06:13:49.13Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="808eaaa7-5bbb-4955-8ec6-f34235f372df">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f2a670b0-7138-48b7-8dbc-1f148c277abe">
             <DataSourceID>DS_ROMA_BI</DataSourceID>
             <QueryDefinition>SELECT [Planillas].[vw_Fact_Ventas_Ult3Meses].[FechaKey],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdSede],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdMesa],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdCliente],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdProveedor],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdProducto],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdDocumento],[Planillas].[vw_Fact_Ventas_Ult3Meses].[Item],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdJefe_dVenta],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdSupervisor],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdVendedor],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdCanal],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdCartera],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdCat_xPrv],[Planillas].[vw_Fact_Ventas_Ult3Meses].[Cantidad],[Planillas].[vw_Fact_Ventas_Ult3Meses].[Total],[Planillas].[vw_Fact_Ventas_Ult3Meses].[TotalIGV],[Planillas].[vw_Fact_Ventas_Ult3Meses].[PartitionMonth],[Planillas].[vw_Fact_Ventas_Ult3Meses].[FactorUME],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdLLaveCartera],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdRelGeneral],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdRelGeneral2],[Planillas].[vw_Fact_Ventas_Ult3Meses].[IdTipoVenta]
 FROM [Planillas].[vw_Fact_Ventas_Ult3Meses]</QueryDefinition>
@@ -2941,12 +2941,12 @@ FROM [Planillas].[vw_Fact_Ventas_Ult3Meses]</QueryDefinition>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="284fb221-7e89-490a-9ab3-a7c74a8f85ea">
+          <ProactiveCaching dwd:design-time-name="6bbc3745-8fe4-40fd-852b-d14d5418a7ef">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9ab63384-3b2b-4c2f-aa05-aaedd7018db0" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2b62e6c8-05c5-4f4e-812b-c91038ce765a" />
           </ProactiveCaching>
           <EstimatedSize>26799258</EstimatedSize>
           <EstimatedRows>1133226</EstimatedRows>
@@ -6597,26 +6597,26 @@ FROM [Planillas].[vw_Fact_Ventas_Ult3Meses]</QueryDefinition>
     <MeasureGroup>
       <ID>Fact Cuotas</ID>
       <Partitions>
-        <Partition dwd:design-time-name="4605277a-169c-4701-9f61-79389fa16a56">
+        <Partition dwd:design-time-name="389f0bec-ba7b-474e-ad86-92039e98fd19">
           <ID>Fact Cuotas</ID>
           <Name>Fact Cuotas</Name>
           <CreatedTimestamp>2021-12-17T14:07:08.463333Z</CreatedTimestamp>
           <LastSchemaUpdate>2022-01-14T07:04:38.2Z</LastSchemaUpdate>
           <LastProcessed>2022-02-03T06:16:34.49Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8733694d-2d86-4228-9eaf-e6d2c47096e3">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3fe8cd07-b8c1-48d2-95ff-a0ea3afbd64a">
             <DataSourceViewID>dsCuboUlt3Meses</DataSourceViewID>
             <TableID>Ventas_Fact_Cuotas</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="233b82b6-bbef-48e0-bd07-54ed4ad381ec">
+          <ProactiveCaching dwd:design-time-name="159b842f-9d3f-4102-9dc7-cb884ed1b8a0">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4de99cc0-b7f4-4b21-b94a-e8dc31c7dc6b" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ebacdfb4-d9c2-477e-85c2-4094707178ed" />
           </ProactiveCaching>
           <EstimatedSize>1661639</EstimatedSize>
           <EstimatedRows>76740</EstimatedRows>
@@ -8336,26 +8336,26 @@ FROM [Planillas].[vw_Fact_Ventas_Ult3Meses]</QueryDefinition>
     <MeasureGroup>
       <ID>Dim Vw Factor Proyectado</ID>
       <Partitions>
-        <Partition dwd:design-time-name="dc7e1bc1-ed0c-422b-9626-c6443d89d513">
+        <Partition dwd:design-time-name="8466dc54-2cc0-45ae-8f10-a1999b563503">
           <ID>Dim Vw Factor Proyectado</ID>
           <Name>Dim Vw Factor Proyectado</Name>
           <CreatedTimestamp>2021-12-17T14:07:10.183333Z</CreatedTimestamp>
           <LastSchemaUpdate>2022-01-14T07:04:38.323333Z</LastSchemaUpdate>
           <LastProcessed>2022-02-03T06:13:50.083333Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4c57f1aa-e351-4af9-a006-9e151f4af424">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="473be407-f4b0-4cac-8fe7-f79084f538a8">
             <DataSourceViewID>dsCuboUlt3Meses</DataSourceViewID>
             <TableID>Ventas_Dim_vw_FactorProyectado</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="f6b015b5-e5c1-452e-9200-64338fea1aa8">
+          <ProactiveCaching dwd:design-time-name="50ff7d6e-d91f-47bf-b5dd-e62368ff7127">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="89ad216c-c46c-4628-b2d5-b1d709299dbd" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="31f434db-2633-4e43-bcc5-da9aaea1c180" />
           </ProactiveCaching>
           <EstimatedSize>322</EstimatedSize>
           <EstimatedRows>1</EstimatedRows>
@@ -8443,26 +8443,26 @@ FROM [Planillas].[vw_Fact_Ventas_Ult3Meses]</QueryDefinition>
     <MeasureGroup>
       <ID>Dim Fechas</ID>
       <Partitions>
-        <Partition dwd:design-time-name="20350d2c-fa40-4295-ae3a-3c001c737f2a">
+        <Partition dwd:design-time-name="f4f2934b-2ffb-4cdc-be13-87c0c0f82009">
           <ID>Dim Fechas</ID>
           <Name>Dim Fechas</Name>
           <CreatedTimestamp>2021-12-17T14:07:10.243333Z</CreatedTimestamp>
           <LastSchemaUpdate>2022-01-14T07:04:38.513333Z</LastSchemaUpdate>
           <LastProcessed>2022-02-03T06:13:50.036667Z</LastProcessed>
           <State>Processed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8ebd1687-9cb4-4800-a59b-677ea57386ea">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b0f06575-269d-4c10-934f-b5d50ef2306a">
             <DataSourceViewID>dsCuboUlt3Meses</DataSourceViewID>
             <TableID>Ventas_DimFechas</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="9ce3d512-113b-4e25-8fb3-ba97dc1f28bd">
+          <ProactiveCaching dwd:design-time-name="85e9b66b-cecd-488a-a8b7-a5e7f9861c82">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4c477a64-510d-4d43-9276-12f8d6c5d8c6" />
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="52af942d-c6d7-41cc-96de-95f2ec9ce0c2" />
           </ProactiveCaching>
           <EstimatedSize>2438</EstimatedSize>
           <EstimatedRows>1079</EstimatedRows>
